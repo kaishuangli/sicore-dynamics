@@ -6,8 +6,10 @@ import IndustriesSection from "@/sections/IndustriesSection";
 import PartnersSection from "@/sections/PartnersSection";
 import FeaturedProductSection from "@/sections/FeaturedProductSection";
 import AboutSection from "@/sections/AboutSection";
+import GeoEntitySection from "@/sections/GeoEntitySection";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
+import { getFaqPageSchema } from "@/lib/geo";
 import { site } from "@/lib/site";
 import {
   getItemListSchema,
@@ -38,10 +40,11 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
     description,
     keywords: seoKeywords,
     alternates: {
-      canonical: locale === "zh" ? `${site.url}/zh` : site.url,
+      canonical: locale === "zh" ? `${site.url}/zh` : locale === "es" ? `${site.url}/es` : site.url,
       languages: {
         en: site.url,
-        zh: `${site.url}/zh`,
+        es: `${site.url}/es`,
+        "x-default": site.url,
       },
     },
     robots: {
@@ -52,15 +55,16 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
         follow: true,
         "max-image-preview": "large",
         "max-snippet": -1,
+        "max-video-preview": -1,
       },
     },
     openGraph: {
       title: `${title} | ${site.name}`,
       description,
-      url: locale === "zh" ? `${site.url}/zh` : site.url,
+      url: locale === "zh" ? `${site.url}/zh` : locale === "es" ? `${site.url}/es` : site.url,
       siteName: site.name,
       type: "website",
-      locale: locale === "zh" ? "zh_CN" : "en_US",
+      locale: locale === "zh" ? "zh_CN" : locale === "es" ? "es_ES" : "en_US",
       images: [
         {
           url: `${site.url}/images/plug-free-docking/hero.png`,
@@ -91,8 +95,10 @@ export default async function Home({ params }: HomePageProps) {
       <JsonLd data={getWebPageSchema()} />
       <JsonLd data={getItemListSchema()} />
       <JsonLd data={getServiceSchema()} />
+      <JsonLd data={getFaqPageSchema()} />
       <main id="main-content">
         <Hero locale={locale} />
+        <GeoEntitySection locale={locale} />
         <TechnologySection locale={locale} />
         <IndustriesSection locale={locale} />
         <FeaturedProductSection locale={locale} />

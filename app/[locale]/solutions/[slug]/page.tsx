@@ -6,6 +6,7 @@ import SolutionPageMain from "@/sections/solutions/SolutionPageMain";
 import { getIndustryPageHeading, industries, type IndustryId } from "@/lib/industries";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getIndustryBySlugLocalized, getSolutionFaqsForIndustry } from "@/lib/i18n/content";
+import { getBreadcrumbSchema } from "@/lib/geo";
 import { getOrganizationSchema, seoKeywords } from "@/lib/seo";
 import { site } from "@/lib/site";
 
@@ -118,6 +119,13 @@ export default async function SolutionDetailPage({ params }: PageProps) {
       <JsonLd data={webPageSchema} />
       <JsonLd data={serviceSchema} />
       <JsonLd data={faqSchema} />
+      <JsonLd
+        data={getBreadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Industrial Solutions", path: "/solutions" },
+          { name: industry.title, path: `/solutions/${industry.id}` },
+        ])}
+      />
       <main id="main-content" className="bg-white">
         <SolutionPageHero industry={industry} locale={locale} />
         <SolutionPageMain industry={industry} locale={locale} />
