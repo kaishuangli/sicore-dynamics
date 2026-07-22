@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Capacitive Power Transfer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0891B2"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#grid)" opacity="0.55"/>
+  <rect x="36" y="28" width="1208" height="664" rx="28" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="36" y="28" width="1208" height="10" fill="url(#accent)"/>
+  <text x="72" y="88" fill="#0B5FFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">SICORE KNOWLEDGE DIAGRAM</text>
+  <text x="72" y="132" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800">Capacitive Power Transfer</text>
+  <text x="72" y="168" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="18">Hero diagram for this knowledge article</text>
+  
+      <rect x="280" y="240" width="28" height="220" fill="#0B5FFF"/>
+      <rect x="980" y="240" width="28" height="220" fill="#06B6D4"/>
+      <text x="294" y="500" text-anchor="middle" fill="#0B0F19" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Plate A</text>
+      <text x="994" y="500" text-anchor="middle" fill="#0B0F19" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Plate B</text>
+      <path d="M340 300 H950" stroke="#F59E0B" stroke-width="3" stroke-dasharray="6 8"/>
+      <path d="M340 350 H950" stroke="#F59E0B" stroke-width="3" stroke-dasharray="6 8"/>
+      <path d="M340 400 H950" stroke="#F59E0B" stroke-width="3" stroke-dasharray="6 8"/>
+      <text x="640" y="280" text-anchor="middle" fill="#64748B" font-size="18" font-family="Segoe UI, Arial, sans-serif">Electric field (CPT)</text>
+      
+  <rect x="470" y="520" width="340" height="70" rx="14" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2.5"/>
+  <text x="640" y="561" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Displacement current</text>
+  <text x="72" y="666" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="14">Educational illustration for Knowledge Center — not a product photo</text>
+</svg>

@@ -1,0 +1,46 @@
+export const wireless3000wSpecGroups = [
+  {
+    title: "Especificaciones del Sistema",
+    specs: [
+      { label: "Potencia Máxima de Salida", value: "3 kW Máx" },
+      { label: "Eficiencia de Transferencia de Energía", value: "Hasta 87% (Carga Plena)" },
+      { label: "Distancia de Carga Inalámbrica", value: "35–80 mm" },
+      { label: "Frecuencia de Operación", value: "85 kHz" },
+      { label: "Comunicación Inalámbrica", value: "2,4 GHz" },
+      { label: "Interfaz de Comunicación", value: "CAN / RS485" },
+      { label: "Blindaje Electromagnético", value: "Blindaje de Ferrita + Aluminio" },
+      { label: "Modo de Arranque", value: "Detección y Arranque Automáticos" },
+      { label: "Modo de Carga", value: "Voltaje Constante / Corriente Constante (CV/CC)" },
+      { label: "Temperatura de Operación", value: "−20°C a +50°C" },
+      { label: "Temperatura de Almacenamiento", value: "−40°C a +85°C" },
+      { label: "Humedad de Operación", value: "≤ 90% HR (Sin condensación)" },
+    ],
+  },
+  {
+    title: "Especificaciones del Transmisor",
+    specs: [
+      { label: "Voltaje de Entrada", value: "AC 220 V ±15%, 50/60 Hz" },
+      { label: "Corriente de Entrada Máxima", value: "16 A Máx" },
+      { label: "Dimensiones del Controlador del Transmisor", value: "360 × 320,6 × 95 mm (L × An × Al)" },
+      { label: "Peso del Controlador del Transmisor", value: "Aprox. 7,7 kg" },
+      { label: "Material de la Carcasa / Grado IP", value: "Acero Laminado en Frío, IP20" },
+      { label: "Longitud del Cable de Entrada AC", value: "Aprox. 2 m" },
+      { label: "Dimensiones de la Bobina del Transmisor", value: "335 × 335 × 23 mm (L × An × Al)" },
+      { label: "Peso de la Bobina del Transmisor", value: "Aprox. 6,5 kg (incluyendo cable de 1,5 m)" },
+      { label: "Longitud del Cable de la Bobina del Transmisor", value: "Aprox. 1,5 m" },
+      { label: "Material de la Carcasa de la Bobina / Grado IP", value: "PC + Aleación de Aluminio, IP65 (Encapsulado)" },
+    ],
+  },
+  {
+    title: "Especificaciones del Receptor",
+    specs: [
+      { label: "Voltaje de Salida Nominal", value: "58 VDC (Rango Ajustable: 42–60 VDC)" },
+      { label: "Corriente de Salida Nominal", value: "50 A Máx (Rango Ajustable: 10–50 A)" },
+      { label: "Precisión de Voltaje de Salida", value: "±2%" },
+      { label: "Precisión de Corriente de Salida", value: "±3%" },
+      { label: "Tipos de Batería Compatibles", value: "Batería de Plomo-Ácido / Batería de Litio" },
+      { label: "Dimensiones de la Bobina del Receptor", value: "235 × 235 × 27 mm (L × An × Al)" },
+      { label: "Material de la Carcasa de la Bobina del Receptor / Grado IP", value: "PC + Aleación de Aluminio, IP65 (Encapsulado)" },
+    ],
+  },
+] as const;

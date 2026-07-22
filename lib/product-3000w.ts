@@ -1,0 +1,46 @@
+export const wireless3000wSpecGroups = [
+  {
+    title: "System Specifications",
+    specs: [
+      { label: "Maximum Output Power", value: "3 kW Max" },
+      { label: "Power Transfer Efficiency", value: "Up to 87% (Full Load)" },
+      { label: "Wireless Charging Distance", value: "35–80 mm" },
+      { label: "Operating Frequency", value: "85 kHz" },
+      { label: "Wireless Communication", value: "2.4 GHz" },
+      { label: "Communication Interface", value: "CAN / RS485" },
+      { label: "Electromagnetic Shielding", value: "Ferrite + Aluminum Shielding" },
+      { label: "Startup Mode", value: "Automatic Detection & Startup" },
+      { label: "Charging Mode", value: "Constant Voltage / Constant Current (CV/CC)" },
+      { label: "Operating Temperature", value: "−20°C to +50°C" },
+      { label: "Storage Temperature", value: "−40°C to +85°C" },
+      { label: "Operating Humidity", value: "≤ 90% RH (Non-condensing)" },
+    ],
+  },
+  {
+    title: "Transmitter Specifications",
+    specs: [
+      { label: "Input Voltage", value: "AC 220 V ±15%, 50/60 Hz" },
+      { label: "Maximum Input Current", value: "16 A Max" },
+      { label: "Transmitter Controller Dimensions", value: "360 × 320.6 × 95 mm (L × W × H)" },
+      { label: "Transmitter Controller Weight", value: "Approx. 7.7 kg" },
+      { label: "Enclosure Material / IP Rating", value: "Cold-Rolled Steel, IP20" },
+      { label: "AC Input Cable Length", value: "Approx. 2 m" },
+      { label: "Transmitter Coil Dimensions", value: "335 × 335 × 23 mm (L × W × H)" },
+      { label: "Transmitter Coil Weight", value: "Approx. 6.5 kg (including 1.5 m cable)" },
+      { label: "Transmitter Coil Cable Length", value: "Approx. 1.5 m" },
+      { label: "Coil Housing Material / IP Rating", value: "PC + Aluminum Alloy, IP65 (Potted)" },
+    ],
+  },
+  {
+    title: "Receiver Specifications",
+    specs: [
+      { label: "Rated Output Voltage", value: "58 VDC (Adjustable Range: 42–60 VDC)" },
+      { label: "Rated Output Current", value: "50 A Max (Adjustable Range: 10–50 A)" },
+      { label: "Output Voltage Accuracy", value: "±2%" },
+      { label: "Output Current Accuracy", value: "±3%" },
+      { label: "Compatible Battery Types", value: "Lead-acid Battery / Lithium Battery" },
+      { label: "Receiver Coil Dimensions", value: "235 × 235 × 27 mm (L × W × H)" },
+      { label: "Receiver Coil Housing Material / IP Rating", value: "PC + Aluminum Alloy, IP65 (Potted)" },
+    ],
+  },
+] as const;

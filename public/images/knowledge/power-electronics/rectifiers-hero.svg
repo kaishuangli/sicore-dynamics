@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Rectifiers">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#grid)" opacity="0.55"/>
+  <rect x="36" y="28" width="1208" height="664" rx="28" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="36" y="28" width="1208" height="10" fill="url(#accent)"/>
+  <text x="72" y="88" fill="#0B5FFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">SICORE KNOWLEDGE DIAGRAM</text>
+  <text x="72" y="132" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800">Rectifiers</text>
+  <text x="72" y="168" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="18">Hero diagram for this knowledge article</text>
+  
+      
+  <rect x="120" y="300" width="180" height="80" rx="14" fill="#EFF6FF" stroke="#0B5FFF" stroke-width="2.5"/>
+  <text x="210" y="346" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">AC in</text>
+      <path d="M380 280 L460 340 L380 400 Z" fill="none" stroke="#0B5FFF" stroke-width="4"/>
+      <path d="M520 280 L600 340 L520 400 Z" fill="none" stroke="#06B6D4" stroke-width="4"/>
+      
+  <rect x="700" y="300" width="200" height="80" rx="14" fill="#D1FAE5" stroke="#059669" stroke-width="2.5"/>
+  <text x="800" y="346" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">DC bus</text>
+      
+  <rect x="980" y="300" width="160" height="80" rx="14" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2.5"/>
+  <text x="1060" y="346" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Load</text>
+      
+  <defs><marker id="a300340360340" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#0B5FFF"/></marker></defs>
+  <line x1="300" y1="340" x2="360" y2="340" stroke="#0B5FFF" stroke-width="3" marker-end="url(#a300340360340)"/>
+      
+  <defs><marker id="a620340690340" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#059669"/></marker></defs>
+  <line x1="620" y1="340" x2="690" y2="340" stroke="#059669" stroke-width="3" marker-end="url(#a620340690340)"/>
+      
+  <defs><marker id="a910340970340" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#7C3AED"/></marker></defs>
+  <line x1="910" y1="340" x2="970" y2="340" stroke="#7C3AED" stroke-width="3" marker-end="url(#a910340970340)"/>
+  <text x="72" y="666" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="14">Educational illustration for Knowledge Center — not a product photo</text>
+</svg>

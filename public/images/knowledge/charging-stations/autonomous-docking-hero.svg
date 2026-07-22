@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Autonomous Docking">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0891B2"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#grid)" opacity="0.55"/>
+  <rect x="36" y="28" width="1208" height="664" rx="28" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="36" y="28" width="1208" height="10" fill="url(#accent)"/>
+  <text x="72" y="88" fill="#0B5FFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">SICORE KNOWLEDGE DIAGRAM</text>
+  <text x="72" y="132" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800">Autonomous Docking</text>
+  <text x="72" y="168" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="18">Hero diagram for this knowledge article</text>
+  
+      
+  <rect x="120" y="260" width="220" height="100" rx="14" fill="#EFF6FF" stroke="#0B5FFF" stroke-width="2.5"/>
+  <text x="230" y="316" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Sense</text>
+      
+  <rect x="480" y="260" width="280" height="100" rx="14" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2.5"/>
+  <text x="620" y="316" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Controller</text>
+      
+  <rect x="920" y="260" width="220" height="100" rx="14" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2.5"/>
+  <text x="1030" y="316" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Actuator</text>
+      
+  <defs><marker id="a350310470310" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#7C3AED"/></marker></defs>
+  <line x1="350" y1="310" x2="470" y2="310" stroke="#7C3AED" stroke-width="3" marker-end="url(#a350310470310)"/>
+      
+  <defs><marker id="a770310910310" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#F59E0B"/></marker></defs>
+  <line x1="770" y1="310" x2="910" y2="310" stroke="#F59E0B" stroke-width="3" marker-end="url(#a770310910310)"/>
+      <path d="M1030 370 Q640 520 230 370" fill="none" stroke="#059669" stroke-width="3" stroke-dasharray="8 6"/>
+      <text x="640" y="500" text-anchor="middle" fill="#64748B" font-size="18" font-family="Segoe UI, Arial, sans-serif">Closed-loop regulation across docking scatter</text>
+  <text x="72" y="666" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="14">Educational illustration for Knowledge Center — not a product photo</text>
+</svg>

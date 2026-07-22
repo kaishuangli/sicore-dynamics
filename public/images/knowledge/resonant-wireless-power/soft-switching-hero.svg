@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Soft Switching">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0B5FFF"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#grid)" opacity="0.55"/>
+  <rect x="36" y="28" width="1208" height="664" rx="28" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="36" y="28" width="1208" height="10" fill="url(#accent)"/>
+  <text x="72" y="88" fill="#0B5FFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">SICORE KNOWLEDGE DIAGRAM</text>
+  <text x="72" y="132" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800">Soft Switching</text>
+  <text x="72" y="168" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="18">Hero diagram for this knowledge article</text>
+  
+      <path d="M180 320 C 230.4 284, 255.6 356, 306 320 S 381.6 356, 432 320 S 507.6 284, 558 320 S 600 340, 600 320" fill="none" stroke="#0B5FFF" stroke-width="4"/>
+      <path d="M700 320 C 750.4 284, 775.6 356, 826 320 S 901.6 356, 952 320 S 1027.6 284, 1078 320 S 1120 340, 1120 320" fill="none" stroke="#06B6D4" stroke-width="4"/>
+      <text x="390" y="280" text-anchor="middle" fill="#0B5FFF" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Voltage</text>
+      <text x="910" y="280" text-anchor="middle" fill="#06B6D4" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Current</text>
+      <circle cx="390" cy="320" r="10" fill="#F59E0B"/>
+      <circle cx="910" cy="320" r="10" fill="#F59E0B"/>
+      <text x="640" y="470" text-anchor="middle" fill="#64748B" font-size="18" font-family="Segoe UI, Arial, sans-serif">Soft-switching trajectories</text>
+  <text x="72" y="666" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="14">Educational illustration for Knowledge Center — not a product photo</text>
+</svg>

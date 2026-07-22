@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Battery Chemistry">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#grid)" opacity="0.55"/>
+  <rect x="36" y="28" width="1208" height="664" rx="28" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="36" y="28" width="1208" height="10" fill="url(#accent)"/>
+  <text x="72" y="88" fill="#0B5FFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">SICORE KNOWLEDGE DIAGRAM</text>
+  <text x="72" y="132" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800">Battery Chemistry</text>
+  <text x="72" y="168" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="18">Hero diagram for this knowledge article</text>
+  
+      
+  <rect x="120" y="300" width="160" height="90" rx="14" fill="#EFF6FF" stroke="#0B5FFF" stroke-width="2.5"/>
+  <text x="200" y="351" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Noise</text>
+      
+  <rect x="380" y="300" width="200" height="90" rx="14" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2.5"/>
+  <text x="480" y="351" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Filter / CMC</text>
+      
+  <rect x="700" y="300" width="200" height="90" rx="14" fill="#DBEAFE" stroke="#0B5FFF" stroke-width="2.5"/>
+  <text x="800" y="351" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Cable / LISN</text>
+      
+  <rect x="1000" y="300" width="160" height="90" rx="14" fill="#D1FAE5" stroke="#059669" stroke-width="2.5"/>
+  <text x="1080" y="351" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Limits</text>
+      
+  <defs><marker id="a290345370345" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#0B5FFF"/></marker></defs>
+  <line x1="290" y1="345" x2="370" y2="345" stroke="#0B5FFF" stroke-width="3" marker-end="url(#a290345370345)"/>
+      
+  <defs><marker id="a590345690345" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#0B5FFF"/></marker></defs>
+  <line x1="590" y1="345" x2="690" y2="345" stroke="#0B5FFF" stroke-width="3" marker-end="url(#a590345690345)"/>
+      
+  <defs><marker id="a910345990345" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#059669"/></marker></defs>
+  <line x1="910" y1="345" x2="990" y2="345" stroke="#059669" stroke-width="3" marker-end="url(#a910345990345)"/>
+      <path d="M380 460 C 442.4 424, 473.6 496, 536 460 S 629.6 496, 692 460 S 785.6 424, 848 460 S 900 480, 900 460" fill="none" stroke="#E11D48" stroke-width="4"/>
+  <text x="72" y="666" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="14">Educational illustration for Knowledge Center — not a product photo</text>
+</svg>

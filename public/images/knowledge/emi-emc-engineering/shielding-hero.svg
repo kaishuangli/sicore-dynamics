@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Shielding">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#grid)" opacity="0.55"/>
+  <rect x="36" y="28" width="1208" height="664" rx="28" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="36" y="28" width="1208" height="10" fill="url(#accent)"/>
+  <text x="72" y="88" fill="#0B5FFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">SICORE KNOWLEDGE DIAGRAM</text>
+  <text x="72" y="132" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800">Shielding</text>
+  <text x="72" y="168" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="18">Hero diagram for this knowledge article</text>
+  
+      <circle cx="640" cy="300" r="70" fill="none" stroke="#0B5FFF" stroke-width="3" opacity="1"/><circle cx="640" cy="300" r="62" fill="none" stroke="#0B5FFF" stroke-width="3" opacity="0.88"/><circle cx="640" cy="300" r="54" fill="none" stroke="#0B5FFF" stroke-width="3" opacity="0.76"/><circle cx="640" cy="300" r="46" fill="none" stroke="#0B5FFF" stroke-width="3" opacity="0.64"/><circle cx="640" cy="300" r="38" fill="none" stroke="#0B5FFF" stroke-width="3" opacity="0.52"/>
+      <rect x="260" y="420" width="760" height="28" fill="#94A3B8"/>
+      <rect x="260" y="460" width="760" height="50" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="2"/>
+      <text x="640" y="492" text-anchor="middle" fill="#0B0F19" font-size="16" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Shield / chassis plane</text>
+      <path d="M500 360 Q640 410 780 360" fill="none" stroke="#E11D48" stroke-width="3" stroke-dasharray="6 6"/>
+      <text x="640" y="560" text-anchor="middle" fill="#64748B" font-size="18" font-family="Segoe UI, Arial, sans-serif">Leakage flux control near metal</text>
+  <text x="72" y="666" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="14">Educational illustration for Knowledge Center — not a product photo</text>
+</svg>

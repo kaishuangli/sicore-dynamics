@@ -1,0 +1,46 @@
+export const wireless3000wSpecGroups = [
+  {
+    title: "系统规格",
+    specs: [
+      { label: "最大输出功率", value: "3 kW 最大" },
+      { label: "电力传输效率", value: "最高 87%（满载）" },
+      { label: "无线充电距离", value: "35–80 mm" },
+      { label: "工作频率", value: "85 kHz" },
+      { label: "无线通信", value: "2.4 GHz" },
+      { label: "通信接口", value: "CAN / RS485" },
+      { label: "电磁屏蔽", value: "铁氧体 + 铝合金屏蔽" },
+      { label: "启动方式", value: "自动检测与启动" },
+      { label: "充电模式", value: "恒压 / 恒流（CV/CC）" },
+      { label: "工作温度", value: "−20°C 至 +50°C" },
+      { label: "存储温度", value: "−40°C 至 +85°C" },
+      { label: "工作湿度", value: "≤ 90% RH（无冷凝）" },
+    ],
+  },
+  {
+    title: "发射端规格",
+    specs: [
+      { label: "输入电压", value: "AC 220 V ±15%，50/60 Hz" },
+      { label: "最大输入电流", value: "16 A 最大" },
+      { label: "发射控制器尺寸", value: "360 × 320.6 × 95 mm（长 × 宽 × 高）" },
+      { label: "发射控制器重量", value: "约 7.7 kg" },
+      { label: "外壳材质 / 防护等级", value: "冷轧钢，IP20" },
+      { label: "交流输入线缆长度", value: "约 2 m" },
+      { label: "发射线圈尺寸", value: "335 × 335 × 23 mm（长 × 宽 × 高）" },
+      { label: "发射线圈重量", value: "约 6.5 kg（含 1.5 m 线缆）" },
+      { label: "发射线圈线缆长度", value: "约 1.5 m" },
+      { label: "线圈外壳材质 / 防护等级", value: "PC + 铝合金，IP65（灌封）" },
+    ],
+  },
+  {
+    title: "接收端规格",
+    specs: [
+      { label: "额定输出电压", value: "58 VDC（可调范围：42–60 VDC）" },
+      { label: "额定输出电流", value: "50 A 最大（可调范围：10–50 A）" },
+      { label: "输出电压精度", value: "±2%" },
+      { label: "输出电流精度", value: "±3%" },
+      { label: "兼容电池类型", value: "铅酸电池 / 锂电池" },
+      { label: "接收线圈尺寸", value: "235 × 235 × 27 mm（长 × 宽 × 高）" },
+      { label: "接收线圈外壳材质 / 防护等级", value: "PC + 铝合金，IP65（灌封）" },
+    ],
+  },
+] as const;

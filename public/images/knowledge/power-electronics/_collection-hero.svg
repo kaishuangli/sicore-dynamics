@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="power electronics">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#grid)" opacity="0.55"/>
+  <rect x="36" y="28" width="1208" height="664" rx="28" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="36" y="28" width="1208" height="10" fill="url(#accent)"/>
+  <text x="72" y="88" fill="#0B5FFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">SICORE KNOWLEDGE DIAGRAM</text>
+  <text x="72" y="132" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800">power electronics</text>
+  <text x="72" y="168" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="18">Collection overview diagram</text>
+  
+      <rect x="260" y="230" width="760" height="320" rx="18" fill="#EFF6FF" stroke="#0B5FFF" stroke-width="2"/>
+      
+  <rect x="320" y="280" width="140" height="70" rx="14" fill="#EFF6FF" stroke="#0B5FFF" stroke-width="2.5"/>
+  <text x="390" y="321" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Q1</text>
+      
+  <rect x="560" y="280" width="140" height="70" rx="14" fill="#EFF6FF" stroke="#0B5FFF" stroke-width="2.5"/>
+  <text x="630" y="321" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Q2</text>
+      
+  <rect x="320" y="420" width="140" height="70" rx="14" fill="#EFF6FF" stroke="#0B5FFF" stroke-width="2.5"/>
+  <text x="390" y="461" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Q3</text>
+      
+  <rect x="560" y="420" width="140" height="70" rx="14" fill="#EFF6FF" stroke="#0B5FFF" stroke-width="2.5"/>
+  <text x="630" y="461" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Q4</text>
+      
+  <rect x="820" y="340" width="140" height="80" rx="14" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2.5"/>
+  <text x="890" y="386" text-anchor="middle" fill="#0B0F19" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Coil</text>
+      
+  <defs><marker id="a470315550315" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#0B5FFF"/></marker></defs>
+  <line x1="470" y1="315" x2="550" y2="315" stroke="#0B5FFF" stroke-width="3" marker-end="url(#a470315550315)"/>
+      
+  <defs><marker id="a470455550455" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#0B5FFF"/></marker></defs>
+  <line x1="470" y1="455" x2="550" y2="455" stroke="#0B5FFF" stroke-width="3" marker-end="url(#a470455550455)"/>
+      
+  <defs><marker id="a710380810380" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#F59E0B"/></marker></defs>
+  <line x1="710" y1="380" x2="810" y2="380" stroke="#F59E0B" stroke-width="3" marker-end="url(#a710380810380)"/>
+      <text x="640" y="580" text-anchor="middle" fill="#64748B" font-size="18" font-family="Segoe UI, Arial, sans-serif">Full-bridge inverter to coil</text>
+  <text x="72" y="666" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="14">Educational illustration for Knowledge Center — not a product photo</text>
+</svg>
