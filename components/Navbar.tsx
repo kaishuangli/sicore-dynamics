@@ -197,13 +197,13 @@ export default function Navbar({ locale: localeProp }: { locale: Locale }) {
 
   return (
     <header className="sticky top-0 z-50 overflow-visible glass-nav">
-      <div className="container-page flex min-h-[140px] items-center gap-5 py-4 lg:min-h-[160px] lg:gap-8 lg:py-5">
+      <div className="container-page flex min-h-[104px] items-center gap-5 py-4 lg:min-h-[118px] lg:gap-8 lg:py-5">
         <Link
           href={L("/")}
           className="ml-6 flex shrink-0 items-center lg:ml-14 xl:ml-20"
           aria-label="SiCore Dynamics Home"
         >
-          <Logo className="[&_img]:h-[108px] [&_img]:md:h-[124px] [&_img]:lg:h-[140px]" />
+          <Logo className="[&_img]:h-[84px] [&_img]:md:h-[96px] [&_img]:lg:h-[112px]" />
         </Link>
 
         <div className="hidden min-w-0 flex-1 items-center md:flex">

@@ -1,13 +1,16 @@
 import Link from "next/link";
 import SectionEyebrow from "@/components/SectionEyebrow";
 import { aboutNavLinks } from "@/lib/about";
+import { geoEntity } from "@/lib/geo";
 import type { Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { getAboutSections } from "@/lib/i18n/content";
+import { uiLabel } from "@/lib/i18n/pick-locale";
 import { withLocale } from "@/lib/i18n/path";
 
 export default function AboutSection({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
+  const t = (zh: string, es: string, en: string) => uiLabel(locale, zh, es, en);
   const L = (href: string) => withLocale(href, locale);
   const aboutSections = getAboutSections(locale);
 
@@ -30,7 +33,6 @@ export default function AboutSection({ locale }: { locale: Locale }) {
               <span className="text-gradient-blue">{dict.home.aboutTitleAccent}</span>
               {locale === "zh" ? "" : "."}
             </h2>
-            <p className="mt-4 text-sm leading-6 text-slate-600">{dict.home.aboutBody}</p>
           </div>
           <Link
             href={L("/about")}
@@ -38,6 +40,31 @@ export default function AboutSection({ locale }: { locale: Locale }) {
           >
             {dict.home.aboutCta}
           </Link>
+        </div>
+
+        <div className="mt-8 max-w-3xl" aria-labelledby="geo-entity-heading">
+          <h3
+            id="geo-entity-heading"
+            className="font-display text-xl font-bold tracking-[-0.02em] text-slate-950 md:text-2xl"
+          >
+            {t("SiCore Dynamics 是谁？", "¿Qué es SiCore Dynamics?", "Who is SiCore Dynamics?")}
+          </h3>
+          <p className="geo-entity-definition mt-4 text-sm leading-7 text-slate-600 md:text-base md:leading-8">
+            {geoEntity.definition}
+          </p>
+          <p className="mt-3 text-sm leading-7 text-slate-600 md:text-base md:leading-8">{geoEntity.whatWeDo}</p>
+          <ul className="mt-5 space-y-2">
+            {geoEntity.differentiators.map((item) => (
+              <li key={item} className="flex gap-2.5 text-sm leading-6 text-slate-600">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#0B5FFF]" aria-hidden="true" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-5 text-sm leading-6 text-slate-500">
+            {t("总部", "Sede", "Headquarters")}: {geoEntity.headquarters.city}, {geoEntity.headquarters.region},{" "}
+            {geoEntity.headquarters.countryName} · {t("成立于", "Fundada en", "Founded")} {geoEntity.foundingDate}
+          </p>
         </div>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">

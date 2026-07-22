@@ -259,7 +259,7 @@ export const industries = [
     productsIntro:
       "SiCore 60W embedded modules integrate cleanly into desks, tables, and hospitality furniture without visible charging ports.",
     image: "/images/smart-furniture-airport-lounge.png",
-    heroVisual: "/images/smart-furniture-conference.png",
+    heroVisual: "/images/smart-furniture-conference-v2.png",
     alt: "Airport lounge desk with embedded wireless charging pads for phones and laptops",
     heroVisualAlt: "Embedded wireless charging in a smart conference table",
     useCases: [
@@ -272,19 +272,19 @@ export const industries = [
       {
         title: "Public Library",
         description: "Integrated power for study tables and quiet shared workspaces.",
-        image: "/images/smart-furniture-library.png",
+        image: "/images/smart-furniture-library-v2.png",
         alt: "Library study tables with embedded SiCore wireless charging pads",
       },
       {
         title: "Restaurant & Dining Tables",
         description: "Clean surface designs with hidden charging for guest devices.",
-        image: "/images/smart-furniture-restaurant.png",
+        image: "/images/smart-furniture-restaurant-v2.png",
         alt: "Cafe dining table with embedded wireless charging pad",
       },
       {
         title: "Airport & Public Lounges",
         description: "Durable embedded charging for high-traffic public environments.",
-        image: "/images/smart-furniture-airport.png",
+        image: "/images/smart-furniture-airport-v2.png",
         alt: "Airport lounge counter with embedded SiCore wireless charging",
       },
     ],

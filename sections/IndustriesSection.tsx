@@ -19,11 +19,11 @@ export default function IndustriesSection({ locale }: { locale: Locale }) {
       <div className="container-page relative">
         <SectionEyebrow bgClassName="bg-white">{dict.home.solutionsEyebrow}</SectionEyebrow>
 
-        <div className="mx-auto mt-4 max-w-4xl text-center">
+        <div className="mt-4">
           <h2 className="font-display text-2xl font-black tracking-[-0.03em] text-[#0B0F19] md:text-3xl lg:text-[34px] lg:leading-tight">
             {dict.home.solutionsTitle}
           </h2>
-          <div className="mx-auto mt-6 max-w-3xl space-y-4 text-sm leading-7 text-slate-600 md:text-base">
+          <div className="mt-6 space-y-4 text-base leading-8 text-slate-600 text-justify md:text-lg md:leading-8">
             <p>{dict.home.solutionsP1}</p>
             <p>{dict.home.solutionsP2}</p>
           </div>
@@ -52,7 +52,7 @@ export default function IndustriesSection({ locale }: { locale: Locale }) {
           </div>
         </div>
 
-        <div className="mt-10 text-center">
+        <div className="mt-10">
           <Link
             href={L("/#solutions")}
             className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.08em] text-[#0B5FFF] transition hover:gap-3"

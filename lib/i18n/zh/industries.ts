@@ -256,7 +256,7 @@ export const industries = [
     productsIntro:
       "SiCore 60W 嵌入式模块可无缝集成到办公桌、桌台与酒店家具中，不留可见充电接口。",
     image: "/images/smart-furniture-airport-lounge.png",
-    heroVisual: "/images/smart-furniture-conference.png",
+    heroVisual: "/images/smart-furniture-conference-v2.png",
     alt: "机场休息室桌台嵌入手机与笔记本电脑无线充电板",
     heroVisualAlt: "智能会议桌中的嵌入式无线充电",
     useCases: [
@@ -269,19 +269,19 @@ export const industries = [
       {
         title: "公共图书馆",
         description: "为自习桌与安静共享空间提供集成供电。",
-        image: "/images/smart-furniture-library.png",
+        image: "/images/smart-furniture-library-v2.png",
         alt: "图书馆自习桌嵌入 SiCore 无线充电板",
       },
       {
         title: "餐厅与餐桌",
         description: "简洁台面设计，为宾客设备提供隐藏式充电。",
-        image: "/images/smart-furniture-restaurant.png",
+        image: "/images/smart-furniture-restaurant-v2.png",
         alt: "咖啡馆餐桌嵌入无线充电板",
       },
       {
         title: "机场与公共休息区",
         description: "为高客流公共环境提供耐用的嵌入式充电。",
-        image: "/images/smart-furniture-airport.png",
+        image: "/images/smart-furniture-airport-v2.png",
         alt: "机场休息室柜台嵌入 SiCore 无线充电",
       },
     ],

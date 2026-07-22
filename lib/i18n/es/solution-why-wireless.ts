@@ -178,7 +178,7 @@ export const solutionWhyWireless: Record<IndustryId, WhyWirelessAnalysis> = {
         ],
         visual: {
           type: "image",
-          src: "/images/smart-furniture-conference.png",
+          src: "/images/smart-furniture-conference-v2.png",
           alt: "Mesa de conferencias con bobinas de carga inalámbrica integradas",
         },
       },

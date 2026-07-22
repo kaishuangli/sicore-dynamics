@@ -32,7 +32,7 @@ export const solutionLayoutConfig: Partial<Record<IndustryId, SolutionLayoutConf
   },
   "smart-furniture": {
     heroMedia: "image",
-    heroImage: "/images/smart-furniture-conference.png",
+    heroImage: "/images/smart-furniture-conference-v2.png",
     heroImageContain: true,
     heroAspect: "square",
     wideHeroMedia: true,

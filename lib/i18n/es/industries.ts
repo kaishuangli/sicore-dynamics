@@ -259,7 +259,7 @@ export const industries = [
     productsIntro:
       "Los módulos integrados SiCore de 60W se incorporan de forma limpia en escritorios, mesas y mobiliario de hostelería, sin puertos de carga visibles.",
     image: "/images/smart-furniture-airport-lounge.png",
-    heroVisual: "/images/smart-furniture-conference.png",
+    heroVisual: "/images/smart-furniture-conference-v2.png",
     alt: "Escritorio de sala de espera de aeropuerto con bases de carga inalámbrica integradas para teléfonos y laptops",
     heroVisualAlt: "Carga inalámbrica integrada en una mesa de conferencias inteligente",
     useCases: [
@@ -272,19 +272,19 @@ export const industries = [
       {
         title: "Biblioteca Pública",
         description: "Energía integrada para mesas de estudio y espacios de trabajo compartidos y silenciosos.",
-        image: "/images/smart-furniture-library.png",
+        image: "/images/smart-furniture-library-v2.png",
         alt: "Mesas de estudio de biblioteca con bases de carga inalámbrica SiCore integradas",
       },
       {
         title: "Mesas de Restaurantes y Comedores",
         description: "Diseños de superficie limpios con carga oculta para los dispositivos de los huéspedes.",
-        image: "/images/smart-furniture-restaurant.png",
+        image: "/images/smart-furniture-restaurant-v2.png",
         alt: "Mesa de café con base de carga inalámbrica integrada",
       },
       {
         title: "Salas de Espera de Aeropuertos y Espacios Públicos",
         description: "Carga integrada duradera para entornos públicos de alto tráfico.",
-        image: "/images/smart-furniture-airport.png",
+        image: "/images/smart-furniture-airport-v2.png",
         alt: "Mostrador de sala de espera de aeropuerto con carga inalámbrica SiCore integrada",
       },
     ],

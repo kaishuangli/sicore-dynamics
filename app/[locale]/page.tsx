@@ -6,7 +6,6 @@ import IndustriesSection from "@/sections/IndustriesSection";
 import PartnersSection from "@/sections/PartnersSection";
 import FeaturedProductSection from "@/sections/FeaturedProductSection";
 import AboutSection from "@/sections/AboutSection";
-import GeoEntitySection from "@/sections/GeoEntitySection";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { getFaqPageSchema } from "@/lib/geo";
@@ -98,7 +97,6 @@ export default async function Home({ params }: HomePageProps) {
       <JsonLd data={getFaqPageSchema()} />
       <main id="main-content">
         <Hero locale={locale} />
-        <GeoEntitySection locale={locale} />
         <TechnologySection locale={locale} />
         <IndustriesSection locale={locale} />
         <FeaturedProductSection locale={locale} />

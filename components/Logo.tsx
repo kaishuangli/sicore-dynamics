@@ -15,12 +15,12 @@ export default function Logo({ variant = "light", className = "" }: LogoProps) {
       } ${className}`}
     >
       <Image
-        src="/images/sicore-logo.png"
+        src="/images/sicore-logo-transparent.png"
         alt="SiCore Dynamics"
-        width={1024}
-        height={682}
+        width={865}
+        height={840}
         priority={variant === "light"}
-        className="h-[108px] w-auto object-contain object-left md:h-[124px] lg:h-[140px]"
+        className="h-[84px] w-auto object-contain object-left md:h-[96px] lg:h-[112px]"
       />
     </span>
   );

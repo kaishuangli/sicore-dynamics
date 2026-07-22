@@ -88,6 +88,15 @@ const en = {
     techEyebrow: "OUR TECHNOLOGY",
     techTitle: "Advanced Wireless",
     techTitleAccent: "Power Solutions",
+    techPillar1Title: "Wireless energy that keeps machines moving",
+    techPillar1Body:
+      "We design wireless power transfer that feels invisible in daily operation — high efficiency, alignment-tolerant coupling, and stable energy delivery from compact modules to multi-kilowatt industrial platforms. No fragile connectors. No downtime spent chasing cables.",
+    techPillar2Title: "Plug-free docking for autonomous fleets",
+    techPillar2Body:
+      "Robots, AGVs, AMRs, and drones should charge the moment they dock — not wait for a technician with a plug. Our docking mechanics and intelligent charging systems turn parking into power: sealed interfaces, guided alignment, and adaptive control that fit real factory floors.",
+    techPillar3Title: "OEM-ready from prototype to production",
+    techPillar3Body:
+      "Technology only matters when it ships inside your product. We engineer magnetics, power electronics, firmware, and mechanical fit together — so wireless charging becomes a native part of medical carts, agricultural platforms, industrial machines, and custom OEM designs.",
     techIntro:
       "Explore SiCore technology platforms spanning wireless energy, intelligent charging, plug-free docking, and OEM integration.",
     techWireless: "wireless energy",
@@ -228,6 +237,15 @@ const zh: typeof en = {
     techEyebrow: "我们的技术",
     techTitle: "先进无线",
     techTitleAccent: "供电解决方案",
+    techPillar1Title: "让能量跟着机器一起跑",
+    techPillar1Body:
+      "我们做的是“用起来像看不见”的无线供电——高效率、对准容差强、从紧凑模块到数千瓦工业平台都能稳定送电。没有易损接头，也不再把时间耗在找线、插线、换线之上。",
+    techPillar2Title: "自主设备一对接就能充",
+    techPillar2Body:
+      "机器人、AGV、AMR 与无人机，停到位就该开始充电，而不是等人拿着插头来。通过对接机构与智能充电系统，我们把“停车”变成“补能”：密封接口、导向对准、自适应控制，真正贴合工厂现场。",
+    techPillar3Title: "从样机到量产，都能嵌进产品",
+    techPillar3Body:
+      "技术只有装进产品里才算数。我们把磁路、电力电子、固件与结构一并设计，让无线充电成为医疗推车、农业装备、工业设备与定制 OEM 方案里的原生能力——而不是事后外挂的附件。",
     techIntro: "探索 SiCore 技术平台：涵盖无线能量、智能充电、无插拔对接与 OEM 集成。",
     techWireless: "无线能量",
     techIntelligent: "智能充电",
@@ -367,6 +385,15 @@ const es: typeof en = {
     techEyebrow: "NUESTRA TECNOLOGÍA",
     techTitle: "Soluciones avanzadas de",
     techTitleAccent: "energía inalámbrica",
+    techPillar1Title: "Energía inalámbrica que mantiene las máquinas en movimiento",
+    techPillar1Body:
+      "Diseñamos transferencia de energía inalámbrica que se siente invisible en el día a día: alta eficiencia, acoplamiento tolerante a la alineación y entrega estable desde módulos compactos hasta plataformas industriales de varios kilovatios. Sin conectores frágiles. Sin tiempo perdido buscando cables.",
+    techPillar2Title: "Acoplamiento sin conector para flotas autónomas",
+    techPillar2Body:
+      "Robots, AGV, AMR y drones deberían cargar al acoplarse — no esperar a un técnico con un enchufe. Nuestra mecánica de docking y los sistemas de carga inteligente convierten el aparcamiento en energía: interfaces selladas, alineación guiada y control adaptativo para el suelo de fábrica real.",
+    techPillar3Title: "Listo para OEM, del prototipo a la producción",
+    techPillar3Body:
+      "La tecnología solo importa cuando viaja dentro de su producto. Integramos magnetismo, electrónica de potencia, firmware y ajuste mecánico — para que la carga inalámbrica sea nativa en carros médicos, plataformas agrícolas, máquinas industriales y diseños OEM a medida.",
     techIntro:
       "Explore las plataformas tecnológicas de SiCore: energía inalámbrica, carga inteligente, acoplamiento sin conector e integración OEM.",
     techWireless: "energía inalámbrica",
