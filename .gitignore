@@ -8,3 +8,5 @@ npm-debug.log*
 
 build-output.txt
 git-*.txt
+.vercel
+.env*
