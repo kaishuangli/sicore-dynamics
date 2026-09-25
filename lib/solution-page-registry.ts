@@ -10,6 +10,7 @@ import ConsumerSolutionBody from "@/sections/solutions/consumer/ConsumerSolution
 import CustomSolutionBody from "@/sections/solutions/custom/CustomSolutionBody";
 import MedicalSolutionBody from "@/sections/solutions/medical/MedicalSolutionBody";
 import FurnitureSolutionBody from "@/sections/solutions/furniture/FurnitureSolutionBody";
+import SmartTestSolutionBody from "@/sections/solutions/smart-test/SmartTestSolutionBody";
 
 export type SolutionBodyProps = { industry: LocalizedIndustry; locale: Locale };
 
@@ -19,6 +20,7 @@ const solutionBodies: Record<IndustryId, ComponentType<SolutionBodyProps>> = {
   "medical-equipment": MedicalSolutionBody,
   "agricultural-automation": AgriSolutionBody,
   "smart-furniture": FurnitureSolutionBody,
+  "smart-test-equipments": SmartTestSolutionBody,
   "consumer-electronics": ConsumerSolutionBody,
   "customized-solutions": CustomSolutionBody,
 };

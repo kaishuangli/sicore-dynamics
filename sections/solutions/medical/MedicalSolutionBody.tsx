@@ -236,7 +236,7 @@ export default function MedicalSolutionBody({
                   </Link>
                 </li>
                 <li aria-hidden="true">/</li>
-                <li>{t("行业解决方案", "Soluciones industriales", "Industrial Solutions")}</li>
+                <li>{t("应用场景", "Applications", "Applications")}</li>
                 <li aria-hidden="true">/</li>
                 <li className="font-semibold text-white">{industry.title}</li>
               </ol>

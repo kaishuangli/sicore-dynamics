@@ -63,7 +63,27 @@ export const productTiers = [
 
 export type ProductTierId = (typeof productTiers)[number]["id"];
 
-export const productNavLinks = productTiers.map((tier) => ({
+export const wirelessLowPowerTier = {
+  id: "30w-or-less",
+  label: "30W or less",
+  title: "30W or Less Wireless Power Modules",
+  tagline: "Qi and embedded wireless charging modules rated 30 W and below.",
+  description:
+    "Compact transmitter, receiver, controller, and coil modules for consumer electronics, furniture, and OEM products that need wireless charging at 30 W or less.",
+  applications: ["Consumer electronics", "Furniture embedding", "Qi receivers", "Desktop charging"],
+  highlights: ["Qi / Qi2 class modules", "5 W to 15 W typical", "TX, RX, and controller boards"],
+  image:
+    "/images/products/wireless-power-modules/30w-or-less/long-range-wireless-charging-module/01_complete_wireless_charging_assembly.png",
+} as const;
+
+export type WirelessPowerNavId = typeof wirelessLowPowerTier.id | ProductTierId;
+
+export function isWirelessLowPowerTierId(value: string): value is typeof wirelessLowPowerTier.id {
+  return value === wirelessLowPowerTier.id;
+}
+
+/** Power-tier links used by product pages / home showcase (not the Products nav menu). */
+export const productTierNavLinks = productTiers.map((tier) => ({
   label: tier.label,
   href:
     tier.id === "60w"
@@ -74,9 +94,54 @@ export const productNavLinks = productTiers.map((tier) => ({
           ? "/products/800w"
           : tier.id === "1500w"
             ? "/products/1500w"
-            : `/products#${tier.id}`,
+            : `/products/wireless-power-modules/${tier.id}`,
   id: tier.id,
 }));
+
+/** Categories hidden from customer menus, hub, and sitemap. Pages stay for preview. */
+export const publicHiddenProductCategoryIds = new Set<string>([]);
+
+export function isProductCategoryPublic(id: string) {
+  return !publicHiddenProductCategoryIds.has(id);
+}
+
+export function getPublicProductNavLinks() {
+  return productNavLinks.filter((item) => isProductCategoryPublic(item.id));
+}
+
+/** Products dropdown / footer menu. */
+export const productNavLinks = [
+  {
+    id: "wireless-power-modules",
+    label: "Wireless Power Modules",
+    href: "/products/wireless-power-modules",
+  },
+  {
+    id: "integrated-boards",
+    label: "Integrated Boards",
+    href: "/products/integrated-boards",
+  },
+  {
+    id: "autonomous-software",
+    label: "Autonomous Software",
+    href: "/products/autonomous-software",
+  },
+  {
+    id: "docking",
+    label: "Docking",
+    href: "/products/docking",
+  },
+  {
+    id: "consumer-oriented-products",
+    label: "Consumer Oriented Products",
+    href: "/products/consumer-oriented-products",
+  },
+  {
+    id: "ev-charging-gun",
+    label: "EV Charging Gun",
+    href: "/products/ev-charging-gun",
+  },
+] as const;
 
 export function getProductTierFromHash(hash: string): ProductTierId | null {
   const id = hash.replace(/^#/, "");

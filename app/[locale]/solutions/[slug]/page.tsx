@@ -122,7 +122,7 @@ export default async function SolutionDetailPage({ params }: PageProps) {
       <JsonLd
         data={getBreadcrumbSchema([
           { name: "Home", path: "/" },
-          { name: "Industrial Solutions", path: "/solutions" },
+          { name: "Applications", path: "/solutions" },
           { name: industry.title, path: `/solutions/${industry.id}` },
         ])}
       />

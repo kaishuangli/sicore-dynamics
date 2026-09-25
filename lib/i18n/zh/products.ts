@@ -63,20 +63,51 @@ export const productTiers = [
 
 export type ProductTierId = (typeof productTiers)[number]["id"];
 
-export const productNavLinks = productTiers.map((tier) => ({
-  label: tier.label,
-  href:
-    tier.id === "60w"
-      ? "/products/60w"
-      : tier.id === "200w"
-        ? "/products/200w"
-        : tier.id === "800w"
-          ? "/products/800w"
-          : tier.id === "1500w"
-            ? "/products/1500w"
-            : `/products#${tier.id}`,
-  id: tier.id,
-}));
+export const wirelessLowPowerTier = {
+  id: "30w-or-less",
+  label: "30W 及以下",
+  title: "30W 及以下无线功率模块",
+  tagline: "额定 30 W 及以下的 Qi 与嵌入式无线充电模块。",
+  description:
+    "面向消费电子、家具嵌入与 OEM 产品的紧凑型发射、接收、控制器与线圈模块，无线充电功率不超过 30 W。",
+  applications: ["消费电子", "家具嵌入", "Qi 接收端", "桌面充电"],
+  highlights: ["Qi / Qi2 等级模块", "典型 5 W 至 15 W", "发射、接收与控制板"],
+  image:
+    "/images/products/wireless-power-modules/30w-or-less/long-range-wireless-charging-module/01_complete_wireless_charging_assembly.png",
+} as const;
+
+export const productNavLinks = [
+  {
+    id: "wireless-power-modules",
+    label: "无线功率模块",
+    href: "/products/wireless-power-modules",
+  },
+  {
+    id: "integrated-boards",
+    label: "集成板卡",
+    href: "/products/integrated-boards",
+  },
+  {
+    id: "autonomous-software",
+    label: "自主软件",
+    href: "/products/autonomous-software",
+  },
+  {
+    id: "docking",
+    label: "对接系统",
+    href: "/products/docking",
+  },
+  {
+    id: "consumer-oriented-products",
+    label: "消费类产品",
+    href: "/products/consumer-oriented-products",
+  },
+  {
+    id: "ev-charging-gun",
+    label: "电动汽车充电枪",
+    href: "/products/ev-charging-gun",
+  },
+] as const;
 
 export function getProductTierFromHash(hash: string): ProductTierId | null {
   const id = hash.replace(/^#/, "");

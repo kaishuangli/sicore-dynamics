@@ -6,9 +6,10 @@ import { useState } from "react";
 import SectionEyebrow from "@/components/SectionEyebrow";
 import type { Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { getProductTiers } from "@/lib/i18n/content";
+import { getProductTiers } from "@/lib/i18n/product-content";
+import { resolveProductImage } from "@/lib/catalog/resolve-product-image";
 import { withLocale } from "@/lib/i18n/path";
-import { productNavLinks, type ProductTierId } from "@/lib/products";
+import { productTierNavLinks, type ProductTierId } from "@/lib/products";
 
 const showcaseImages: Record<ProductTierId, string> = {
   "60w": "/images/stealth-60w-hero.png",
@@ -25,7 +26,7 @@ export default function FeaturedProductSection({ locale }: { locale: Locale }) {
   const [activeId, setActiveId] = useState<ProductTierId>("60w");
   const active = productTiers.find((tier) => tier.id === activeId) ?? productTiers[0];
   const activeHref = L(
-    productNavLinks.find((link) => link.id === active.id)?.href ?? "/products",
+    productTierNavLinks.find((link) => link.id === active.id)?.href ?? "/products",
   );
 
   return (
@@ -69,7 +70,7 @@ export default function FeaturedProductSection({ locale }: { locale: Locale }) {
               <div className="relative h-[320px] sm:h-[380px] md:h-[420px]">
                 <Image
                   key={active.id}
-                  src={showcaseImages[active.id]}
+                  src={resolveProductImage("wireless-power-modules", active.id, showcaseImages[active.id])}
                   alt={active.title}
                   fill
                   className="object-contain p-6 drop-shadow-[0_20px_60px_rgba(56,189,248,0.18)]"

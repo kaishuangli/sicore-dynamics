@@ -198,6 +198,38 @@ export const solutionFaqs: Record<IndustryId, readonly SolutionFaqItem[]> = {
         "Yes. SiCore supplies matched TX/RX platforms for docks, cases, furniture surfaces, and embedded product charging.",
     },
   ],
+  "smart-test-equipments": [
+    {
+      question: "What is Smart Test Equipments from SiCore?",
+      answer:
+        "A modular intelligent docking platform that powers, charges, and connects battery-powered test instruments — so labs reduce cable clutter and keep instruments ready for the next task.",
+    },
+    {
+      question: "Which instruments can share the docking platform?",
+      answer:
+        "Battery-powered modules such as oscilloscopes, power supplies, DMMs, spectrum analyzers, and DAQ modules can share a unified docking station with automatic recognition.",
+    },
+    {
+      question: "How does automatic charging improve lab productivity?",
+      answer:
+        "Engineers take an instrument, use it independently, then return it to the dock. Charging and status sync happen automatically, reducing downtime and cable handling.",
+    },
+    {
+      question: "Can the platform scale as our instrument fleet grows?",
+      answer:
+        "Yes. The docking architecture is modular and scalable, so additional instrument types and dock capacity can be added as lab or production needs expand.",
+    },
+    {
+      question: "Does SiCore support OEM integration for test equipment makers?",
+      answer:
+        "Yes. SiCore partners with instrument OEMs to embed receivers, design shared docks, and integrate battery and status communication into host systems.",
+    },
+    {
+      question: "Where is Smart Test Equipments typically deployed?",
+      answer:
+        "R&D laboratories, production test lines, field service teams, and education or training labs that need portable instruments with shared charging infrastructure.",
+    },
+  ],
   "customized-solutions": [
     {
       question: "When should a project use customized wireless charging instead of off-the-shelf products?",

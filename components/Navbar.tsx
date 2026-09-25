@@ -5,24 +5,26 @@ import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import Logo from "@/components/Logo";
 import NavDropdown from "@/components/NavDropdown";
-import { aboutNavLinks } from "@/lib/about";
+import CartNavButton from "@/components/cart/CartNavButton";
 import { downloadNavLinks } from "@/lib/downloads";
 import { getSelectableLocales, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
+import { knowledgeNavLinks } from "@/lib/knowledge";
 import {
   getLocaleFromPathname,
   stripLocaleFromPathname,
   switchLocalePath,
   withLocale,
 } from "@/lib/i18n/path";
-import { getKnowledgeCategories } from "@/lib/i18n/content";
 import { industryNavLinks } from "@/lib/industries";
-import { productNavLinks } from "@/lib/products";
+import { oemNavLinks } from "@/lib/oem-program";
+import { getPublicProductNavLinks } from "@/lib/products";
 import { technologyNavLinks } from "@/lib/technology";
 
 type NavDropdownItem = {
   label: string;
   href: string;
+  nested?: boolean;
 };
 
 function SearchIcon() {
@@ -140,7 +142,11 @@ function MobileDropdownPanel({
         <Link
           key={`${item.href}::${item.label}`}
           href={item.href}
-          className="block border-b border-slate-200/80 px-4 py-2.5 text-[12px] font-semibold text-slate-800 last:border-b-0 hover:bg-[rgba(11,95,255,0.08)] hover:text-[#0B5FFF]"
+          className={`block border-b border-slate-200/80 py-2.5 last:border-b-0 hover:bg-[rgba(11,95,255,0.08)] hover:text-[#0B5FFF] ${
+            item.nested
+              ? "px-4 pl-8 text-[11px] font-medium text-slate-600"
+              : "px-4 text-[12px] font-semibold text-slate-800"
+          }`}
           onClick={onNavigate}
         >
           {item.label}
@@ -163,9 +169,10 @@ export default function Navbar({ locale: localeProp }: { locale: Locale }) {
     { label: dict.nav.products, href: L("/products") },
     { label: dict.nav.solutions, href: L("/#solutions") },
     { label: dict.nav.knowledge, href: L("/knowledge") },
-    { label: dict.nav.about, href: L("/about") },
+    { label: dict.nav.oem, href: L("/oem") },
     { label: dict.nav.download, href: L("/download") },
     { label: dict.nav.contact, href: L("/contact") },
+    { label: dict.nav.thirdPartyProducts, href: L("/third-party-products") },
   ];
 
   const navDropdownMap: Record<string, NavDropdownItem[]> = {
@@ -173,20 +180,20 @@ export default function Navbar({ locale: localeProp }: { locale: Locale }) {
       label: dict.navTech[item.id as keyof typeof dict.navTech] ?? item.label,
       href: L(item.href),
     })),
-    [L("/products")]: productNavLinks.map((item) => ({
-      label: item.label,
+    [L("/products")]: getPublicProductNavLinks().map((item) => ({
+      label: dict.navProducts[item.id as keyof typeof dict.navProducts] ?? item.label,
       href: L(item.href),
     })),
     [L("/#solutions")]: industryNavLinks.map((item) => ({
       label: dict.navSolutions[item.id as keyof typeof dict.navSolutions] ?? item.label,
       href: L(item.href),
     })),
-    [L("/knowledge")]: getKnowledgeCategories(locale).map((item) => ({
-      label: item.shortLabel,
-      href: L(`/knowledge?collection=${encodeURIComponent(item.id)}`),
+    [L("/knowledge")]: knowledgeNavLinks.map((item) => ({
+      label: item.label,
+      href: L(item.href),
     })),
-    [L("/about")]: aboutNavLinks.map((item) => ({
-      label: dict.navAbout[item.id as keyof typeof dict.navAbout] ?? item.label,
+    [L("/oem")]: oemNavLinks.map((item) => ({
+      label: dict.navOem[item.id as keyof typeof dict.navOem] ?? item.label,
       href: L(item.href),
     })),
     [L("/download")]: downloadNavLinks.map((item) => ({
@@ -232,6 +239,7 @@ export default function Navbar({ locale: localeProp }: { locale: Locale }) {
             </form>
 
             <LanguageSwitcher locale={locale} />
+            <CartNavButton locale={locale} />
           </div>
 
           <Link href={L("/contact")} className="btn-primary ml-5 shrink-0 px-6 py-2.5 text-xs lg:ml-8 lg:px-7">
@@ -260,7 +268,7 @@ export default function Navbar({ locale: localeProp }: { locale: Locale }) {
                     href={item.href}
                     items={dropdownItems}
                     active={active}
-                    menuOnly={item.href === L("/#solutions") || item.href === L("/products")}
+                    menuOnly={item.href === L("/#solutions")}
                   />
                 );
               }

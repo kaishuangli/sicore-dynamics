@@ -47,7 +47,7 @@ export default function PlugFreeDockingTopicPage({ topic, locale }: PlugFreeDock
                   href={L("/technology/plug-free-docking")}
                   className="transition hover:text-[#0B5FFF]"
                 >
-                  {t("免插拔对接", "Acoplamiento sin enchufe", "Plug-Free Docking")}
+                  {t("对接技术", "Docking Technology", "Docking Technology")}
                 </Link>
               </li>
               <li aria-hidden="true">/</li>

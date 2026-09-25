@@ -40,7 +40,7 @@ export default function SolutionPageHero({
             </li>
             <li aria-hidden="true">/</li>
             <li>
-              <span>{t("行业解决方案", "Soluciones industriales", "Industrial Solutions")}</span>
+              <span>{t("应用场景", "Applications", "Applications")}</span>
             </li>
             <li aria-hidden="true">/</li>
             <li className="font-semibold text-[#0B0F19]">{industry.title}</li>

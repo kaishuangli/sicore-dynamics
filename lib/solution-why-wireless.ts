@@ -235,6 +235,51 @@ export const solutionWhyWireless: Record<IndustryId, WhyWirelessAnalysis> = {
       },
     ],
   },
+  "smart-test-equipments": {
+    rows: [
+      {
+        title: "Why Test Labs Need Intelligent Dock Charging",
+        paragraphs: [
+          "Modern test laboratories and production floors depend on battery-powered instruments that move between benches, lines, and field sites. Conventional wall adapters and cable nests create clutter, trip hazards, and uneven readiness across the instrument fleet.",
+          "A shared intelligent docking platform lets engineers take an instrument, use it independently, and return it for automatic charging — without hunting for the right cable or leaving critical tools drained overnight.",
+          "For labs targeting higher utilization, charging infrastructure is part of the measurement workflow — not an afterthought behind the rack.",
+        ],
+        visual: {
+          type: "image",
+          src: "/images/smart-test-equipments/scenario-rnd.png",
+          alt: "Laboratory environment where portable instruments benefit from shared dock charging",
+        },
+      },
+      {
+        title: "How Smart Test Docking Works",
+        paragraphs: [
+          "Each instrument remains battery-powered for portable use. When placed on the shared dock, the platform recognizes the device, manages power delivery, and can sync status for fleet visibility.",
+          "The same docking architecture scales across oscilloscopes, meters, analyzers, and DAQ modules — one power platform, multiple instruments, modular growth.",
+        ],
+        visual: {
+          type: "principle",
+          steps: [
+            {
+              label: "Take and Use",
+              detail: "Lift a battery-powered instrument from the shared dock for portable measurement work.",
+            },
+            {
+              label: "Independent Operation",
+              detail: "Use the module anywhere testing is needed — bench, line, or field — without tethered AC adapters.",
+            },
+            {
+              label: "Return to Dock",
+              detail: "Place the instrument back on the modular docking platform when the task is complete.",
+            },
+            {
+              label: "Auto Charge & Sync",
+              detail: "Automatic charging and status visibility keep the fleet ready for the next assignment.",
+            },
+          ],
+        },
+      },
+    ],
+  },
   "customized-solutions": {
     rows: [
       {

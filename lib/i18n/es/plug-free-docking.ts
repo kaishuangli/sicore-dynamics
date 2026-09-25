@@ -1,6 +1,6 @@
 export const plugFreeDockingPage = {
-  eyebrow: "Tecnología de Acoplamiento Sin Conectores",
-  title: "Tecnología de Acoplamiento Sin Conectores",
+  eyebrow: "Docking Technology",
+  title: "Docking Technology",
   subtitle: "Acoplamiento Perfecto Sin Conexión Manual",
   description:
     "La tecnología de acoplamiento sin conectores de SiCore permite que las máquinas autónomas se carguen sin cables ni conectores manuales — mediante mecánica de acoplamiento de precisión, interfaces de contacto o inalámbricas, detección de posición y confiabilidad lista para exteriores.",

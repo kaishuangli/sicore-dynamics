@@ -63,7 +63,7 @@ export default function WirelessDockSection({ locale }: { locale: Locale }) {
         <div className="container-page relative flex min-h-[420px] items-center py-16 md:min-h-[520px] md:py-20">
           <div className="max-w-xl">
             <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#38BDF8]">
-              {t("免插拔对接技术", "Tecnología de acoplamiento sin enchufe", "Plug-Free Docking Technology")}
+              {t("对接技术", "Docking Technology", "Docking Technology")}
             </p>
             <h2
               id="wireless-dock-heading"

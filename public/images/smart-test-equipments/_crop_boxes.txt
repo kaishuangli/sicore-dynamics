@@ -1,0 +1,18 @@
+source: hero-reference.png (388x1024)
+output: 3x LANCZOS upscale from source crop boxes below
+
+hero.png  (0, 18, 388, 154)
+hero-product.png  (24, 26, 370, 148)
+how-01-take.png  (10, 290, 100, 352)
+how-02-operate.png  (102, 290, 192, 352)
+how-03-return.png  (194, 290, 286, 352)
+how-04-charge.png  (288, 290, 380, 352)
+scenario-rnd.png  (10, 508, 100, 590)
+scenario-production.png  (102, 508, 194, 590)
+scenario-field.png  (196, 508, 288, 590)
+scenario-education.png  (290, 508, 380, 590)
+benefit-workspace.png  (4, 684, 104, 772)
+benefit-utilization.png  (102, 684, 204, 772)
+benefit-management.png  (8, 816, 380, 888)
+benefit-dock-status.png  (204, 684, 306, 772)
+cta-lab.png  (0, 942, 388, 1024)

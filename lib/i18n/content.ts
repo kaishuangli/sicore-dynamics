@@ -132,17 +132,43 @@ import * as product3000Zh from "@/lib/i18n/zh/product-3000w";
 import * as product3000Es from "@/lib/i18n/es/product-3000w";
 
 import {
-  productTiers as productTiersEn,
-  productsPageMeta as productsPageMetaEn,
-} from "@/lib/products";
+  integratedBoardCategories as integratedBoardCategoriesEn,
+  integratedBoards as integratedBoardsEn,
+} from "@/lib/integrated-boards";
 import {
-  productTiers as productTiersZh,
-  productsPageMeta as productsPageMetaZh,
-} from "@/lib/i18n/zh/products";
+  integratedBoardCategories as integratedBoardCategoriesZh,
+  integratedBoards as integratedBoardsZh,
+} from "@/lib/i18n/zh/integrated-boards";
 import {
-  productTiers as productTiersEs,
-  productsPageMeta as productsPageMetaEs,
-} from "@/lib/i18n/es/products";
+  integratedBoardCategories as integratedBoardCategoriesEs,
+  integratedBoards as integratedBoardsEs,
+} from "@/lib/i18n/es/integrated-boards";
+import type { IntegratedBoardId } from "@/lib/integrated-boards";
+
+import {
+  autonomousSoftwareSections as autonomousSoftwareSectionsEn,
+  autonomousSoftwareProducts as autonomousSoftwareProductsEn,
+} from "@/lib/autonomous-software";
+import {
+  autonomousSoftwareSections as autonomousSoftwareSectionsZh,
+  autonomousSoftwareProducts as autonomousSoftwareProductsZh,
+} from "@/lib/i18n/zh/autonomous-software";
+import {
+  autonomousSoftwareSections as autonomousSoftwareSectionsEs,
+  autonomousSoftwareProducts as autonomousSoftwareProductsEs,
+} from "@/lib/i18n/es/autonomous-software";
+import type { AutonomousSoftwareId } from "@/lib/autonomous-software";
+
+import type { DockingProductId } from "@/lib/docking-products";
+import { pogoPinChargingDockPage as pogoPinChargingDockPageEn } from "@/lib/pogo-pin-charging-dock";
+import { pogoPinChargingDockPage as pogoPinChargingDockPageEs } from "@/lib/i18n/es/pogo-pin-charging-dock";
+import { pogoPinChargingDockPage as pogoPinChargingDockPageZh } from "@/lib/i18n/zh/pogo-pin-charging-dock";
+import { resolveProductImage } from "@/lib/catalog/resolve-product-image";
+import {
+  getDockingProducts,
+  getProductTiers,
+  getProductsPageMeta,
+} from "@/lib/i18n/product-content";
 
 import { getSolutionFaqs as getSolutionFaqsEn } from "@/lib/solution-faqs";
 import { getSolutionFaqs as getSolutionFaqsZh } from "@/lib/i18n/zh/solution-faqs";
@@ -197,6 +223,8 @@ import * as uavEs from "@/lib/i18n/es/uav-contact-dock";
 import { wirelessEnergyPlatformPage as wirelessEnergyPlatformPageEn } from "@/lib/wireless-energy-platform";
 import { wirelessEnergyPlatformPage as wirelessEnergyPlatformPageZh } from "@/lib/i18n/zh/wireless-energy-platform";
 import { wirelessEnergyPlatformPage as wirelessEnergyPlatformPageEs } from "@/lib/i18n/es/wireless-energy-platform";
+
+export { getDockingProducts, getProductTiers, getProductsPageMeta };
 
 export function getOemIntegrationPage(locale: Locale) {
   return pickLocale(oemIntegrationPageEn, oemIntegrationPageZh, locale, oemIntegrationPageEs);
@@ -323,14 +351,6 @@ export function getIndustryNewsBundle(locale: Locale) {
   return industryNewsEn;
 }
 
-export function getProductTiers(locale: Locale) {
-  return pickLocale(productTiersEn, productTiersZh, locale, productTiersEs);
-}
-
-export function getProductsPageMeta(locale: Locale) {
-  return pickLocale(productsPageMetaEn, productsPageMetaZh, locale, productsPageMetaEs);
-}
-
 export function getProduct60w(locale: Locale) {
   if (locale === "zh") return product60Zh;
   if (locale === "es") return product60Es;
@@ -359,6 +379,82 @@ export function getProduct3000w(locale: Locale) {
   if (locale === "zh") return product3000Zh;
   if (locale === "es") return product3000Es;
   return product3000En;
+}
+
+export function getIntegratedBoards(locale: Locale) {
+  return pickLocale(integratedBoardsEn, integratedBoardsZh, locale, integratedBoardsEs).map((board) => ({
+    ...board,
+    image: resolveProductImage("integrated-boards", board.id, board.image),
+  }));
+}
+
+export function getIntegratedBoardCategories(locale: Locale) {
+  return pickLocale(
+    integratedBoardCategoriesEn,
+    integratedBoardCategoriesZh,
+    locale,
+    integratedBoardCategoriesEs,
+  ).map((item) => ({
+    ...item,
+    image: resolveProductImage("integrated-boards", item.id, item.image),
+  }));
+}
+
+export function getIntegratedBoardContent(locale: Locale, id: IntegratedBoardId) {
+  return getIntegratedBoards(locale).find((board) => board.id === id);
+}
+
+export function getAutonomousSoftwareSections(locale: Locale) {
+  return pickLocale(
+    autonomousSoftwareSectionsEn,
+    autonomousSoftwareSectionsZh,
+    locale,
+    autonomousSoftwareSectionsEs,
+  ).map((section) => ({
+    ...section,
+    products: section.products.map((product) => ({
+      ...product,
+      image: resolveProductImage("autonomous-software", product.id, product.image),
+    })),
+  }));
+}
+
+export function getAutonomousSoftwareProducts(locale: Locale) {
+  return pickLocale(
+    autonomousSoftwareProductsEn,
+    autonomousSoftwareProductsZh,
+    locale,
+    autonomousSoftwareProductsEs,
+  ).map((product) => ({
+    ...product,
+    image: resolveProductImage("autonomous-software", product.id, product.image),
+  }));
+}
+
+export function getAutonomousSoftwareCategories(locale: Locale) {
+  return getAutonomousSoftwareSections(locale).map((section) => ({
+    id: section.id,
+    label: section.label,
+    description: section.description,
+    image: section.products[0]?.image ?? "/images/smart-test-equipments/fleet-tablet.png",
+  }));
+}
+
+export function getAutonomousSoftwareContent(locale: Locale, id: AutonomousSoftwareId) {
+  return getAutonomousSoftwareProducts(locale).find((item) => item.id === id);
+}
+
+export function getDockingProductContent(locale: Locale, id: DockingProductId) {
+  return getDockingProducts(locale).find((item) => item.id === id);
+}
+
+export function getPogoPinChargingDockPage(locale: Locale) {
+  return pickLocale(
+    pogoPinChargingDockPageEn,
+    pogoPinChargingDockPageZh,
+    locale,
+    pogoPinChargingDockPageEs,
+  );
 }
 
 export function getSolutionFaqsForIndustry(

@@ -350,6 +350,61 @@ export const industries = [
     ],
   },
   {
+    id: "smart-test-equipments",
+    title: "Smart Test Equipments",
+    pageTitle: "Smart Equipment — Autonomous Mobility for Test Laboratories",
+    description:
+      "Autonomous mobile smart equipment for test labs — navigation, docking, wireless charging, and fleet management.",
+    content: [
+      "SiCore Smart Test Equipments deliver a shared intelligent docking platform for battery-powered oscilloscopes, meters, analyzers, and modular instruments — so labs stay cable-free, instruments stay ready, and fleets stay visible.",
+    ],
+    productsIntro:
+      "A unified docking platform with automatic recognition, efficient power management, and scalable modular design for modern test environments.",
+    image: "/images/smart-test-equipments/ste-hero-robot-v2.png",
+    heroVisual: "/images/smart-test-equipments/ste-hero-robot-v2.png",
+    alt: "SiCore Smart Equipment Robot carrying laboratory test instruments",
+    heroVisualAlt: "Autonomous smart equipment robot for test laboratories",
+    useCases: [
+      {
+        title: "R&D Testing",
+        description: "Move equipment between lab stations to accelerate design validation.",
+        image: "/images/smart-test-equipments/ste-usecase-rnd.png",
+        alt: "Smart equipment robot in an R&D laboratory",
+      },
+      {
+        title: "Production Test",
+        description: "Support production-line testing with flexible instrument delivery.",
+        image: "/images/smart-test-equipments/ste-usecase-production.png",
+        alt: "Smart equipment robot on a production test line",
+      },
+      {
+        title: "QA & Validation",
+        description: "Streamline QA processes with automated transport between checkpoints.",
+        image: "/images/smart-test-equipments/ste-usecase-qa.png",
+        alt: "Smart equipment robot supporting QA validation",
+      },
+      {
+        title: "Clean Room",
+        description: "Autonomous operation helps minimize unnecessary human contamination risk.",
+        image: "/images/smart-test-equipments/ste-usecase-cleanroom.png",
+        alt: "Smart equipment robot operating in a clean room",
+      },
+    ],
+    listSections: [
+      {
+        title: "Key Benefits",
+        items: [
+          "Cable-free workspace",
+          "Always-ready instruments",
+          "Flexible mobile use",
+          "Real-time battery monitoring",
+          "Unified docking platform",
+          "Scalable modular design",
+        ],
+      },
+    ],
+  },
+  {
     id: "customized-solutions",
     title: "Customized Solutions",
     pageTitle: "Customized Wireless Charging Solutions",
@@ -445,9 +500,9 @@ export function getIndustryFromHash(hash: string): IndustryId | null {
 }
 
 export const solutionsPageMeta = {
-  title: "Industrial Solutions",
+  title: "Applications",
   description:
-    "Industrial wireless charging solutions for reliable power transfer across automation, unmanned aerial vehicles, medical equipment, agricultural automation, smart furniture, and customized OEM programs.",
+    "Autonomous charging applications across automation, unmanned aerial vehicles, medical equipment, agricultural automation, smart furniture, and customized OEM programs.",
 };
 
 export const solutionsFaqs = [
@@ -469,7 +524,7 @@ export const solutionsFaqs = [
 ] as const;
 
 export const solutionsLandingMeta = {
-  eyebrow: "Industrial Solutions",
+  eyebrow: "Applications",
   title: "Industrial Wireless Charging Solutions for Reliable Power Transfer",
   paragraphs: [
     "We provide customized wireless charging solutions for industrial equipment, automation systems, medical devices, agricultural platforms, smart furniture, and OEM applications.",
@@ -477,7 +532,7 @@ export const solutionsLandingMeta = {
   ],
 };
 
-/** Homepage mosaic cards — labels/hrefs stay in sync with Technology nav Industrial Solutions dropdown. */
+/** Homepage mosaic cards — labels/hrefs stay in sync with Applications nav dropdown. */
 export const solutionsLandingApplications = publicIndustries.map((item) => ({
   label: item.title,
   image: item.image,

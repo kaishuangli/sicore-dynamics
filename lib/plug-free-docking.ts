@@ -1,6 +1,6 @@
 export const plugFreeDockingPage = {
-  eyebrow: "Plug-Free Docking Technology",
-  title: "Plug-Free Docking Technology",
+  eyebrow: "Docking Technology",
+  title: "Docking Technology",
   subtitle: "Seamless Docking Without Manual Plug-In",
   description:
     "SiCore plug-free docking technology enables autonomous machines to charge without cables or manual connectors — through precise docking mechanics, contact or wireless interfaces, position detection, and outdoor-ready reliability.",

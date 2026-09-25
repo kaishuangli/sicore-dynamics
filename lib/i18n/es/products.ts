@@ -104,20 +104,51 @@ export const productTiers = [
 
 export type ProductTierId = (typeof productTiers)[number]["id"];
 
-export const productNavLinks = productTiers.map((tier) => ({
-  label: tier.label,
-  href:
-    tier.id === "60w"
-      ? "/products/60w"
-      : tier.id === "200w"
-        ? "/products/200w"
-        : tier.id === "800w"
-          ? "/products/800w"
-          : tier.id === "1500w"
-            ? "/products/1500w"
-            : `/products#${tier.id}`,
-  id: tier.id,
-}));
+export const wirelessLowPowerTier = {
+  id: "30w-or-less",
+  label: "30W o menos",
+  title: "Módulos de potencia inalámbrica de 30 W o menos",
+  tagline: "Módulos Qi y embebidos de carga inalámbrica de 30 W o menos.",
+  description:
+    "Módulos compactos de transmisor, receptor, controlador y bobina para electrónica de consumo, mobiliario y OEM que requieren carga inalámbrica de 30 W o menos.",
+  applications: ["Electrónica de consumo", "Integración en muebles", "Receptores Qi", "Carga de escritorio"],
+  highlights: ["Módulos clase Qi / Qi2", "Típico 5 W a 15 W", "Placas TX, RX y de control"],
+  image:
+    "/images/products/wireless-power-modules/30w-or-less/long-range-wireless-charging-module/01_complete_wireless_charging_assembly.png",
+} as const;
+
+export const productNavLinks = [
+  {
+    id: "wireless-power-modules",
+    label: "Módulos de potencia inalámbrica",
+    href: "/products/wireless-power-modules",
+  },
+  {
+    id: "integrated-boards",
+    label: "Placas integradas",
+    href: "/products/integrated-boards",
+  },
+  {
+    id: "autonomous-software",
+    label: "Software autónomo",
+    href: "/products/autonomous-software",
+  },
+  {
+    id: "docking",
+    label: "Acoplamiento",
+    href: "/products/docking",
+  },
+  {
+    id: "consumer-oriented-products",
+    label: "Productos orientados al consumidor",
+    href: "/products/consumer-oriented-products",
+  },
+  {
+    id: "ev-charging-gun",
+    label: "Pistolas de carga EV",
+    href: "/products/ev-charging-gun",
+  },
+] as const;
 
 export function getProductTierFromHash(hash: string): ProductTierId | null {
   const id = hash.replace(/^#/, "");

@@ -1,9 +1,9 @@
 import { site } from "@/lib/site";
 import { geoEntity } from "@/lib/geo";
 
-export const homeTitle = "Wireless Power Transfer for Robotics & AI Charging Systems";
+export const homeTitle = "Intelligent Autonomous Charging for Robotics & Smart Equipment";
 
-export const homeDescription = `${site.seoCorePhrase}. SiCore Dynamics develops advanced wireless power transfer, intelligent charging stations, and AI power electronics for robotics, AGVs, drones, industrial automation, and mission-critical systems.`;
+export const homeDescription = `${site.seoCorePhrase}. SiCore Dynamics designs automatic power charging systems and intelligent autonomous charging solutions for robotics, AGVs, drones, medical devices, industrial automation, and OEM platforms.`;
 
 export const coreCapabilities = [
   {
@@ -19,7 +19,7 @@ export const coreCapabilities = [
     href: "/technology/intelligent-charging",
   },
   {
-    label: "Plug-Free Docking Technology",
+    label: "Docking Technology",
     text: "Plug-free docking technology enables autonomous machines to charge without cables or manual connectors — through precise docking mechanics.",
     icon: "station" as const,
     href: "/technology/plug-free-docking",
@@ -113,7 +113,7 @@ export function getOrganizationSchema() {
       "Industrial Automation",
       "AGV Wireless Charging",
       "AMR Wireless Charging",
-      "Plug-Free Docking Technology",
+      "Docking Technology",
       "Medical Device Wireless Charging",
       "OEM Wireless Charging Integration",
       "Intelligent Energy Systems",

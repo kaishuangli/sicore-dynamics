@@ -23,10 +23,10 @@ export async function generateMetadata({ params }: TopicPageProps): Promise<Meta
   const topic = getPlugFreeDockingTopic(topicId, locale);
   const platformLabel =
     locale === "zh"
-      ? "无插拔对接技术"
+      ? "对接技术"
       : locale === "es"
-        ? "Acoplamiento sin enchufe"
-        : "Plug-Free Docking";
+        ? "Docking Technology"
+        : "Docking Technology";
 
   if (!topic) {
     return {

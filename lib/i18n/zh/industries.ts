@@ -347,6 +347,61 @@ export const industries = [
     ],
   },
   {
+    id: "smart-test-equipments",
+    title: "智能测试设备",
+    pageTitle: "智能测试设备 — 测试仪器的智能对接充电",
+    description:
+      "模块化智能测试台对接平台，为实验室与产线中的电池供电测试仪器提供供电、充电与管理。",
+    content: [
+      "SiCore 智能测试设备为示波器、万用表、分析仪等电池供电仪器提供共享智能对接平台，让实验室减少线缆、仪器随时就绪、设备状态清晰可见。",
+    ],
+    productsIntro:
+      "统一对接平台，支持自动识别、高效电源管理与可扩展模块化设计，适配现代测试环境。",
+    image: "/images/smart-test-equipments/ste-hero-robot-v2.png",
+    heroVisual: "/images/smart-test-equipments/ste-hero-robot-v2.png",
+    alt: "SiCore 智能设备机器人搭载实验室测试仪器",
+    heroVisualAlt: "面向测试实验室的自主智能设备机器人",
+    useCases: [
+      {
+        title: "研发测试",
+        description: "在实验工位之间移动设备，加速设计验证。",
+        image: "/images/smart-test-equipments/ste-usecase-rnd.png",
+        alt: "研发实验室中的智能设备机器人",
+      },
+      {
+        title: "生产测试",
+        description: "以灵活的仪器配送支持产线测试。",
+        image: "/images/smart-test-equipments/ste-usecase-production.png",
+        alt: "生产测试线上的智能设备机器人",
+      },
+      {
+        title: "质量与验证",
+        description: "通过自动化转运简化质量与验证流程。",
+        image: "/images/smart-test-equipments/ste-usecase-qa.png",
+        alt: "支持质量验证的智能设备机器人",
+      },
+      {
+        title: "洁净室",
+        description: "自主运行有助于降低不必要的人员污染风险。",
+        image: "/images/smart-test-equipments/ste-usecase-cleanroom.png",
+        alt: "洁净室中的智能设备机器人",
+      },
+    ],
+    listSections: [
+      {
+        title: "核心优势",
+        items: [
+          "无缆工作区",
+          "仪器随时就绪",
+          "灵活移动使用",
+          "实时电池监测",
+          "统一对接平台",
+          "可扩展模块化设计",
+        ],
+      },
+    ],
+  },
+  {
     id: "customized-solutions",
     title: "定制化解决方案",
     pageTitle: "定制无线充电解决方案",
@@ -444,9 +499,9 @@ export function getIndustryFromHash(hash: string): IndustryId | null {
 }
 
 export const solutionsPageMeta = {
-  title: "工业解决方案",
+  title: "应用场景",
   description:
-    "面向自动化、无人飞行器、医疗设备、农业自动化、智能家具与定制化 OEM 项目的工业无线充电解决方案，实现可靠的电能传输。",
+    "面向自动化、无人飞行器、医疗设备、农业自动化、智能家具与定制化 OEM 项目的自主充电应用方案，实现可靠的电能传输。",
 };
 
 export const solutionsFaqs = [
@@ -468,7 +523,7 @@ export const solutionsFaqs = [
 ] as const;
 
 export const solutionsLandingMeta = {
-  eyebrow: "工业解决方案",
+  eyebrow: "应用场景",
   title: "可靠电能传输的工业无线充电解决方案",
   paragraphs: [
     "我们为工业设备、自动化系统、医疗器械、农业平台、智能家具与 OEM 应用提供定制化无线充电解决方案。",
@@ -476,7 +531,7 @@ export const solutionsLandingMeta = {
   ],
 };
 
-/** Homepage mosaic cards — labels/hrefs stay in sync with Technology nav Industrial Solutions dropdown. */
+/** Homepage mosaic cards — labels/hrefs stay in sync with Applications nav dropdown. */
 export const solutionsLandingApplications = publicIndustries.map((item) => ({
   label: item.title,
   image: item.image,

@@ -235,6 +235,39 @@ export const solutionWhyWireless: Record<IndustryId, WhyWirelessAnalysis> = {
       },
     ],
   },
+  "smart-test-equipments": {
+    rows: [
+      {
+        title: "为什么测试实验室需要智能对接充电",
+        paragraphs: [
+          "现代测试实验室与产线依赖在工位、产线与现场之间移动的电池供电仪器。传统墙插适配器与线缆堆积会造成杂乱、绊倒风险，以及仪器车队就绪度不均。",
+          "共享智能对接平台让工程师取用仪器、独立使用后再放回自动充电——无需寻找线缆，也不会让关键工具整夜亏电。",
+          "对追求更高利用率的实验室而言，充电基础设施是测量流程的一部分，而不是机柜后的附属品。",
+        ],
+        visual: {
+          type: "image",
+          src: "/images/smart-test-equipments/scenario-rnd.png",
+          alt: "便携仪器受益于共享对接充电的实验室环境",
+        },
+      },
+      {
+        title: "智能测试对接如何工作",
+        paragraphs: [
+          "每台仪器保持电池供电以便携使用。放到共享对接位后，平台识别设备、管理供电，并可同步状态以实现车队可视。",
+          "同一对接架构可覆盖示波器、万用表、分析仪与数据采集模块——一个供电平台、多种仪器、模块化扩展。",
+        ],
+        visual: {
+          type: "principle",
+          steps: [
+            { label: "取用", detail: "从共享对接位取下电池供电仪器进行便携测量" },
+            { label: "独立作业", detail: "在工位、产线或现场使用，无需交流适配器拖线" },
+            { label: "放回对接", detail: "任务完成后将仪器放回模块化对接平台" },
+            { label: "自动充电与同步", detail: "自动充电与状态可视，让车队为下一次任务就绪" },
+          ],
+        },
+      },
+    ],
+  },
   "customized-solutions": {
     rows: [
       {

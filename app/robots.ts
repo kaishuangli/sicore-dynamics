@@ -3,11 +3,6 @@ import { site } from "@/lib/site";
 
 /** Allow major search + AI/answer-engine crawlers for GEO visibility. */
 export default function robots(): MetadataRoute.Robots {
-  const allowAll = {
-    userAgent: "*" as const,
-    allow: "/",
-  };
-
   const aiAgents = [
     "GPTBot",
     "ChatGPT-User",
@@ -27,7 +22,11 @@ export default function robots(): MetadataRoute.Robots {
 
   return {
     rules: [
-      allowAll,
+      {
+        userAgent: "*" as const,
+        allow: "/",
+        disallow: ["/admin", "/api/admin"],
+      },
       ...aiAgents.map((userAgent) => ({
         userAgent,
         allow: "/" as const,

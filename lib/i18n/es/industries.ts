@@ -350,6 +350,61 @@ export const industries = [
     ],
   },
   {
+    id: "smart-test-equipments",
+    title: "Equipos de Prueba Inteligentes",
+    pageTitle: "Equipos de Prueba Inteligentes — Carga por acoplamiento para instrumentos",
+    description:
+      "Banco de prueba inteligente modular que alimenta, carga y gestiona instrumentos de prueba a batería en laboratorios y plantas.",
+    content: [
+      "SiCore Smart Test Equipments ofrece una plataforma de acoplamiento inteligente compartida para osciloscopios, multímetros, analizadores e instrumentos modulares a batería: menos cables, equipos siempre listos y flotas visibles.",
+    ],
+    productsIntro:
+      "Plataforma de acoplamiento unificada con reconocimiento automático, gestión eficiente de energía y diseño modular escalable.",
+    image: "/images/smart-test-equipments/ste-hero-robot-v2.png",
+    heroVisual: "/images/smart-test-equipments/ste-hero-robot-v2.png",
+    alt: "Robot Smart Equipment SiCore con instrumentos de laboratorio",
+    heroVisualAlt: "Robot autónomo de equipos inteligentes para laboratorios de prueba",
+    useCases: [
+      {
+        title: "Pruebas de I+D",
+        description: "Mover equipos entre estaciones para acelerar la validación de diseño.",
+        image: "/images/smart-test-equipments/ste-usecase-rnd.png",
+        alt: "Robot de equipos inteligentes en laboratorio de I+D",
+      },
+      {
+        title: "Prueba en producción",
+        description: "Apoyar pruebas en línea con entrega flexible de instrumentos.",
+        image: "/images/smart-test-equipments/ste-usecase-production.png",
+        alt: "Robot de equipos inteligentes en línea de producción",
+      },
+      {
+        title: "QA y validación",
+        description: "Agilizar procesos de QA con transporte automatizado.",
+        image: "/images/smart-test-equipments/ste-usecase-qa.png",
+        alt: "Robot de equipos inteligentes en validación de calidad",
+      },
+      {
+        title: "Sala limpia",
+        description: "La operación autónoma ayuda a reducir riesgos de contaminación.",
+        image: "/images/smart-test-equipments/ste-usecase-cleanroom.png",
+        alt: "Robot de equipos inteligentes en sala limpia",
+      },
+    ],
+    listSections: [
+      {
+        title: "Beneficios clave",
+        items: [
+          "Espacio de trabajo sin cables",
+          "Instrumentos siempre listos",
+          "Uso móvil flexible",
+          "Monitoreo de batería en tiempo real",
+          "Plataforma de acoplamiento unificada",
+          "Diseño modular escalable",
+        ],
+      },
+    ],
+  },
+  {
     id: "customized-solutions",
     title: "Soluciones Personalizadas",
     pageTitle: "Soluciones de Carga Inalámbrica Personalizadas",
@@ -445,9 +500,9 @@ export function getIndustryFromHash(hash: string): IndustryId | null {
 }
 
 export const solutionsPageMeta = {
-  title: "Soluciones Industriales",
+  title: "Applications",
   description:
-    "Soluciones de carga inalámbrica industrial para una transferencia de energía confiable en automatización, vehículos aéreos no tripulados, equipos médicos, automatización agrícola, muebles inteligentes y programas OEM personalizados.",
+    "Aplicaciones de carga autónoma para automatización, vehículos aéreos no tripulados, equipos médicos, automatización agrícola, muebles inteligentes y programas OEM personalizados.",
 };
 
 export const solutionsFaqs = [
@@ -469,7 +524,7 @@ export const solutionsFaqs = [
 ] as const;
 
 export const solutionsLandingMeta = {
-  eyebrow: "Soluciones Industriales",
+  eyebrow: "Applications",
   title: "Soluciones de Carga Inalámbrica Industrial para una Transferencia de Energía Confiable",
   paragraphs: [
     "Ofrecemos soluciones de carga inalámbrica personalizadas para equipos industriales, sistemas de automatización, dispositivos médicos, plataformas agrícolas, muebles inteligentes y aplicaciones OEM.",

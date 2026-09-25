@@ -1,0 +1,10 @@
+source: page-mockup.png (388x1024)
+output: 3x LANCZOS upscale from crop boxes below
+
+hero-robot.png  (175, 45, 385, 225)
+fleet-tablet.png  (8, 310, 380, 465)
+hardware-callouts.png  (150, 555, 385, 765)
+usecase-rnd.png  (6, 805, 96, 910)
+usecase-production.png  (100, 805, 190, 910)
+usecase-qa.png  (194, 805, 284, 910)
+usecase-cleanroom.png  (288, 805, 382, 910)

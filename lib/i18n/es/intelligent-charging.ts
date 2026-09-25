@@ -89,12 +89,12 @@ export const intelligentChargingPage = {
       ],
     },
     {
-      id: "fleet-charging",
+      id: "charging-scheduling",
       number: "03",
-      title: "Carga de Flotas",
+      title: "Programación de Carga",
       subtitle: "Carga Coordinada en Múltiples Máquinas",
       description:
-        "La Carga de Flotas coordina la demanda de carga entre múltiples robots, vehículos y estaciones de carga según el nivel de batería, la prioridad de la tarea, la disponibilidad de estaciones y los horarios operativos.",
+        "La programación de carga coordina la demanda de carga entre múltiples robots, vehículos y estaciones según el nivel de batería, la prioridad de la tarea, la disponibilidad de estaciones y los horarios operativos.",
       detail:
         "Esto ayuda a reducir la congestión en la carga, evitar tiempos de inactividad innecesarios y mejorar la utilización general de la flota.",
       visual: "fleet",

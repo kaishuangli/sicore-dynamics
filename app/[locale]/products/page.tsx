@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import ProductTabPanels from "@/sections/products/ProductTabPanels";
+import ProductCategoriesHub from "@/sections/products/ProductCategoriesHub";
 import { isLocale, type Locale } from "@/lib/i18n/config";
-import { getProductsPageMeta } from "@/lib/i18n/content";
+import { getProductsPageMeta } from "@/lib/i18n/product-content";
 
 type ProductsPageProps = {
   params: Promise<{ locale: string }>;
@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: ProductsPageProps): Promise<M
     description: productsPageMeta.description,
     keywords: [
       "wireless power products",
-      "60W wireless charging",
-      "200W wireless charging",
-      "800W wireless charging",
-      "1500W wireless charging",
-      "3000W wireless charging",
+      "wireless charging modules",
+      "integrated boards",
+      "autonomous charging software",
+      "docking systems",
+      "fast charging products",
     ],
   };
 }
@@ -35,7 +35,7 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
 
   return (
     <main>
-      <ProductTabPanels locale={locale} />
+      <ProductCategoriesHub locale={locale} />
     </main>
   );
 }

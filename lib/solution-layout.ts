@@ -37,6 +37,9 @@ export const solutionLayoutConfig: Partial<Record<IndustryId, SolutionLayoutConf
     heroAspect: "square",
     wideHeroMedia: true,
   },
+  "smart-test-equipments": {
+    bodyOwnsHero: true,
+  },
   "consumer-electronics": {
     heroMedia: "video",
     heroImage: "/images/product-rx.png",

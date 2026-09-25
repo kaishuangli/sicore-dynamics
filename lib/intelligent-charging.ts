@@ -89,14 +89,14 @@ export const intelligentChargingPage = {
       ],
     },
     {
-      id: "fleet-charging",
+      id: "charging-scheduling",
       number: "03",
-      title: "Fleet Charging",
+      title: "Charging Scheduling",
       subtitle: "Coordinated Charging Across Multiple Machines",
       description:
-        "Fleet Charging coordinates charging demand across multiple robots, vehicles, and charging stations based on battery level, task priority, station availability, and operational schedules.",
+        "Charging scheduling coordinates charging demand across robots, vehicles, and charging stations based on battery level, task priority, station availability, and operational schedules.",
       detail:
-        "This helps reduce charging congestion, avoid unnecessary downtime, and improve overall fleet utilization.",
+        "This helps reduce charging congestion, avoid unnecessary downtime, and improve overall fleet utilization through queue management and priority-based scheduling.",
       visual: "fleet",
       technologies: [
         "Queue Management",

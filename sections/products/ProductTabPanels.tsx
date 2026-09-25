@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { getProductTierFromHash, type ProductTierId } from "@/lib/products";
 import type { Locale } from "@/lib/i18n/config";
-import { getProductTiers } from "@/lib/i18n/content";
+import { getProductTiers } from "@/lib/i18n/product-content";
 import ProductPowerPanel from "@/sections/products/ProductPowerPanel";
 
 export default function ProductTabPanels({ locale }: { locale: Locale }) {

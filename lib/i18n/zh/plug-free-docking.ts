@@ -1,6 +1,6 @@
 export const plugFreeDockingPage = {
-  eyebrow: "无插拔对接技术",
-  title: "无插拔对接技术",
+  eyebrow: "对接技术",
+  title: "对接技术",
   subtitle: "无需人工插拔的无缝对接",
   description:
     "SiCore 无插拔对接技术使自主设备无需线缆或人工连接器即可完成充电——通过精密的对接机构、接触式或无线接口、位置检测以及适应户外环境的可靠性设计。",

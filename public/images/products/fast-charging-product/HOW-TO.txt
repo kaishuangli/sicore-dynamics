@@ -1,0 +1,52 @@
+把每个充电器做成一个数字文件夹。封面命名为 cover.png（或 cover.jpg）。没有 cover 时，网站会用该文件夹里的第一张图。其余图片会作为产品相册。
+
+分类目录（两个名字指向同一文件夹）：
+  public/images/products/ev-charging-gun/
+  public/images/products/fast-charging-product/
+
+AC EV Chargers：
+  public/images/products/ev-charging-gun/AC EV Chargers/1/
+  1  -> EV-AC100
+  2  -> EV-AC101
+  3  -> EV-AC102
+  4  -> EV-AC103
+  9  -> EV-AC105
+  10 -> EV-AC106
+  11 -> EV-AC107
+  12 -> EV-AC108
+  13 -> EV-AC109
+
+DC EV Chargers：
+  public/images/products/ev-charging-gun/DC EV Chargers/1/
+  1 -> EV-DC100
+  2 -> EV-DC101
+  3 -> EV-DC102
+  4 -> EV-DC103
+  5 -> EV-DC104
+  6 -> EV-DC105
+
+Portable EV Chargers：
+  public/images/products/ev-charging-gun/Portable EV Chargers/1/
+  1 -> EV-PT100
+  2 -> EV-PT101
+  3 -> EV-PT102
+  4 -> EV-PT103
+  5 -> EV-PT104
+
+Charging Accessories：
+  public/images/products/ev-charging-gun/Charging Accessories/1/
+  1 -> EV-CA100
+  2 -> EV-CA101
+  3 -> EV-CA102
+  4 -> EV-CA103
+  5 -> (removed from site)
+  6 -> EV-CA105
+  7 -> EV-CA106
+  8 -> EV-CA107
+  9 -> EV-CA108
+
+放好后刷新：
+  http://localhost:3000/products/ev-charging-gun
+  http://localhost:3000/products/ev-charging-gun?category=dc-fast-chargers
+  http://localhost:3000/products/ev-charging-gun?category=portable-ev-chargers
+  http://localhost:3000/products/ev-charging-gun?category=charging-accessories

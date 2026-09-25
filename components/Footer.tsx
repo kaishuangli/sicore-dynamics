@@ -4,7 +4,8 @@ import type { Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { withLocale } from "@/lib/i18n/path";
 import { industryNavLinks } from "@/lib/industries";
-import { productNavLinks } from "@/lib/products";
+import { oemNavLinks } from "@/lib/oem-program";
+import { getPublicProductNavLinks } from "@/lib/products";
 import { site } from "@/lib/site";
 import { technologyNavLinks } from "@/lib/technology";
 
@@ -22,8 +23,8 @@ export default function Footer({ locale }: { locale: Locale }) {
     },
     {
       title: dict.footer.products,
-      links: productNavLinks.map((item) => ({
-        label: item.label,
+      links: getPublicProductNavLinks().map((item) => ({
+        label: dict.navProducts[item.id as keyof typeof dict.navProducts] ?? item.label,
         href: L(item.href),
       })),
     },
@@ -35,9 +36,15 @@ export default function Footer({ locale }: { locale: Locale }) {
       })),
     },
     {
+      title: dict.footer.oem,
+      links: oemNavLinks.map((item) => ({
+        label: dict.navOem[item.id as keyof typeof dict.navOem] ?? item.label,
+        href: L(item.href),
+      })),
+    },
+    {
       title: dict.footer.company,
       links: [
-        { label: dict.footer.aboutUs, href: L("/about") },
         { label: dict.footer.knowledgeCenter, href: L("/knowledge") },
         { label: dict.footer.download, href: L("/download") },
         { label: dict.footer.partners, href: L("/partners") },
@@ -68,7 +75,7 @@ export default function Footer({ locale }: { locale: Locale }) {
             </div>
           </div>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
             {columns.map((column) => (
               <div key={column.title}>
                 <h3 className="font-display text-sm font-semibold text-white">{column.title}</h3>

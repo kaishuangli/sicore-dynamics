@@ -149,7 +149,7 @@ export default function IntelligentChargingPanel({ locale }: { locale: Locale })
           <section
             key={module.id}
             id={module.id}
-            className={`border-b border-slate-200/70 py-14 lg:py-20 ${
+            className={`scroll-mt-[190px] border-b border-slate-200/70 py-14 lg:py-20 ${
               index % 2 === 0 ? "bg-white" : "bg-[#F8FAFC]"
             }`}
             aria-labelledby={`${module.id}-heading`}

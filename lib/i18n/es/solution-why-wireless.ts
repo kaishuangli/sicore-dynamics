@@ -235,6 +235,39 @@ export const solutionWhyWireless: Record<IndustryId, WhyWirelessAnalysis> = {
       },
     ],
   },
+  "smart-test-equipments": {
+    rows: [
+      {
+        title: "Por Qué los Laboratorios Necesitan Carga por Acoplamiento Inteligente",
+        paragraphs: [
+          "Los laboratorios y plantas modernas dependen de instrumentos a batería que se mueven entre bancos, líneas y sitios de campo. Los adaptadores de pared y los nidos de cables generan desorden, riesgos de tropiezo y una disponibilidad irregular de la flota.",
+          "Una plataforma de acoplamiento inteligente compartida permite tomar un instrumento, usarlo de forma independiente y devolverlo para carga automática, sin buscar el cable correcto ni dejar herramientas críticas descargadas.",
+          "Para laboratorios que buscan mayor utilización, la infraestructura de carga forma parte del flujo de medición, no un accesorio detrás del rack.",
+        ],
+        visual: {
+          type: "image",
+          src: "/images/smart-test-equipments/scenario-rnd.png",
+          alt: "Laboratorio donde instrumentos portátiles se benefician de la carga en dock compartido",
+        },
+      },
+      {
+        title: "Cómo Funciona el Acoplamiento Smart Test",
+        paragraphs: [
+          "Cada instrumento permanece alimentado por batería para uso portátil. Al colocarlo en el dock compartido, la plataforma reconoce el dispositivo, gestiona la entrega de energía y puede sincronizar el estado de la flota.",
+          "La misma arquitectura escala entre osciloscopios, multímetros, analizadores y módulos DAQ: una plataforma de energía, múltiples instrumentos y crecimiento modular.",
+        ],
+        visual: {
+          type: "principle",
+          steps: [
+            { label: "Tomar y Usar", detail: "Retirar un instrumento a batería del dock para mediciones portátiles" },
+            { label: "Operación Independiente", detail: "Usar el módulo en banco, línea o campo sin adaptadores de CA" },
+            { label: "Volver al Dock", detail: "Colocar el instrumento en la plataforma modular al terminar la tarea" },
+            { label: "Carga y Sincronización", detail: "Carga automática y visibilidad de estado para la siguiente asignación" },
+          ],
+        },
+      },
+    ],
+  },
   "customized-solutions": {
     rows: [
       {

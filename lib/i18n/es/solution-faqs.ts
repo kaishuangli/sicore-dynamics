@@ -198,6 +198,38 @@ export const solutionFaqs: Record<IndustryId, readonly SolutionFaqItem[]> = {
         "Sí. SiCore suministra plataformas TX/RX acopladas para estaciones, estuches, superficies de mobiliario y carga de productos integrados.",
     },
   ],
+  "smart-test-equipments": [
+    {
+      question: "¿Qué son los Smart Test Equipments de SiCore?",
+      answer:
+        "Una plataforma de acoplamiento inteligente modular que alimenta, carga y conecta instrumentos de prueba a batería, para reducir cables y mantener los equipos listos.",
+    },
+    {
+      question: "¿Qué instrumentos pueden compartir la plataforma?",
+      answer:
+        "Módulos a batería como osciloscopios, fuentes, multímetros, analizadores de espectro y DAQ pueden compartir una estación unificada con reconocimiento automático.",
+    },
+    {
+      question: "¿Cómo mejora la carga automática la productividad del laboratorio?",
+      answer:
+        "El ingeniero toma el instrumento, lo usa de forma independiente y lo devuelve al dock. La carga y el estado se sincronizan automáticamente.",
+    },
+    {
+      question: "¿La plataforma escala si crece la flota de instrumentos?",
+      answer:
+        "Sí. La arquitectura es modular y escalable, permitiendo añadir tipos de instrumentos y capacidad de acoplamiento según la demanda.",
+    },
+    {
+      question: "¿SiCore soporta integración OEM para fabricantes de instrumentos?",
+      answer:
+        "Sí. SiCore colabora con OEMs para integrar receptores, diseñar docks compartidos y comunicar estado de batería al sistema anfitrión.",
+    },
+    {
+      question: "¿Dónde se despliega habitualmente?",
+      answer:
+        "Laboratorios de I+D, líneas de prueba en producción, equipos de servicio de campo y laboratorios educativos o de formación.",
+    },
+  ],
   "customized-solutions": [
     {
       question: "¿Cuándo debe un proyecto utilizar carga inalámbrica personalizada en lugar de productos estándar?",

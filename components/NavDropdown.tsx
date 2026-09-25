@@ -7,6 +7,7 @@ import { createPortal } from "react-dom";
 type NavDropdownItem = {
   label: string;
   href: string;
+  nested?: boolean;
 };
 
 type NavDropdownProps = {
@@ -132,8 +133,12 @@ export default function NavDropdown({ label, href, items, active, menuOnly = fal
               key={`${item.href}::${item.label}`}
               href={item.href}
               role="menuitem"
-              className="block px-4 py-2.5 text-[13px] font-semibold leading-snug text-slate-800 transition hover:bg-[rgba(11,95,255,0.08)] hover:text-[#0B5FFF]"
-              onClick={closeMenu}
+              className={`block py-2.5 text-[13px] font-semibold leading-snug text-slate-800 transition hover:bg-[rgba(11,95,255,0.08)] hover:text-[#0B5FFF] ${
+                item.nested ? "px-4 pl-8 text-[12px] font-medium text-slate-600" : "px-4"
+              }`}
+              onClick={() => {
+                window.setTimeout(closeMenu, 0);
+              }}
             >
               {item.label}
             </Link>

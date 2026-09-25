@@ -89,12 +89,12 @@ export const intelligentChargingPage = {
       ],
     },
     {
-      id: "fleet-charging",
+      id: "charging-scheduling",
       number: "03",
-      title: "车队充电",
+      title: "充电调度",
       subtitle: "跨多设备的协同充电",
       description:
-        "车队充电根据电量水平、任务优先级、充电站可用性与运营排班，协调多台机器人、车辆与充电站之间的充电需求。",
+        "充电调度根据电量水平、任务优先级、充电站可用性与运营排班，协调多台机器人、车辆与充电站之间的充电需求。",
       detail:
         "这有助于减少充电拥堵、避免不必要的停机，并提升车队整体利用率。",
       visual: "fleet",

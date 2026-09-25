@@ -35,7 +35,7 @@ export default function AboutSection({ locale }: { locale: Locale }) {
             </h2>
           </div>
           <Link
-            href={L("/about")}
+            href={L("/oem/why-sicore")}
             className="shrink-0 text-sm font-bold text-[#0B5FFF] transition hover:opacity-80"
           >
             {dict.home.aboutCta}

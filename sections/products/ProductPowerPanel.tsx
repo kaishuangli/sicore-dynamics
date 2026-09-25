@@ -1,20 +1,29 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
-import { getProduct3000w, getProductTiers } from "@/lib/i18n/content";
+import { getProduct3000w } from "@/lib/i18n/content";
+import { getProductTiers } from "@/lib/i18n/product-content";
 import { withLocale } from "@/lib/i18n/path";
 
 type ProductTier = ReturnType<typeof getProductTiers>[number];
 
-export default function ProductPowerPanel({ tier, locale }: { tier: ProductTier; locale: Locale }) {
+export default function ProductPowerPanel({
+  tier,
+  locale,
+  embedded = false,
+}: {
+  tier: ProductTier;
+  locale: Locale;
+  embedded?: boolean;
+}) {
   const isZh = locale === "zh";
   const L = (href: string) => withLocale(href, locale);
   const show3000wSpecs = tier.id === "3000w";
   const { wireless3000wSpecGroups } = getProduct3000w(locale);
 
   return (
-    <div className="py-12 lg:py-16">
-      <div className="container-page">
+    <div className={embedded ? "px-5 py-8 md:px-8 lg:px-10 lg:py-12" : "py-12 lg:py-16"}>
+      <div className={embedded ? undefined : "container-page"}>
         <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#0B5FFF]">
           {tier.label} {isZh ? "产品" : "Product"}
         </p>
