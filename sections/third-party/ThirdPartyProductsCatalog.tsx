@@ -58,6 +58,7 @@ export default function ThirdPartyProductsCatalog({
   const categoryNavLabel = isZh ? "产品分类" : isEs ? "Categorías" : "Categories";
   const buyOnlineLabel = isZh ? "现货可购" : isEs ? "Compra online" : "Buy online";
   const stockLabel = isZh ? "有货" : isEs ? "EN STOCK" : "IN STOCK";
+  const quoteLabel = isZh ? "询价" : isEs ? "Cotizar" : "Quote";
   const countLabel = isZh
     ? `共 ${sorted.length} 款产品`
     : isEs
@@ -176,6 +177,7 @@ export default function ThirdPartyProductsCatalog({
             <div className="grid grid-cols-1 gap-x-5 gap-y-10 sm:grid-cols-2 xl:grid-cols-3">
               {sorted.map((item) => {
                 const productTitle = getThirdPartyProductTitle(item, locale);
+                const priced = item.priceCents > 0;
                 return (
                   <article key={item.id} className="group flex flex-col">
                     <Link href={L(`/third-party-products/${item.id}`)} className="block">
@@ -204,11 +206,13 @@ export default function ThirdPartyProductsCatalog({
                     <p className="mt-1 text-sm text-slate-500">{item.brand}</p>
                     <div className="mt-2 flex flex-wrap items-center gap-2">
                       <span className="text-base font-bold text-[#0F766E]">
-                        {formatUsd(item.priceCents, locale)}
+                        {priced ? formatUsd(item.priceCents, locale) : quoteLabel}
                       </span>
-                      <span className="rounded-full border border-emerald-500 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.08em] text-emerald-600">
-                        {stockLabel}
-                      </span>
+                      {item.inStock ? (
+                        <span className="rounded-full border border-emerald-500 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.08em] text-emerald-600">
+                          {stockLabel}
+                        </span>
+                      ) : null}
                     </div>
                     <ul className="mt-3 space-y-1">
                       {item.specs.slice(0, 3).map((spec) => (
@@ -219,7 +223,16 @@ export default function ThirdPartyProductsCatalog({
                       ))}
                     </ul>
                     <div className="mt-auto pt-1">
-                      <AddToCartButton productId={item.id} locale={locale} />
+                      {priced ? (
+                        <AddToCartButton productId={item.id} locale={locale} />
+                      ) : (
+                        <Link
+                          href={L(`/third-party-products/${item.id}`)}
+                          className="mt-3 inline-flex w-full items-center justify-center border border-[#0B5FFF] px-4 py-2.5 text-xs font-bold text-[#0B5FFF] transition hover:bg-[#0B5FFF] hover:text-white"
+                        >
+                          {quoteLabel}
+                        </Link>
+                      )}
                     </div>
                   </article>
                 );

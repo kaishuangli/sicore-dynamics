@@ -2,6 +2,715 @@
   "version": 1,
   "products": [
     {
+      "id": "wdd35d4",
+      "catalogId": "third-party-products",
+      "subcategoryId": "sensors-sensing",
+      "brand": "WHEELTEC",
+      "name": {
+        "en": "WDD35D4 Absolute Angular Displacement Sensor",
+        "zh": "WDD35D4 绝对角位移传感器",
+        "es": "Sensor de desplazamiento angular absoluto WDD35D4"
+      },
+      "tagline": {
+        "en": "Precision potentiometric rotary-position sensor with continuous analog output.",
+        "zh": "连续模拟输出的精密电位式转角传感器。",
+        "es": "Sensor potenciométrico de posición rotatoria con salida analógica continua."
+      },
+      "description": {
+        "en": "The WDD35D4 converts shaft angle into a continuous analog signal. It offers 360° mechanical rotation, 345° electrical travel, ±0.1% linearity, and a 20 million revolution mechanical life.",
+        "zh": "WDD35D4 把转轴角度转换成连续模拟信号。机械转角 360°，电气行程 345°，线性度 ±0.1%，机械寿命 2000 万转。",
+        "es": "El WDD35D4 convierte el ángulo del eje en una señal analógica continua. Ofrece 360° de giro mecánico, 345° de recorrido eléctrico, linealidad de ±0,1 % y una vida mecánica de 20 millones de revoluciones."
+      },
+      "image": "/images/products/third-party-products/wdd35d4/cover.png",
+      "imageAlt": {
+        "en": "WDD35D4 Absolute Angular Displacement Sensor",
+        "zh": "WDD35D4 绝对角位移传感器",
+        "es": "Sensor de desplazamiento angular absoluto WDD35D4"
+      },
+      "gallery": [
+        "/images/products/third-party-products/wdd35d4/cover.png",
+        "/images/products/third-party-products/wdd35d4/1.png",
+        "/images/products/third-party-products/wdd35d4/2.png",
+        "/images/products/third-party-products/wdd35d4/3.png",
+        "/images/products/third-party-products/wdd35d4/4.png",
+        "/images/products/third-party-products/wdd35d4/5.png",
+        "/images/products/third-party-products/wdd35d4/6.png",
+        "/images/products/third-party-products/wdd35d4/7.png",
+        "/images/products/third-party-products/wdd35d4/8.png",
+        "/images/products/third-party-products/wdd35d4/9.png",
+        "/images/products/third-party-products/wdd35d4/10.png",
+        "/images/products/third-party-products/wdd35d4/11.png"
+      ],
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Mechanical rotation",
+          "value": "360°"
+        },
+        {
+          "label": "Electrical rotation",
+          "value": "345°"
+        },
+        {
+          "label": "Linearity",
+          "value": "±0.1%"
+        },
+        {
+          "label": "Resolution",
+          "value": "Continuous"
+        },
+        {
+          "label": "Mechanical life",
+          "value": "20,000,000 revolutions"
+        },
+        {
+          "label": "Protection",
+          "value": "IP40"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-26T16:08:15Z",
+      "updatedAt": "2026-09-26T16:08:15Z",
+      "datasheetHref": "/downloads/third-party-products/WDD35D4_Professional_Datasheet.pdf"
+    },
+    {
+      "id": "tfmini-s",
+      "catalogId": "third-party-products",
+      "subcategoryId": "sensors-sensing",
+      "brand": "Benewake",
+      "name": {
+        "en": "TFmini-S ToF LiDAR Module",
+        "zh": "TFmini-S 飞行时间激光测距模块",
+        "es": "Módulo LiDAR ToF TFmini-S"
+      },
+      "tagline": {
+        "en": "Compact 12 m single-point Time-of-Flight distance sensor.",
+        "zh": "12 米级小型单点飞行时间测距传感器。",
+        "es": "Sensor de distancia ToF de un punto, compacto, de 12 m."
+      },
+      "description": {
+        "en": "TFmini-S is a miniature single-point LiDAR for robotics, UAVs, and embedded systems. It measures 0.1–12 m, weighs about 5 g, and speaks UART or I²C.",
+        "zh": "TFmini-S 是面向机器人、无人机和嵌入式系统的小型单点激光雷达。量程 0.1–12 m，重量约 5 g，接口为 UART 或 I²C。",
+        "es": "TFmini-S es un LiDAR de un punto en miniatura para robots, UAV y sistemas embebidos. Mide de 0,1 a 12 m, pesa unos 5 g y se comunica por UART o I²C."
+      },
+      "image": "/images/products/third-party-products/tfmini-s/cover.png",
+      "imageAlt": {
+        "en": "TFmini-S ToF LiDAR Module",
+        "zh": "TFmini-S 飞行时间激光测距模块",
+        "es": "Módulo LiDAR ToF TFmini-S"
+      },
+      "gallery": [
+        "/images/products/third-party-products/tfmini-s/cover.png",
+        "/images/products/third-party-products/tfmini-s/1.png",
+        "/images/products/third-party-products/tfmini-s/2.png",
+        "/images/products/third-party-products/tfmini-s/3.png",
+        "/images/products/third-party-products/tfmini-s/6.png",
+        "/images/products/third-party-products/tfmini-s/7.png",
+        "/images/products/third-party-products/tfmini-s/8.png",
+        "/images/products/third-party-products/tfmini-s/9.png",
+        "/images/products/third-party-products/tfmini-s/10.png"
+      ],
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Range",
+          "value": "0.1–12 m at 90% reflectivity"
+        },
+        {
+          "label": "Accuracy",
+          "value": "±6 cm (0.1–6 m); ±1% (6–12 m)"
+        },
+        {
+          "label": "Update rate",
+          "value": "Up to 1000 Hz"
+        },
+        {
+          "label": "Interface",
+          "value": "UART / I²C"
+        },
+        {
+          "label": "Size",
+          "value": "42 × 15 × 16 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "5 g ±0.3 g"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-26T16:08:15Z",
+      "updatedAt": "2026-09-26T16:08:15Z",
+      "datasheetHref": "/downloads/third-party-products/TFmini-S_ToF_LiDAR_Module_Datasheet.pdf"
+    },
+    {
+      "id": "tf-luna",
+      "catalogId": "third-party-products",
+      "subcategoryId": "sensors-sensing",
+      "brand": "Benewake",
+      "name": {
+        "en": "TF-Luna 8 m Low-Cost LiDAR",
+        "zh": "TF-Luna 8 米低成本激光雷达",
+        "es": "LiDAR TF-Luna de 8 m y bajo coste"
+      },
+      "tagline": {
+        "en": "Compact, lightweight single-point ToF module under 5 g.",
+        "zh": "不足 5 克的小型轻量单点飞行时间测距模块。",
+        "es": "Módulo ToF de un punto, compacto y de menos de 5 g."
+      },
+      "description": {
+        "en": "TF-Luna is a low-power single-point LiDAR for embedded distance measurement. Range is 0.2–8 m, frame rate is adjustable from 1 to 250 Hz, and the module uses UART or I2C.",
+        "zh": "TF-Luna 是低功耗单点激光雷达，用于嵌入式测距。量程 0.2–8 m，帧率 1–250 Hz 可调，接口为 UART 或 I2C。",
+        "es": "TF-Luna es un LiDAR de un punto y bajo consumo para medición embebida. El alcance es de 0,2 a 8 m, la frecuencia se ajusta de 1 a 250 Hz y usa UART o I2C."
+      },
+      "image": "/images/products/third-party-products/tf-luna/cover.png",
+      "imageAlt": {
+        "en": "TF-Luna 8 m Low-Cost LiDAR",
+        "zh": "TF-Luna 8 米低成本激光雷达",
+        "es": "LiDAR TF-Luna de 8 m y bajo coste"
+      },
+      "gallery": [
+        "/images/products/third-party-products/tf-luna/cover.png",
+        "/images/products/third-party-products/tf-luna/1.png",
+        "/images/products/third-party-products/tf-luna/3.png",
+        "/images/products/third-party-products/tf-luna/4.png",
+        "/images/products/third-party-products/tf-luna/5.png",
+        "/images/products/third-party-products/tf-luna/6.png",
+        "/images/products/third-party-products/tf-luna/7.png",
+        "/images/products/third-party-products/tf-luna/8.png",
+        "/images/products/third-party-products/tf-luna/9.png"
+      ],
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Range",
+          "value": "0.2–8 m"
+        },
+        {
+          "label": "Accuracy",
+          "value": "±6 cm (0.2–3 m); ±2% (3–8 m)"
+        },
+        {
+          "label": "Frame rate",
+          "value": "1–250 Hz"
+        },
+        {
+          "label": "Interface",
+          "value": "UART / I2C"
+        },
+        {
+          "label": "Size",
+          "value": "35 × 21.25 × 13.5 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "<5 g"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-26T16:08:15Z",
+      "updatedAt": "2026-09-26T16:08:15Z",
+      "datasheetHref": "/downloads/third-party-products/TF-Luna_8m_Low-Cost_LiDAR_Datasheet.pdf"
+    },
+    {
+      "id": "n300-pro",
+      "catalogId": "third-party-products",
+      "subcategoryId": "sensors-sensing",
+      "brand": "HIPNUC",
+      "name": {
+        "en": "N300 Pro / N300WP Pro 9-Axis IMU",
+        "zh": "N300 Pro / N300WP Pro 九轴惯性测量单元",
+        "es": "IMU de 9 ejes N300 Pro / N300WP Pro"
+      },
+      "tagline": {
+        "en": "High-rate MEMS attitude sensor for robotics, UAVs, and industrial motion.",
+        "zh": "面向机器人、无人机与工业运动测量的高速率 MEMS 姿态传感器。",
+        "es": "Sensor de actitud MEMS de alta velocidad para robots, UAV y movimiento industrial."
+      },
+      "description": {
+        "en": "The N300 Pro family combines a 3-axis accelerometer, gyroscope, and magnetometer, with a barometer on the N300 Pro. Output reaches 1000 Hz. The compact N300 Pro uses Type-C; the waterproof N300WP Pro adds TTL, CAN, and RS485.",
+        "zh": "N300 Pro 系列集成三轴加速度计、陀螺仪和磁力计，N300 Pro 还带气压计。输出最高 1000 Hz。小型 N300 Pro 使用 Type-C；防水型 N300WP Pro 提供 TTL、CAN 和 RS485。",
+        "es": "La familia N300 Pro combina acelerómetro, giroscopio y magnetómetro de 3 ejes, con barómetro en el N300 Pro. La salida llega a 1000 Hz. El N300 Pro compacto usa Type-C; el N300WP Pro estanco añade TTL, CAN y RS485."
+      },
+      "image": "/images/products/third-party-products/n300-pro/1.png",
+      "imageAlt": {
+        "en": "N300 Pro / N300WP Pro 9-Axis IMU",
+        "zh": "N300 Pro / N300WP Pro 九轴惯性测量单元",
+        "es": "IMU de 9 ejes N300 Pro / N300WP Pro"
+      },
+      "gallery": [
+        "/images/products/third-party-products/n300-pro/1.png",
+        "/images/products/third-party-products/n300-pro/2.png",
+        "/images/products/third-party-products/n300-pro/3.png",
+        "/images/products/third-party-products/n300-pro/4.png",
+        "/images/products/third-party-products/n300-pro/5.png",
+        "/images/products/third-party-products/n300-pro/6.png",
+        "/images/products/third-party-products/n300-pro/7.png",
+        "/images/products/third-party-products/n300-pro/8.png",
+        "/images/products/third-party-products/n300-pro/9.png",
+        "/images/products/third-party-products/n300-pro/10.png",
+        "/images/products/third-party-products/n300-pro/11.png",
+        "/images/products/third-party-products/n300-pro/12.png",
+        "/images/products/third-party-products/n300-pro/13.png",
+        "/images/products/third-party-products/n300-pro/14.png",
+        "/images/products/third-party-products/n300-pro/15.png",
+        "/images/products/third-party-products/n300-pro/16.png",
+        "/images/products/third-party-products/n300-pro/17.png",
+        "/images/products/third-party-products/n300-pro/18.png"
+      ],
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Output rate",
+          "value": "Up to 1000 Hz"
+        },
+        {
+          "label": "Gyro bias instability",
+          "value": "As low as 1.6°/h"
+        },
+        {
+          "label": "N300 Pro interface",
+          "value": "Type-C"
+        },
+        {
+          "label": "N300WP Pro interface",
+          "value": "TTL, CAN, RS485"
+        },
+        {
+          "label": "Supply",
+          "value": "3.3–5 V DC"
+        },
+        {
+          "label": "Operating temperature",
+          "value": "−40°C to +85°C"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-26T16:08:15Z",
+      "updatedAt": "2026-09-26T16:08:15Z",
+      "datasheetHref": "/downloads/third-party-products/N300_Pro_N300WP_Pro_9-Axis_IMU_Datasheet.pdf"
+    },
+    {
+      "id": "linktrack-aoa",
+      "catalogId": "third-party-products",
+      "subcategoryId": "sensors-sensing",
+      "brand": "Nooploop",
+      "name": {
+        "en": "LinkTrack AOA UWB Positioning System",
+        "zh": "LinkTrack AOA 超宽带定位系统",
+        "es": "Sistema de posicionamiento UWB LinkTrack AOA"
+      },
+      "tagline": {
+        "en": "UWB ranging, angle-of-arrival, and bidirectional wireless data in one system.",
+        "zh": "一套系统同时完成超宽带测距、到达角测量和双向无线数据传输。",
+        "es": "Medición UWB, ángulo de llegada y datos inalámbricos bidireccionales en un solo sistema."
+      },
+      "description": {
+        "en": "LinkTrack AOA pairs a compact tag with an anchor for relative distance and direction. Repeat accuracy is ±5 cm and ±5°, communication reaches 120 m, and the host interface is UART.",
+        "zh": "LinkTrack AOA 由紧凑标签和基站组成，用于相对距离和方向测量。重复精度 ±5 cm、±5°，通信距离 120 m，主机接口为 UART。",
+        "es": "LinkTrack AOA combina una etiqueta compacta y un ancla para distancia y dirección relativas. La precisión de repetición es de ±5 cm y ±5°, el alcance de comunicación es de 120 m y la interfaz es UART."
+      },
+      "image": "/images/products/third-party-products/linktrack-aoa/1.png",
+      "imageAlt": {
+        "en": "LinkTrack AOA UWB Positioning System",
+        "zh": "LinkTrack AOA 超宽带定位系统",
+        "es": "Sistema de posicionamiento UWB LinkTrack AOA"
+      },
+      "gallery": [
+        "/images/products/third-party-products/linktrack-aoa/1.png",
+        "/images/products/third-party-products/linktrack-aoa/2.png",
+        "/images/products/third-party-products/linktrack-aoa/3.png",
+        "/images/products/third-party-products/linktrack-aoa/4.png",
+        "/images/products/third-party-products/linktrack-aoa/5.png",
+        "/images/products/third-party-products/linktrack-aoa/6.png",
+        "/images/products/third-party-products/linktrack-aoa/7.png",
+        "/images/products/third-party-products/linktrack-aoa/8.png",
+        "/images/products/third-party-products/linktrack-aoa/9.png",
+        "/images/products/third-party-products/linktrack-aoa/10.png",
+        "/images/products/third-party-products/linktrack-aoa/11.png"
+      ],
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Ranging accuracy",
+          "value": "±5 cm repeat"
+        },
+        {
+          "label": "Direction accuracy",
+          "value": "±5°"
+        },
+        {
+          "label": "Angular range",
+          "value": "150°"
+        },
+        {
+          "label": "Communication distance",
+          "value": "120 m"
+        },
+        {
+          "label": "Update rate",
+          "value": "1–200 Hz"
+        },
+        {
+          "label": "Interface",
+          "value": "UART"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-26T16:08:15Z",
+      "updatedAt": "2026-09-26T16:08:15Z",
+      "datasheetHref": "/downloads/third-party-products/LinkTrack_AOA_UWB_Positioning_System_Datasheet.pdf"
+    },
+    {
+      "id": "ydlidar-x4-pro",
+      "catalogId": "third-party-products",
+      "subcategoryId": "sensors-sensing",
+      "brand": "YDLIDAR",
+      "name": {
+        "en": "YDLIDAR X4 Pro 360° 2D LiDAR",
+        "zh": "YDLIDAR X4 Pro 360° 二维激光雷达",
+        "es": "LiDAR 2D de 360° YDLIDAR X4 Pro"
+      },
+      "tagline": {
+        "en": "Compact 10 m scanning LiDAR for navigation, mapping, and obstacle avoidance.",
+        "zh": "用于导航、建图和避障的 10 米级小型扫描激光雷达。",
+        "es": "LiDAR de barrido compacto de 10 m para navegación, mapeo y evasión de obstáculos."
+      },
+      "description": {
+        "en": "The X4 Pro scans a full 360° at 5000 Hz ranging frequency. Measurement radius is 0.12–10 m at 80% reflectivity, with a scan rate of 6–12 Hz.",
+        "zh": "X4 Pro 以 5000 Hz 测距频率做 360° 扫描。在 80% 反射率下量程为 0.12–10 m，扫描频率 6–12 Hz。",
+        "es": "El X4 Pro escanea 360° completos con una frecuencia de medición de 5000 Hz. El radio es de 0,12 a 10 m al 80 % de reflectividad, con un barrido de 6 a 12 Hz."
+      },
+      "image": "/images/products/third-party-products/ydlidar-x4-pro/cover.png",
+      "imageAlt": {
+        "en": "YDLIDAR X4 Pro 360° 2D LiDAR",
+        "zh": "YDLIDAR X4 Pro 360° 二维激光雷达",
+        "es": "LiDAR 2D de 360° YDLIDAR X4 Pro"
+      },
+      "gallery": [
+        "/images/products/third-party-products/ydlidar-x4-pro/cover.png",
+        "/images/products/third-party-products/ydlidar-x4-pro/2.png",
+        "/images/products/third-party-products/ydlidar-x4-pro/3.png",
+        "/images/products/third-party-products/ydlidar-x4-pro/4.png",
+        "/images/products/third-party-products/ydlidar-x4-pro/5.png",
+        "/images/products/third-party-products/ydlidar-x4-pro/6.png",
+        "/images/products/third-party-products/ydlidar-x4-pro/7.png",
+        "/images/products/third-party-products/ydlidar-x4-pro/8.png"
+      ],
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Scan angle",
+          "value": "360°"
+        },
+        {
+          "label": "Range",
+          "value": "0.12–10 m at 80% reflectivity"
+        },
+        {
+          "label": "Ranging frequency",
+          "value": "5000 Hz"
+        },
+        {
+          "label": "Scan frequency",
+          "value": "6–12 Hz"
+        },
+        {
+          "label": "Angular resolution",
+          "value": "0.5° at 7 Hz"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-26T16:08:15Z",
+      "updatedAt": "2026-09-26T16:08:15Z",
+      "datasheetHref": "/downloads/third-party-products/YDLIDAR_X4_Pro_2D_LiDAR_Datasheet.pdf"
+    },
+    {
+      "id": "tsl1401",
+      "catalogId": "third-party-products",
+      "subcategoryId": "sensors-sensing",
+      "brand": "TSL1401",
+      "name": {
+        "en": "TSL1401 Linear CCD Line-Tracking Sensor",
+        "zh": "TSL1401 线性 CCD 循迹传感器",
+        "es": "Sensor de seguimiento de línea CCD lineal TSL1401"
+      },
+      "tagline": {
+        "en": "128-pixel line-scan camera module for high-speed path recognition.",
+        "zh": "用于高速路径识别的 128 像素线阵扫描模块。",
+        "es": "Módulo de cámara de barrido lineal de 128 píxeles para reconocimiento de trayectoria a alta velocidad."
+      },
+      "description": {
+        "en": "The TSL1401 module outputs an analog grayscale line from 128 photodiode pixels. It runs from 3.3–5 V, uses a 56° lens, and is intended for line tracking at 5–40 cm.",
+        "zh": "TSL1401 模块用 128 个光电二极管像素输出一行模拟灰度。供电 3.3–5 V，配备 56° 镜头，循迹距离 5–40 cm。",
+        "es": "El módulo TSL1401 entrega una línea de escala de grises analógica desde 128 píxeles de fotodiodo. Funciona a 3,3–5 V, usa una lente de 56° y está pensado para seguimiento de línea a 5–40 cm."
+      },
+      "image": "/images/products/third-party-products/tsl1401/cover.jpg",
+      "imageAlt": {
+        "en": "TSL1401 Linear CCD Line-Tracking Sensor",
+        "zh": "TSL1401 线性 CCD 循迹传感器",
+        "es": "Sensor de seguimiento de línea CCD lineal TSL1401"
+      },
+      "gallery": [
+        "/images/products/third-party-products/tsl1401/cover.jpg",
+        "/images/products/third-party-products/tsl1401/4.jpg",
+        "/images/products/third-party-products/tsl1401/4.png",
+        "/images/products/third-party-products/tsl1401/5.jpg",
+        "/images/products/third-party-products/tsl1401/7.jpg",
+        "/images/products/third-party-products/tsl1401/13.jpg",
+        "/images/products/third-party-products/tsl1401/15.jpg",
+        "/images/products/third-party-products/tsl1401/16.jpg",
+        "/images/products/third-party-products/tsl1401/17.jpg"
+      ],
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Sensor array",
+          "value": "128 linear pixels"
+        },
+        {
+          "label": "Detection distance",
+          "value": "5–40 cm"
+        },
+        {
+          "label": "Output",
+          "value": "Analog grayscale"
+        },
+        {
+          "label": "Update rate",
+          "value": "≤100 Hz"
+        },
+        {
+          "label": "Lens",
+          "value": "56°"
+        },
+        {
+          "label": "Supply",
+          "value": "3.3–5 V DC"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-26T16:08:15Z",
+      "updatedAt": "2026-09-26T16:08:15Z",
+      "datasheetHref": "/downloads/third-party-products/TSL1401_Linear_CCD_Line_Tracking_Sensor_Datasheet.pdf"
+    },
+    {
+      "id": "tf03-100",
+      "catalogId": "third-party-products",
+      "subcategoryId": "sensors-sensing",
+      "brand": "Benewake",
+      "name": {
+        "en": "TF03-100 100 m IP67 LiDAR",
+        "zh": "TF03-100 100 米 IP67 激光雷达",
+        "es": "LiDAR TF03-100 de 100 m IP67"
+      },
+      "tagline": {
+        "en": "Long-range single-point ToF LiDAR with industrial interfaces.",
+        "zh": "带工业接口的远距离单点飞行时间激光雷达。",
+        "es": "LiDAR ToF de un punto y largo alcance con interfaces industriales."
+      },
+      "description": {
+        "en": "TF03-100 measures up to 100 m on high-reflectivity targets and stays IP67 sealed. Frame rate is adjustable to 1000 Hz, with UART/CAN or RS485/RS232 versions.",
+        "zh": "TF03-100 在高反射率目标上最远测到 100 m，防护等级 IP67。帧率最高 1000 Hz 可调，可选 UART/CAN 或 RS485/RS232。",
+        "es": "El TF03-100 mide hasta 100 m en objetivos de alta reflectividad y mantiene protección IP67. La frecuencia se ajusta hasta 1000 Hz, con versiones UART/CAN o RS485/RS232."
+      },
+      "image": "/images/products/third-party-products/tf03-100/1.jpg",
+      "imageAlt": {
+        "en": "TF03-100 100 m IP67 LiDAR",
+        "zh": "TF03-100 100 米 IP67 激光雷达",
+        "es": "LiDAR TF03-100 de 100 m IP67"
+      },
+      "gallery": [
+        "/images/products/third-party-products/tf03-100/1.jpg",
+        "/images/products/third-party-products/tf03-100/2.jpg",
+        "/images/products/third-party-products/tf03-100/3.jpg",
+        "/images/products/third-party-products/tf03-100/4.jpg",
+        "/images/products/third-party-products/tf03-100/5.jpg",
+        "/images/products/third-party-products/tf03-100/6.jpg",
+        "/images/products/third-party-products/tf03-100/7.jpg",
+        "/images/products/third-party-products/tf03-100/8.jpg",
+        "/images/products/third-party-products/tf03-100/9.jpg"
+      ],
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Range",
+          "value": "0.1–100 m at 90% reflectivity"
+        },
+        {
+          "label": "Accuracy",
+          "value": "±10 cm within 10 m; ±1% beyond"
+        },
+        {
+          "label": "Frame rate",
+          "value": "1–1000 Hz"
+        },
+        {
+          "label": "Protection",
+          "value": "IP67"
+        },
+        {
+          "label": "Interfaces",
+          "value": "UART / CAN or RS485 / RS232"
+        },
+        {
+          "label": "Supply",
+          "value": "5–24 V"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-26T16:08:15Z",
+      "updatedAt": "2026-09-26T16:08:15Z",
+      "datasheetHref": "/downloads/third-party-products/TF03-100_100m_IP67_LiDAR_Datasheet.pdf"
+    },
+    {
+      "id": "tf02-i",
+      "catalogId": "third-party-products",
+      "subcategoryId": "sensors-sensing",
+      "brand": "Benewake",
+      "name": {
+        "en": "TF02-i RS485/CAN Mid-Range LiDAR",
+        "zh": "TF02-i RS485/CAN 中距激光雷达",
+        "es": "LiDAR de medio alcance TF02-i RS485/CAN"
+      },
+      "tagline": {
+        "en": "Industrial 40 m single-point LiDAR with RS485 and CAN.",
+        "zh": "带 RS485 和 CAN 的工业级 40 米单点激光雷达。",
+        "es": "LiDAR industrial de un punto y 40 m con RS485 y CAN."
+      },
+      "description": {
+        "en": "TF02-i is an industrial single-point LiDAR for robotics, vehicles, and UAV distance sensing. It covers 0.1–40 m, accepts 7–30 V, and is rated IP65.",
+        "zh": "TF02-i 是面向机器人、车辆和无人机测距的工业级单点激光雷达。量程 0.1–40 m，输入 7–30 V，防护等级 IP65。",
+        "es": "TF02-i es un LiDAR industrial de un punto para robots, vehículos y UAV. Cubre de 0,1 a 40 m, acepta 7–30 V y tiene protección IP65."
+      },
+      "image": "/images/products/third-party-products/tf02-i/cover.jpg",
+      "imageAlt": {
+        "en": "TF02-i RS485/CAN Mid-Range LiDAR",
+        "zh": "TF02-i RS485/CAN 中距激光雷达",
+        "es": "LiDAR de medio alcance TF02-i RS485/CAN"
+      },
+      "gallery": [
+        "/images/products/third-party-products/tf02-i/cover.jpg",
+        "/images/products/third-party-products/tf02-i/2.jpg",
+        "/images/products/third-party-products/tf02-i/3.jpg",
+        "/images/products/third-party-products/tf02-i/4.jpg",
+        "/images/products/third-party-products/tf02-i/5.jpg"
+      ],
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Range",
+          "value": "0.1–40 m at 90% reflectivity"
+        },
+        {
+          "label": "Accuracy",
+          "value": "±5 cm (0.1–5 m); ±1% (5–40 m)"
+        },
+        {
+          "label": "Interfaces",
+          "value": "RS485 / CAN"
+        },
+        {
+          "label": "Protection",
+          "value": "IP65"
+        },
+        {
+          "label": "Supply",
+          "value": "7–30 V DC"
+        },
+        {
+          "label": "Frame rate",
+          "value": "1–100 Hz"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-26T16:08:15Z",
+      "updatedAt": "2026-09-26T16:08:15Z",
+      "datasheetHref": "/downloads/third-party-products/TF02-i_RS485_CAN_Mid-Range_LiDAR_Datasheet.pdf"
+    },
+    {
+      "id": "tnav2",
+      "catalogId": "third-party-products",
+      "subcategoryId": "sensors-sensing",
+      "brand": "TNAV",
+      "name": {
+        "en": "TNAV2.0 Wheeled Robot Positioning and Navigation Kit",
+        "zh": "TNAV2.0 轮式机器人定位导航套件",
+        "es": "Kit de posicionamiento y navegación TNAV2.0 para robots con ruedas"
+      },
+      "tagline": {
+        "en": "Navigation kit with 3D LiDAR, a ToF camera, and six ultrasonic radars.",
+        "zh": "包含三维激光雷达、ToF 相机和六路超声波雷达的导航套件。",
+        "es": "Kit de navegación con LiDAR 3D, cámara ToF y seis radares ultrasónicos."
+      },
+      "description": {
+        "en": "TNAV2.0 is a positioning and navigation suite for wheeled robots. It combines a Livox MID-360 3D LiDAR, a ToF depth camera, and six industrial ultrasonic sensors, with a stated positioning accuracy of ±1 cm.",
+        "zh": "TNAV2.0 是面向轮式机器人的定位导航套件。它组合 Livox MID-360 三维激光雷达、ToF 深度相机和六路工业超声波传感器，标称定位精度 ±1 cm。",
+        "es": "TNAV2.0 es un conjunto de posicionamiento y navegación para robots con ruedas. Combina un LiDAR 3D Livox MID-360, una cámara de profundidad ToF y seis sensores ultrasónicos industriales, con una precisión de posicionamiento indicada de ±1 cm."
+      },
+      "image": "/images/products/third-party-products/tnav2/1.png",
+      "imageAlt": {
+        "en": "TNAV2.0 Wheeled Robot Positioning and Navigation Kit",
+        "zh": "TNAV2.0 轮式机器人定位导航套件",
+        "es": "Kit de posicionamiento y navegación TNAV2.0 para robots con ruedas"
+      },
+      "gallery": [
+        "/images/products/third-party-products/tnav2/1.png",
+        "/images/products/third-party-products/tnav2/1.webp",
+        "/images/products/third-party-products/tnav2/2.webp",
+        "/images/products/third-party-products/tnav2/3.png",
+        "/images/products/third-party-products/tnav2/3.webp",
+        "/images/products/third-party-products/tnav2/4.png",
+        "/images/products/third-party-products/tnav2/4.webp"
+      ],
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Positioning accuracy",
+          "value": "±1 cm"
+        },
+        {
+          "label": "3D LiDAR",
+          "value": "Livox MID-360"
+        },
+        {
+          "label": "Vision",
+          "value": "ToF depth camera"
+        },
+        {
+          "label": "Ultrasonic",
+          "value": "6 industrial radars"
+        },
+        {
+          "label": "Navigation",
+          "value": "Autonomous positioning and waypoint topology"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-26T16:08:15Z",
+      "updatedAt": "2026-09-26T16:08:15Z",
+      "datasheetHref": "/downloads/third-party-products/TNAV2.0_Wheeled_Robot_Positioning_Navigation_Kit_Datasheet.pdf"
+    },
+    {
       "id": "c63a",
       "catalogId": "integrated-boards",
       "subcategoryId": "system-controller",

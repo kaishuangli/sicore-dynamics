@@ -131,7 +131,6 @@ export const thirdPartyProducts: ThirdPartyProduct[] = [
   ...makeProducts("partner-power-modules", "tpm", "Partner Power Module", "合作伙伴功率模块", "Módulo de potencia partner"),
   ...makeProducts("controllers-gateways", "tcg", "Controller / Gateway", "控制器 / 网关", "Controlador / Gateway"),
   ...makeProducts("cables-connectors", "tcc", "Cable / Connector Kit", "线缆 / 连接器套件", "Kit cable / conector"),
-  ...makeProducts("sensors-sensing", "tss", "Sensor Module", "传感器模块", "Módulo sensor"),
   ...makeProducts("enclosures-hardware", "teh", "Enclosure / Hardware", "外壳 / 结构件", "Carcasa / hardware"),
   ...makeProducts("evaluation-kits", "tek", "Evaluation Kit", "评估套件", "Kit de evaluación"),
 ];
