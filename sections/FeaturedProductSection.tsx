@@ -6,28 +6,34 @@ import { useState } from "react";
 import SectionEyebrow from "@/components/SectionEyebrow";
 import type { Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { getProductTiers } from "@/lib/i18n/product-content";
-import { resolveProductImage } from "@/lib/catalog/resolve-product-image";
 import { withLocale } from "@/lib/i18n/path";
-import { productTierNavLinks, type ProductTierId } from "@/lib/products";
-
-const showcaseImages: Record<ProductTierId, string> = {
-  "60w": "/images/stealth-60w-hero.png",
-  "200w": "/images/stealth-200w-module-coil.png",
-  "800w": "/images/stealth-800w-hero.png",
-  "1500w": "/images/stealth-1500w-hero.png",
-  "3000w": "/images/product-3000w.png",
-};
+import {
+  getProductCategoryCard,
+  getProductCategoryDescription,
+} from "@/lib/product-categories";
+import { getPublicProductNavLinks } from "@/lib/products";
 
 export default function FeaturedProductSection({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
   const L = (href: string) => withLocale(href, locale);
-  const productTiers = getProductTiers(locale);
-  const [activeId, setActiveId] = useState<ProductTierId>("60w");
-  const active = productTiers.find((tier) => tier.id === activeId) ?? productTiers[0];
-  const activeHref = L(
-    productTierNavLinks.find((link) => link.id === active.id)?.href ?? "/products",
-  );
+  const categories = getPublicProductNavLinks().flatMap((item) => {
+    const card = getProductCategoryCard(item.id);
+    if (!card) return [];
+    return [
+      {
+        id: item.id,
+        href: item.href,
+        label: dict.navProducts[item.id],
+        description: getProductCategoryDescription(item.id, locale),
+        image: card.image,
+        imageAlt: card.imageAlt,
+      },
+    ];
+  });
+  const [activeId, setActiveId] = useState(categories[0]?.id ?? "wireless-power-modules");
+  const active = categories.find((item) => item.id === activeId) ?? categories[0];
+
+  if (!active) return null;
 
   return (
     <section id="products" className="relative overflow-hidden pt-12 pb-10 lg:pt-14 lg:pb-12">
@@ -47,13 +53,12 @@ export default function FeaturedProductSection({ locale }: { locale: Locale }) {
             <p className="mt-7 max-w-xl text-base leading-7 text-slate-600">{dict.home.productsBody}</p>
 
             <div className="mt-8 rounded-2xl border border-slate-200 bg-white/80 p-5">
-              <p className="font-display text-xl font-extrabold text-[#0B0F19]">{active.title}</p>
-              <p className="mt-2 text-sm font-semibold text-[#0B5FFF]">{active.tagline}</p>
+              <p className="font-display text-xl font-extrabold text-[#0B0F19]">{active.label}</p>
               <p className="mt-3 text-sm leading-6 text-slate-600">{active.description}</p>
             </div>
 
             <div className="mt-9 flex flex-wrap gap-4">
-              <Link href={activeHref} className="btn-primary">
+              <Link href={L(active.href)} className="btn-primary">
                 {dict.home.viewTier} {active.label} <span>→</span>
               </Link>
               <Link href={L("/products")} className="btn-ghost">
@@ -70,38 +75,38 @@ export default function FeaturedProductSection({ locale }: { locale: Locale }) {
               <div className="relative h-[320px] sm:h-[380px] md:h-[420px]">
                 <Image
                   key={active.id}
-                  src={resolveProductImage("wireless-power-modules", active.id, showcaseImages[active.id])}
-                  alt={active.title}
+                  src={active.image}
+                  alt={active.imageAlt}
                   fill
                   className="object-contain p-6 drop-shadow-[0_20px_60px_rgba(56,189,248,0.18)]"
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  priority={active.id === "60w"}
+                  priority={active.id === categories[0]?.id}
                 />
               </div>
             </div>
 
             <div
-              className="relative mt-6 grid grid-cols-5 gap-2"
+              className="relative mt-6 grid grid-cols-2 gap-2 sm:grid-cols-3"
               role="tablist"
-              aria-label="Product power tiers"
+              aria-label={dict.home.productsEyebrow}
             >
-              {productTiers.map((tier) => {
-                const selected = tier.id === active.id;
+              {categories.map((item) => {
+                const selected = item.id === active.id;
 
                 return (
                   <button
-                    key={tier.id}
+                    key={item.id}
                     type="button"
                     role="tab"
                     aria-selected={selected}
-                    onClick={() => setActiveId(tier.id)}
+                    onClick={() => setActiveId(item.id)}
                     className={`rounded-2xl border px-2 py-3 text-center text-xs font-black backdrop-blur transition sm:px-3 sm:text-sm ${
                       selected
                         ? "border-cyan-400/60 bg-cyan-400/20 text-white"
                         : "border-cyan-400/20 bg-white/5 text-white/80 hover:border-cyan-400/40 hover:bg-white/10 hover:text-white"
                     }`}
                   >
-                    {tier.label}
+                    {item.label}
                   </button>
                 );
               })}
