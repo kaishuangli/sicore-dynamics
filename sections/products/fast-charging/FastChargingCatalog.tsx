@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import type { Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
@@ -40,13 +41,8 @@ function availabilityCopy(
   };
 }
 
-export default function FastChargingCatalog({
-  locale,
-  category,
-}: {
-  locale: Locale;
-  category?: string;
-}) {
+export default function FastChargingCatalog({ locale }: { locale: Locale }) {
+  const category = useSearchParams().get("category") ?? undefined;
   const L = (href: string) => withLocale(href, locale);
   const dict = getDictionary(locale);
   const navProducts = dict.navProducts as Record<string, string>;

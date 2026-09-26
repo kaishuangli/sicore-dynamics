@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { site } from "@/lib/site";
-import IntegratedBoardsCatalog from "@/sections/products/integrated-boards/IntegratedBoardsCatalog";
+import IntegratedBoardsQuery from "@/sections/products/integrated-boards/IntegratedBoardsQuery";
 
 type PageProps = {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ category?: string; sort?: string }>;
 };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -38,14 +38,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function IntegratedBoardsIndexPage({ params, searchParams }: PageProps) {
+export default async function IntegratedBoardsIndexPage({ params }: PageProps) {
   const { locale: rawLocale } = await params;
   if (!isLocale(rawLocale)) notFound();
 
-  const { category, sort } = await searchParams;
-  const sortKey = sort === "name" ? "name" : "newest";
-
   return (
-    <IntegratedBoardsCatalog locale={rawLocale} category={category} sort={sortKey} />
+    <Suspense fallback={null}>
+      <IntegratedBoardsQuery locale={rawLocale} />
+    </Suspense>
   );
 }

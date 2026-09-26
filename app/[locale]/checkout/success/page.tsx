@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { withLocale } from "@/lib/i18n/path";
@@ -8,7 +9,6 @@ import CheckoutSuccessClient from "@/sections/cart/CheckoutSuccessClient";
 
 type PageProps = {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ order?: string }>;
 };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -20,11 +20,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return { title };
 }
 
-export default async function CheckoutSuccessPage({ params, searchParams }: PageProps) {
+export default async function CheckoutSuccessPage({ params }: PageProps) {
   const { locale: raw } = await params;
   if (!isLocale(raw)) notFound();
   const locale = raw as Locale;
-  const { order } = await searchParams;
   const L = (href: string) => withLocale(href, locale);
 
   const title =
@@ -45,14 +44,11 @@ export default async function CheckoutSuccessPage({ params, searchParams }: Page
         <h1 className="font-display mt-3 text-3xl font-black tracking-[-0.03em] text-[#0B0F19] md:text-4xl">
           {title}
         </h1>
-        {order ? (
-          <p className="mt-4 text-sm font-semibold text-slate-700">
-            {locale === "zh" ? "订单号" : locale === "es" ? "Pedido" : "Order"}: {order}
-          </p>
-        ) : null}
         <p className="mt-4 text-base leading-7 text-slate-600">{body}</p>
         <p className="mt-2 text-sm text-slate-500">{site.email}</p>
-        <CheckoutSuccessClient locale={locale} orderId={order} />
+        <Suspense fallback={null}>
+          <CheckoutSuccessClient locale={locale} />
+        </Suspense>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <Link href={L("/third-party-products")} className="btn-primary">
             {locale === "zh" ? "继续购物" : locale === "es" ? "Seguir comprando" : "Continue shopping"}

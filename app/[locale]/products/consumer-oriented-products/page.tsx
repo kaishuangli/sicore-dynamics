@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { site } from "@/lib/site";
-import ConsumerProductsCatalog from "@/sections/products/consumer/ConsumerProductsCatalog";
+import ConsumerCatalogQuery from "@/sections/products/consumer/ConsumerCatalogQuery";
 
 type PageProps = {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ subcategory?: string }>;
 };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -38,13 +38,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function ConsumerOrientedProductsPage({ params, searchParams }: PageProps) {
+export default async function ConsumerOrientedProductsPage({ params }: PageProps) {
   const { locale: rawLocale } = await params;
   if (!isLocale(rawLocale)) notFound();
 
-  const { subcategory } = await searchParams;
-
   return (
-    <ConsumerProductsCatalog locale={rawLocale} initialSubcategory={subcategory} />
+    <Suspense fallback={null}>
+      <ConsumerCatalogQuery locale={rawLocale} />
+    </Suspense>
   );
 }

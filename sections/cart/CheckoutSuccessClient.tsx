@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import type { Locale } from "@/lib/i18n/config";
 import { site } from "@/lib/site";
 import type { PlacedOrder } from "@/lib/cart/types";
@@ -8,13 +9,8 @@ import { formatUsd } from "@/lib/third-party-products";
 
 const ORDER_STORAGE_KEY = "sicore-third-party-last-order-v1";
 
-export default function CheckoutSuccessClient({
-  locale,
-  orderId,
-}: {
-  locale: Locale;
-  orderId?: string;
-}) {
+export default function CheckoutSuccessClient({ locale }: { locale: Locale }) {
+  const orderId = useSearchParams().get("order") ?? undefined;
   const [order, setOrder] = useState<PlacedOrder | null>(null);
   const isZh = locale === "zh";
   const isEs = locale === "es";
@@ -69,6 +65,7 @@ export default function CheckoutSuccessClient({
     <div className="mt-8 rounded-lg border border-slate-200 bg-[#F8FAFC] px-5 py-4 text-left text-sm text-slate-600">
       <p className="font-bold text-[#0B0F19]">
         {isZh ? "订单摘要" : isEs ? "Resumen" : "Order summary"}
+        {orderId ? ` · ${orderId}` : ""}
       </p>
       <ul className="mt-3 space-y-1">
         {order.lines.map((line) => (

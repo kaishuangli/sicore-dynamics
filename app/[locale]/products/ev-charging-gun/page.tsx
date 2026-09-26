@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
@@ -7,7 +8,6 @@ import FastChargingCatalog from "@/sections/products/fast-charging/FastChargingC
 
 type PageProps = {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ category?: string }>;
 };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -38,10 +38,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function EvChargingGunPage({ params, searchParams }: PageProps) {
+export default async function EvChargingGunPage({ params }: PageProps) {
   const { locale: rawLocale } = await params;
-  const { category } = await searchParams;
   if (!isLocale(rawLocale)) notFound();
 
-  return <FastChargingCatalog locale={rawLocale} category={category} />;
+  return (
+    <Suspense fallback={null}>
+      <FastChargingCatalog locale={rawLocale} />
+    </Suspense>
+  );
 }
