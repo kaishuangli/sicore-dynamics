@@ -13,6 +13,15 @@ const nextConfig: NextConfig = {
     root: projectRoot,
   },
   outputFileTracingRoot: projectRoot,
+  // Admin routes read the image folders at dev time. Do not ship those
+  // files inside serverless functions or Hobby deploys fail the 250 MB limit.
+  outputFileTracingExcludes: {
+    "*": [
+      "./public/images/**/*",
+      "./public/downloads/**/*",
+      "./public/videos/**/*",
+    ],
+  },
   allowedDevOrigins: ["127.0.0.1", "localhost", "192.168.1.170"],
   async redirects() {
     const legacy = [
