@@ -2,7 +2,7 @@ import { Orbitron } from "next/font/google";
 
 const sectionLabelFont = Orbitron({
   subsets: ["latin"],
-  weight: ["700", "800"],
+  weight: "800",
 });
 
 type SectionEyebrowProps = {
