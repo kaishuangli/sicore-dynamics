@@ -1582,7 +1582,7 @@
       "id": "wdd35d4",
       "catalogId": "third-party-products",
       "subcategoryId": "sensors-sensing",
-      "brand": "WHEELTEC",
+      "brand": "SiCore Dynamics",
       "name": {
         "en": "WDD35D4 Absolute Angular Displacement Sensor",
         "zh": "WDD35D4 绝对角位移传感器",
@@ -1656,7 +1656,7 @@
       "id": "tfmini-s",
       "catalogId": "third-party-products",
       "subcategoryId": "sensors-sensing",
-      "brand": "Benewake",
+      "brand": "SiCore Dynamics",
       "name": {
         "en": "TFmini-S ToF LiDAR Module",
         "zh": "TFmini-S 飞行时间激光测距模块",
@@ -1727,7 +1727,7 @@
       "id": "tf-luna",
       "catalogId": "third-party-products",
       "subcategoryId": "sensors-sensing",
-      "brand": "Benewake",
+      "brand": "SiCore Dynamics",
       "name": {
         "en": "TF-Luna 8 m Low-Cost LiDAR",
         "zh": "TF-Luna 8 米低成本激光雷达",
@@ -2088,7 +2088,7 @@
       "id": "tf03-100",
       "catalogId": "third-party-products",
       "subcategoryId": "sensors-sensing",
-      "brand": "Benewake",
+      "brand": "SiCore Dynamics",
       "name": {
         "en": "TF03-100 100 m IP67 LiDAR",
         "zh": "TF03-100 100 米 IP67 激光雷达",
@@ -2159,7 +2159,7 @@
       "id": "tf02-i",
       "catalogId": "third-party-products",
       "subcategoryId": "sensors-sensing",
-      "brand": "Benewake",
+      "brand": "SiCore Dynamics",
       "name": {
         "en": "TF02-i RS485/CAN Mid-Range LiDAR",
         "zh": "TF02-i RS485/CAN 中距激光雷达",
