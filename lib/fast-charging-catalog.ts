@@ -366,7 +366,10 @@ export function getFastChargingCatalogProducts(): FastChargingProduct[] {
       availability: item.availability,
       image: resolveProductImage("ev-charging-gun", item.id, item.image),
     }));
-  const templates = fastChargingProducts.filter((item) => !folderCategories.has(item.categoryId));
+  const uploadedCategories = new Set(extras.map((item) => item.categoryId));
+  const templates = fastChargingProducts.filter(
+    (item) => !folderCategories.has(item.categoryId) && !uploadedCategories.has(item.categoryId),
+  );
   return [...folder, ...extras, ...templates].map((item) => ({
     ...item,
     image: item.image || resolveProductImage("ev-charging-gun", item.id, item.image),

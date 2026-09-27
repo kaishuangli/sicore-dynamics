@@ -56,6 +56,17 @@ export const consumerProductSubcategories = [
   },
 ] as const;
 
+/** Public catalog hides these subcategories until they are ready to show again. */
+const hiddenConsumerSubcategoryIds = new Set<string>(["component"]);
+
+export function isHiddenConsumerSubcategory(id: string) {
+  return hiddenConsumerSubcategoryIds.has(id);
+}
+
+export const visibleConsumerProductSubcategories = consumerProductSubcategories.filter(
+  (item) => !isHiddenConsumerSubcategory(item.id),
+);
+
 export type ConsumerSubcategoryId = (typeof consumerProductSubcategories)[number]["id"];
 
 export const consumerSubcategoryIds = consumerProductSubcategories.map((item) => item.id);
@@ -247,7 +258,7 @@ export function getConsumerCatalogProducts(): ConsumerProduct[] {
     }));
   const extraSubs = new Set(extras.map((item) => item.subcategoryId));
   const builtIns = consumerProducts.filter((item) => !extraSubs.has(item.subcategoryId));
-  return [...extras, ...builtIns].map((item) => ({
+  return [...extras, ...builtIns].filter((item) => !isHiddenConsumerSubcategory(item.subcategoryId)).map((item) => ({
     ...item,
     image: resolveProductImage("consumer-oriented-products", item.id, item.image),
   }));
@@ -277,7 +288,7 @@ export function getConsumerCatalogProduct(id: string, locale: Locale = "en"): Co
 
 export function countBySubcategory() {
   const list = getConsumerCatalogProducts();
-  return consumerProductSubcategories.map((sub) => ({
+  return visibleConsumerProductSubcategories.map((sub) => ({
     ...sub,
     count: list.filter((item) => item.subcategoryId === sub.id).length,
   }));

@@ -4,9 +4,8 @@ import { productNavLinks } from "@/lib/products";
 export const productCategoryCards = [
   {
     id: "wireless-power-modules",
-    image:
-      "/images/products/wireless-power-modules/30w-or-less/long-range-wireless-charging-module/01_complete_wireless_charging_assembly.png",
-    imageAlt: "Wireless charging coil and control board",
+    image: "/images/products/wireless-power-modules/homepage-wireless-module.png",
+    imageAlt: "200W wireless charging module and coil",
     description:
       "60W to 3000W wireless power modules for robots, AGVs, drones, and industrial platforms.",
     zh: "覆盖 60W 至 3000W 的无线功率模块，适用于机器人、AGV、无人机与工业平台。",
@@ -30,8 +29,8 @@ export const productCategoryCards = [
   },
   {
     id: "docking",
-    image: "/images/products/docking/pogo pin/1/1pin/cover.png",
-    imageAlt: "Magnetic pogo pin charging connector",
+    image: "/images/products/docking/homepage-docking.png",
+    imageAlt: "Docking charger beside an autonomous mobile robot",
     description: "Contact and wireless docking systems for repeatable autonomous charging.",
     zh: "用于可重复自主充电的接触式与无线对接系统。",
     es: "Sistemas de acoplamiento por contacto e inalámbricos para carga autónoma repetible.",

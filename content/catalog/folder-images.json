@@ -1,6 +1,7 @@
 {
   "covers": {},
   "products": {
+    "wireless-power-modules/homepage-wireless-module": "/images/products/wireless-power-modules/homepage-wireless-module.png",
     "autonomous-software/autonomous-docking-system": "/images/products/autonomous-software/autonomous-docking-system.jpg",
     "autonomous-software/charging-management-system": "/images/products/autonomous-software/charging-management-system.jpg",
     "autonomous-software/fleet-scheduler": "/images/products/autonomous-software/fleet-scheduler.png",
@@ -12,6 +13,7 @@
     "docking/app-laboratory": "/images/products/docking/app-laboratory.jpg",
     "docking/app-pharmacy": "/images/products/docking/app-pharmacy.jpg",
     "docking/app-warehouse": "/images/products/docking/app-warehouse.jpg",
+    "docking/homepage-docking": "/images/products/docking/homepage-docking.png",
     "docking/pogo-pin-charging-dock": "/images/products/docking/pogo-pin-charging-dock.png",
     "docking/sc-cn10": "/images/products/docking/sc-cn10.png",
     "docking/sc-cn20": "/images/products/docking/sc-cn20.png",

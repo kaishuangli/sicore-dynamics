@@ -10,7 +10,8 @@ import { pickLocalized } from "@/lib/catalog/types";
 import { site } from "@/lib/site";
 import {
   consumerProductIds,
-  consumerProductSubcategories,
+  isHiddenConsumerSubcategory,
+  visibleConsumerProductSubcategories,
   consumerSubcategoryIds,
   getConsumerProduct,
   getConsumerSubcategoryDescription,
@@ -29,7 +30,9 @@ export const dynamicParams = true;
 
 export function generateStaticParams() {
   return [
-    ...consumerSubcategoryIds.map((product) => ({ product })),
+    ...consumerSubcategoryIds
+      .filter((id) => !isHiddenConsumerSubcategory(id))
+      .map((product) => ({ product })),
     ...consumerProductIds
       .filter((id) => id !== "stealth-under-desk-60w")
       .map((product) => ({ product })),
@@ -40,6 +43,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale: rawLocale, product } = await params;
   if (!isLocale(rawLocale)) return {};
+  if (isHiddenConsumerSubcategory(product)) return {};
 
   const uploaded = getUploadedProduct(product);
   if (uploaded?.catalogId === "consumer-oriented-products") {
@@ -87,6 +91,9 @@ export default async function ConsumerProductDetailPage({ params }: PageProps) {
   if (!isLocale(rawLocale)) notFound();
 
   const locale = rawLocale as Locale;
+  if (isHiddenConsumerSubcategory(product)) {
+    redirect(withLocale("/products/consumer-oriented-products", locale));
+  }
   if (isConsumerSubcategoryId(product)) {
     return <ConsumerProductsCatalog locale={locale} initialSubcategory={product} />;
   }
@@ -113,7 +120,7 @@ export default async function ConsumerProductDetailPage({ params }: PageProps) {
                 : "Back to the full catalog",
             href: "/products/consumer-oriented-products",
           },
-          ...consumerProductSubcategories.map((item) => ({
+          ...visibleConsumerProductSubcategories.map((item) => ({
             id: item.id,
             label: getConsumerSubcategoryLabel(item.id, locale),
             tagline: getConsumerSubcategoryDescription(item.id, locale),

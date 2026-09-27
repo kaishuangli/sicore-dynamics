@@ -2,6 +2,1583 @@
   "version": 1,
   "products": [
     {
+      "id": "mp1584en-5v",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "MP1584EN 5 V Fixed-Output Buck Converter",
+        "zh": "MP1584EN 5 V 固定输出降压模块",
+        "es": "Convertidor reductor MP1584EN de salida fija de 5 V"
+      },
+      "tagline": {
+        "en": "7–26 V input, fixed 5 V, 3 A peak",
+        "zh": "输入 7–26 V，固定 5 V，峰值 3 A",
+        "es": "Entrada de 7–26 V, 5 V fijos, pico de 3 A"
+      },
+      "description": {
+        "en": "Compact MP1584EN buck module with a fixed 5 V output. Input is 7–26 V DC. Peak current is 3 A and recommended continuous current is 1.6 A or less. Peak efficiency is up to 96%.",
+        "zh": "紧凑型 MP1584EN 降压模块，固定输出 5 V。输入 7–26 V DC，峰值电流 3 A，建议持续电流不超过 1.6 A，峰值效率最高约 96%。",
+        "es": "Módulo reductor compacto MP1584EN con salida fija de 5 V. La entrada es de 7–26 V CC. La corriente pico es de 3 A y la continua recomendada es de 1,6 A o menos. La eficiencia pico llega al 96%."
+      },
+      "image": "/images/products/integrated-boards/mp1584en-5v/cover.png",
+      "imageAlt": {
+        "en": "MP1584EN 5 V Fixed-Output Buck Converter",
+        "zh": "MP1584EN 5 V 固定输出降压模块",
+        "es": "Convertidor reductor MP1584EN de salida fija de 5 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mp1584en-5v/cover.png",
+        "/images/products/integrated-boards/mp1584en-5v/1.jpg",
+        "/images/products/integrated-boards/mp1584en-5v/2.png"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mp1584en-5v-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Non-isolated buck, MP1584EN"
+        },
+        {
+          "label": "Input voltage",
+          "value": "7–26 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "5 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "3 A peak; ≤1.6 A continuous"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Up to 96%"
+        },
+        {
+          "label": "Board size",
+          "value": "About 22 × 17 mm"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mp1484en-adj",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "MP1484EN Adjustable Buck Converter",
+        "zh": "MP1484EN 可调降压模块",
+        "es": "Convertidor reductor ajustable MP1484EN"
+      },
+      "tagline": {
+        "en": "1.0–17 V adjustable output, 3 A peak",
+        "zh": "输出 1.0–17 V 可调，峰值 3 A",
+        "es": "Salida ajustable de 1,0–17 V, pico de 3 A"
+      },
+      "description": {
+        "en": "MP1484EN adjustable buck module. Input is 4.75–23 V DC and the output is set from 1.0–17 V before the load is connected. Peak current is 3 A, long-term current is 1.8 A or less, switching frequency is 340 kHz, and efficiency is up to 96%.",
+        "zh": "MP1484EN 可调降压模块。输入 4.75–23 V DC，输出在接负载前设定为 1.0–17 V。峰值电流 3 A，长期电流不超过 1.8 A，开关频率 340 kHz，效率最高约 96%。",
+        "es": "Módulo reductor ajustable MP1484EN. La entrada es de 4,75–23 V CC y la salida se ajusta de 1,0 a 17 V antes de conectar la carga. La corriente pico es de 3 A, la de largo plazo es de 1,8 A o menos, la frecuencia es de 340 kHz y la eficiencia llega al 96%."
+      },
+      "image": "/images/products/integrated-boards/mp1484en-adj/1.jpg",
+      "imageAlt": {
+        "en": "MP1484EN Adjustable Buck Converter",
+        "zh": "MP1484EN 可调降压模块",
+        "es": "Convertidor reductor ajustable MP1484EN"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mp1484en-adj/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mp1484en-adj-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Non-isolated buck, MP1484EN"
+        },
+        {
+          "label": "Input voltage",
+          "value": "4.75–23 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "1.0–17 V adjustable"
+        },
+        {
+          "label": "Output current",
+          "value": "3 A peak; ≤1.8 A long-term"
+        },
+        {
+          "label": "Switching frequency",
+          "value": "340 kHz"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Up to 96%"
+        },
+        {
+          "label": "Board size",
+          "value": "About 22 × 17 mm"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "buck-1p3a-selectable",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "1.3 A Selectable-Output Buck Converter",
+        "zh": "1.3 A 可选输出降压模块",
+        "es": "Convertidor reductor de salida seleccionable de 1,3 A"
+      },
+      "tagline": {
+        "en": "Selectable 3.3 / 5 / 9 / 12 V, default 5 V",
+        "zh": "可选 3.3 / 5 / 9 / 12 V，默认 5 V",
+        "es": "Seleccionable 3,3 / 5 / 9 / 12 V, 5 V por defecto"
+      },
+      "description": {
+        "en": "Selectable-output buck module. Input is 6–30 V DC and must stay above the selected output. Output options are 3.3 V, 5 V, 9 V, and 12 V, with 5 V as the default. Maximum current is 1.2 A and continuous current is 1 A or less. Efficiency is up to 93%.",
+        "zh": "可选输出降压模块。输入 6–30 V DC，且必须高于所选输出。输出可选 3.3 V、5 V、9 V、12 V，默认 5 V。最大电流 1.2 A，持续电流不超过 1 A，效率最高约 93%。",
+        "es": "Módulo reductor de salida seleccionable. La entrada es de 6–30 V CC y debe permanecer por encima de la salida elegida. Las opciones son 3,3 V, 5 V, 9 V y 12 V, con 5 V por defecto. La corriente máxima es de 1,2 A y la continua de 1 A o menos. La eficiencia llega al 93%."
+      },
+      "image": "/images/products/integrated-boards/buck-1p3a-selectable/1.jpg",
+      "imageAlt": {
+        "en": "1.3 A Selectable-Output Buck Converter",
+        "zh": "1.3 A 可选输出降压模块",
+        "es": "Convertidor reductor de salida seleccionable de 1,3 A"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/buck-1p3a-selectable/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/buck-1p3a-selectable-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Non-isolated selectable buck"
+        },
+        {
+          "label": "Input voltage",
+          "value": "6–30 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "3.3 / 5 / 9 / 12 V, default 5 V"
+        },
+        {
+          "label": "Output current",
+          "value": "1.2 A max; ≤1 A continuous"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Up to 93%"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mini-360-adj",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "Mini-360 Adjustable Buck Converter",
+        "zh": "Mini-360 可调降压模块",
+        "es": "Convertidor reductor ajustable Mini-360"
+      },
+      "tagline": {
+        "en": "1.0–17 V adjustable, 17.5 × 11.5 mm",
+        "zh": "输出 1.0–17 V 可调，尺寸 17.5 × 11.5 mm",
+        "es": "Salida ajustable de 1,0–17 V, 17,5 × 11,5 mm"
+      },
+      "description": {
+        "en": "Mini-360 synchronous buck module. Input is 4.75–23 V DC and the output is adjustable from 1.0–17 V. Peak current is 3 A and long-term current is 1.8 A. Efficiency is up to 96% at 340 kHz. The board is 17.5 × 11.5 mm and includes reverse-polarity and thermal shutdown guidance at 85 °C.",
+        "zh": "Mini-360 同步降压模块。输入 4.75–23 V DC，输出 1.0–17 V 可调。峰值电流 3 A，长期电流 1.8 A，效率最高约 96%，开关频率 340 kHz。板尺寸 17.5 × 11.5 mm，规格说明包含反接与 85 °C 热关断注意事项。",
+        "es": "Módulo reductor síncrono Mini-360. La entrada es de 4,75–23 V CC y la salida se ajusta de 1,0 a 17 V. La corriente pico es de 3 A y la de largo plazo de 1,8 A. La eficiencia llega al 96% a 340 kHz. La placa mide 17,5 × 11,5 mm e incluye indicaciones de protección contra polaridad inversa y apagado térmico a 85 °C."
+      },
+      "image": "/images/products/integrated-boards/mini-360-adj/1.jpg",
+      "imageAlt": {
+        "en": "Mini-360 Adjustable Buck Converter",
+        "zh": "Mini-360 可调降压模块",
+        "es": "Convertidor reductor ajustable Mini-360"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mini-360-adj/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mini-360-adj-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Synchronous buck, Mini-360"
+        },
+        {
+          "label": "Input voltage",
+          "value": "4.75–23 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "1.0–17 V adjustable"
+        },
+        {
+          "label": "Output current",
+          "value": "3 A peak; 1.8 A long-term"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Up to 96%"
+        },
+        {
+          "label": "Switching frequency",
+          "value": "340 kHz"
+        },
+        {
+          "label": "Board size",
+          "value": "17.5 × 11.5 mm"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mp1584en-3a-adj",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "MP1584EN 3 A Adjustable Buck Converter",
+        "zh": "MP1584EN 3 A 可调降压模块",
+        "es": "Convertidor reductor ajustable MP1584EN de 3 A"
+      },
+      "tagline": {
+        "en": "0.8–20 V adjustable from a 4.5–28 V input",
+        "zh": "输入 4.5–28 V，输出 0.8–20 V 可调",
+        "es": "Salida ajustable de 0,8–20 V desde 4,5–28 V"
+      },
+      "description": {
+        "en": "MP1584EN adjustable buck module. Input is 4.5–28 V DC and the output is adjustable from 0.8–20 V. Maximum current is 3 A, efficiency is up to 92%, switching frequency is 1 MHz, and the board is about 22 × 16 mm.",
+        "zh": "MP1584EN 可调降压模块。输入 4.5–28 V DC，输出 0.8–20 V 可调。最大电流 3 A，效率最高约 92%，开关频率 1 MHz，板尺寸约 22 × 16 mm。",
+        "es": "Módulo reductor ajustable MP1584EN. La entrada es de 4,5–28 V CC y la salida se ajusta de 0,8 a 20 V. La corriente máxima es de 3 A, la eficiencia llega al 92%, la frecuencia es de 1 MHz y la placa mide unos 22 × 16 mm."
+      },
+      "image": "/images/products/integrated-boards/mp1584en-3a-adj/cover.jpg",
+      "imageAlt": {
+        "en": "MP1584EN 3 A Adjustable Buck Converter",
+        "zh": "MP1584EN 3 A 可调降压模块",
+        "es": "Convertidor reductor ajustable MP1584EN de 3 A"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mp1584en-3a-adj/cover.jpg",
+        "/images/products/integrated-boards/mp1584en-3a-adj/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mp1584en-3a-adj-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Non-isolated buck, MP1584EN"
+        },
+        {
+          "label": "Input voltage",
+          "value": "4.5–28 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "0.8–20 V adjustable"
+        },
+        {
+          "label": "Output current",
+          "value": "3 A maximum"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Up to 92%"
+        },
+        {
+          "label": "Switching frequency",
+          "value": "1 MHz"
+        },
+        {
+          "label": "Board size",
+          "value": "About 22 × 16 mm"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "buck-97p5",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "97.5% Adjustable and Fixed Buck Module",
+        "zh": "97.5% 可调 / 固定输出降压模块",
+        "es": "Módulo reductor ajustable y fijo del 97,5%"
+      },
+      "tagline": {
+        "en": "4.5–24 V input, adjustable 0.8–17 V or fixed rails",
+        "zh": "输入 4.5–24 V，可调 0.8–17 V 或固定电压",
+        "es": "Entrada de 4,5–24 V, 0,8–17 V ajustable o salidas fijas"
+      },
+      "description": {
+        "en": "High-efficiency buck module with a stated board efficiency of 97.5%. Input is 4.5–24 V DC. The output can be adjusted from 0.8–17 V or set to 1.8 V, 2.5 V, 3.3 V, 5 V, 9 V, or 12 V using the rear selection points. The datasheet does not state a continuous-current rating. The board is 20 × 11 mm.",
+        "zh": "高效率降压模块，标称板级效率 97.5%。输入 4.5–24 V DC。输出可在 0.8–17 V 之间调节，或通过背面选点设为 1.8 V、2.5 V、3.3 V、5 V、9 V 或 12 V。数据手册未给出持续电流额定值。板尺寸 20 × 11 mm。",
+        "es": "Módulo reductor de alta eficiencia, con una eficiencia de placa indicada del 97,5%. La entrada es de 4,5–24 V CC. La salida se ajusta de 0,8 a 17 V o se fija en 1,8 V, 2,5 V, 3,3 V, 5 V, 9 V o 12 V con los puntos de selección posteriores. La hoja de datos no indica una corriente continua. La placa mide 20 × 11 mm."
+      },
+      "image": "/images/products/integrated-boards/buck-97p5/1.jpg",
+      "imageAlt": {
+        "en": "97.5% Adjustable and Fixed Buck Module",
+        "zh": "97.5% 可调 / 固定输出降压模块",
+        "es": "Módulo reductor ajustable y fijo del 97,5%"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/buck-97p5/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/buck-97p5-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Non-isolated buck, adjustable or fixed"
+        },
+        {
+          "label": "Input voltage",
+          "value": "4.5–24 V DC"
+        },
+        {
+          "label": "Adjustable output",
+          "value": "0.8–17 V DC"
+        },
+        {
+          "label": "Fixed outputs",
+          "value": "1.8 / 2.5 / 3.3 / 5 / 9 / 12 V"
+        },
+        {
+          "label": "Efficiency",
+          "value": "97.5% stated"
+        },
+        {
+          "label": "Board size",
+          "value": "20 × 11 mm"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "buck-3a-adj-fixed",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "3 A High-Efficiency Adjustable Buck Converter",
+        "zh": "3 A 高效率可调降压模块",
+        "es": "Convertidor reductor ajustable de alta eficiencia de 3 A"
+      },
+      "tagline": {
+        "en": "0.8–17 V adjustable, or fixed 1.8–12 V options",
+        "zh": "输出 0.8–17 V 可调，或 1.8–12 V 固定档",
+        "es": "Salida de 0,8–17 V ajustable, u opciones fijas de 1,8–12 V"
+      },
+      "description": {
+        "en": "3 A buck module with adjustable and fixed outputs. Input is 4.5–24 V DC. The adjustable range is 0.8–17 V, and fixed options are 1.8 V, 2.5 V, 3.3 V, 5 V, 9 V, and 12 V. Maximum current is 3 A and efficiency is up to 97.5%. The board is 20 × 11 mm.",
+        "zh": "3 A 可调与固定输出降压模块。输入 4.5–24 V DC。可调范围 0.8–17 V，固定档为 1.8 V、2.5 V、3.3 V、5 V、9 V 和 12 V。最大电流 3 A，效率最高约 97.5%。板尺寸 20 × 11 mm。",
+        "es": "Módulo reductor de 3 A con salida ajustable y fija. La entrada es de 4,5–24 V CC. El rango ajustable es de 0,8–17 V y las opciones fijas son 1,8 V, 2,5 V, 3,3 V, 5 V, 9 V y 12 V. La corriente máxima es de 3 A y la eficiencia llega al 97,5%. La placa mide 20 × 11 mm."
+      },
+      "image": "/images/products/integrated-boards/buck-3a-adj-fixed/cover.jpg",
+      "imageAlt": {
+        "en": "3 A High-Efficiency Adjustable Buck Converter",
+        "zh": "3 A 高效率可调降压模块",
+        "es": "Convertidor reductor ajustable de alta eficiencia de 3 A"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/buck-3a-adj-fixed/cover.jpg",
+        "/images/products/integrated-boards/buck-3a-adj-fixed/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/buck-3a-adj-fixed-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Non-isolated buck"
+        },
+        {
+          "label": "Input voltage",
+          "value": "4.5–24 V DC"
+        },
+        {
+          "label": "Adjustable output",
+          "value": "0.8–17 V"
+        },
+        {
+          "label": "Fixed outputs",
+          "value": "1.8 / 2.5 / 3.3 / 5 / 9 / 12 V"
+        },
+        {
+          "label": "Output current",
+          "value": "3 A maximum"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Up to 97.5%"
+        },
+        {
+          "label": "Board size",
+          "value": "20 × 11 mm"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "s09-3v3-buck-boost",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "S09 3.3 V Automatic Buck-Boost Module",
+        "zh": "S09 3.3 V 自动升降压模块",
+        "es": "Módulo elevador-reductor automático S09 de 3,3 V"
+      },
+      "tagline": {
+        "en": "3–15 V input, fixed 3.3 V, 600 mA",
+        "zh": "输入 3–15 V，固定 3.3 V，600 mA",
+        "es": "Entrada de 3–15 V, 3,3 V fijos, 600 mA"
+      },
+      "description": {
+        "en": "S09 automatic buck-boost module with a fixed 3.3 V output and an enable pin. Input is 3–15 V DC. Maximum output current is 600 mA, efficiency is up to 75%, and ripple is under 50 mV. The board is 19 × 14 × 4 mm.",
+        "zh": "S09 自动升降压模块，固定输出 3.3 V，带使能脚。输入 3–15 V DC。最大输出电流 600 mA，效率最高约 75%，纹波小于 50 mV。板尺寸 19 × 14 × 4 mm。",
+        "es": "Módulo elevador-reductor automático S09 con salida fija de 3,3 V y pin de habilitación. La entrada es de 3–15 V CC. La corriente máxima es de 600 mA, la eficiencia llega al 75% y el rizado es inferior a 50 mV. La placa mide 19 × 14 × 4 mm."
+      },
+      "image": "/images/products/integrated-boards/s09-3v3-buck-boost/1.png",
+      "imageAlt": {
+        "en": "S09 3.3 V Automatic Buck-Boost Module",
+        "zh": "S09 3.3 V 自动升降压模块",
+        "es": "Módulo elevador-reductor automático S09 de 3,3 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/s09-3v3-buck-boost/1.png"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/s09-3v3-buck-boost-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Automatic buck-boost, S09"
+        },
+        {
+          "label": "Input voltage",
+          "value": "3–15 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "3.3 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "600 mA maximum"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Up to 75%"
+        },
+        {
+          "label": "Board size",
+          "value": "19 × 14 × 4 mm"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mini560-5v",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "MINI560 5 V 5 A Buck Converter",
+        "zh": "MINI560 5 V 5 A 降压模块",
+        "es": "Convertidor reductor MINI560 de 5 V y 5 A"
+      },
+      "tagline": {
+        "en": "7–20 V input, fixed 5 V, cooling above 4 A",
+        "zh": "输入 7–20 V，固定 5 V，4 A 以上需散热",
+        "es": "Entrada de 7–20 V, 5 V fijos, refrigeración por encima de 4 A"
+      },
+      "description": {
+        "en": "MINI560 synchronous buck module with a fixed 5 V output. Input is 7–20 V DC. Keep at least 2 V between input and the 5 V output. Extra cooling is required for sustained current above 4 A.",
+        "zh": "MINI560 同步降压模块，固定输出 5 V。输入 7–20 V DC。输入与 5 V 输出之间至少保持 2 V 压差。持续电流超过 4 A 时需要额外散热。",
+        "es": "Módulo reductor síncrono MINI560 con salida fija de 5 V. La entrada es de 7–20 V CC. Mantenga al menos 2 V entre la entrada y la salida de 5 V. Se requiere refrigeración adicional por encima de 4 A continuos."
+      },
+      "image": "/images/products/integrated-boards/mini560-5v/cover.jpg",
+      "imageAlt": {
+        "en": "MINI560 5 V 5 A Buck Converter",
+        "zh": "MINI560 5 V 5 A 降压模块",
+        "es": "Convertidor reductor MINI560 de 5 V y 5 A"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mini560-5v/cover.jpg",
+        "/images/products/integrated-boards/mini560-5v/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mini560-5v-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Synchronous buck, MINI560"
+        },
+        {
+          "label": "Input voltage",
+          "value": "7–20 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "5 V fixed"
+        },
+        {
+          "label": "Headroom",
+          "value": "At least 2 V above the output"
+        },
+        {
+          "label": "Cooling",
+          "value": "Required above 4 A sustained"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mp1584en-9v",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "MP1584EN 9 V Fixed-Output Buck Converter",
+        "zh": "MP1584EN 9 V 固定输出降压模块",
+        "es": "Convertidor reductor MP1584EN de salida fija de 9 V"
+      },
+      "tagline": {
+        "en": "11–26 V input, fixed 9 V, 3 A peak",
+        "zh": "输入 11–26 V，固定 9 V，峰值 3 A",
+        "es": "Entrada de 11–26 V, 9 V fijos, pico de 3 A"
+      },
+      "description": {
+        "en": "MP1584EN buck module with a fixed 9 V output. Input is 11–26 V DC. Peak current is 3 A and recommended continuous current is 1.1 A or less. Peak efficiency is up to 96% when the input stays at least 2 V above the output.",
+        "zh": "MP1584EN 降压模块，固定输出 9 V。输入 11–26 V DC。峰值电流 3 A，建议持续电流不超过 1.1 A。当输入比输出至少高 2 V 时，峰值效率最高约 96%。",
+        "es": "Módulo reductor MP1584EN con salida fija de 9 V. La entrada es de 11–26 V CC. La corriente pico es de 3 A y la continua recomendada es de 1,1 A o menos. La eficiencia pico llega al 96% cuando la entrada queda al menos 2 V por encima de la salida."
+      },
+      "image": "/images/products/integrated-boards/mp1584en-9v/1.jpg",
+      "imageAlt": {
+        "en": "MP1584EN 9 V Fixed-Output Buck Converter",
+        "zh": "MP1584EN 9 V 固定输出降压模块",
+        "es": "Convertidor reductor MP1584EN de salida fija de 9 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mp1584en-9v/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mp1584en-9v-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Non-isolated buck, MP1584EN"
+        },
+        {
+          "label": "Input voltage",
+          "value": "11–26 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "9 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "3 A peak; ≤1.1 A continuous"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Up to 96%"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mp1584en-3v3",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "MP1584EN 3.3 V Fixed-Output Buck Converter",
+        "zh": "MP1584EN 3.3 V 固定输出降压模块",
+        "es": "Convertidor reductor MP1584EN de salida fija de 3,3 V"
+      },
+      "tagline": {
+        "en": "5.3–26 V input, fixed 3.3 V, 3 A peak",
+        "zh": "输入 5.3–26 V，固定 3.3 V，峰值 3 A",
+        "es": "Entrada de 5,3–26 V, 3,3 V fijos, pico de 3 A"
+      },
+      "description": {
+        "en": "MP1584EN buck module with a fixed 3.3 V output. Input is 5.3–26 V DC. Peak current is 3 A and recommended continuous current is 1.8 A or less. Peak efficiency is up to 96%.",
+        "zh": "MP1584EN 降压模块，固定输出 3.3 V。输入 5.3–26 V DC。峰值电流 3 A，建议持续电流不超过 1.8 A，峰值效率最高约 96%。",
+        "es": "Módulo reductor MP1584EN con salida fija de 3,3 V. La entrada es de 5,3–26 V CC. La corriente pico es de 3 A y la continua recomendada es de 1,8 A o menos. La eficiencia pico llega al 96%."
+      },
+      "image": "/images/products/integrated-boards/mp1584en-3v3/1.jpg",
+      "imageAlt": {
+        "en": "MP1584EN 3.3 V Fixed-Output Buck Converter",
+        "zh": "MP1584EN 3.3 V 固定输出降压模块",
+        "es": "Convertidor reductor MP1584EN de salida fija de 3,3 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mp1584en-3v3/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mp1584en-3v3-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Non-isolated buck, MP1584EN"
+        },
+        {
+          "label": "Input voltage",
+          "value": "5.3–26 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "3.3 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "3 A peak; ≤1.8 A continuous"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Up to 96%"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mp1584en-12v",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "MP1584EN 12 V Fixed-Output Buck Converter",
+        "zh": "MP1584EN 12 V 固定输出降压模块",
+        "es": "Convertidor reductor MP1584EN de salida fija de 12 V"
+      },
+      "tagline": {
+        "en": "14–26 V input, fixed 12 V, 3 A peak",
+        "zh": "输入 14–26 V，固定 12 V，峰值 3 A",
+        "es": "Entrada de 14–26 V, 12 V fijos, pico de 3 A"
+      },
+      "description": {
+        "en": "MP1584EN buck module with a fixed 12 V output. Input is 14–26 V DC. Peak current is 3 A and recommended continuous current is 0.8 A or less. Peak efficiency is up to 96%.",
+        "zh": "MP1584EN 降压模块，固定输出 12 V。输入 14–26 V DC。峰值电流 3 A，建议持续电流不超过 0.8 A，峰值效率最高约 96%。",
+        "es": "Módulo reductor MP1584EN con salida fija de 12 V. La entrada es de 14–26 V CC. La corriente pico es de 3 A y la continua recomendada es de 0,8 A o menos. La eficiencia pico llega al 96%."
+      },
+      "image": "/images/products/integrated-boards/mp1584en-12v/1.jpg",
+      "imageAlt": {
+        "en": "MP1584EN 12 V Fixed-Output Buck Converter",
+        "zh": "MP1584EN 12 V 固定输出降压模块",
+        "es": "Convertidor reductor MP1584EN de salida fija de 12 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mp1584en-12v/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mp1584en-12v-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Non-isolated buck, MP1584EN"
+        },
+        {
+          "label": "Input voltage",
+          "value": "14–26 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "12 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "3 A peak; ≤0.8 A continuous"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Up to 96%"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mini560-3v3",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "MINI560 3.3 V Buck Converter",
+        "zh": "MINI560 3.3 V 降压模块",
+        "es": "Convertidor reductor MINI560 de 3,3 V"
+      },
+      "tagline": {
+        "en": "5–20 V input, fixed 3.3 V, cooling above 4 A",
+        "zh": "输入 5–20 V，固定 3.3 V，4 A 以上需散热",
+        "es": "Entrada de 5–20 V, 3,3 V fijos, refrigeración por encima de 4 A"
+      },
+      "description": {
+        "en": "MINI560 synchronous buck module with a fixed 3.3 V output. Input is 5–20 V DC. Keep more than 1.7 V between input and output. Output current is under 5 A, and extra cooling is required above 4 A. Efficiency is up to 99% at 500 kHz. The board is about 30 × 18 mm.",
+        "zh": "MINI560 同步降压模块，固定输出 3.3 V。输入 5–20 V DC。输入与输出压差需大于 1.7 V。输出电流低于 5 A，超过 4 A 时需要额外散热。效率最高约 99%，开关频率 500 kHz。板尺寸约 30 × 18 mm。",
+        "es": "Módulo reductor síncrono MINI560 con salida fija de 3,3 V. La entrada es de 5–20 V CC. Mantenga más de 1,7 V entre entrada y salida. La corriente es inferior a 5 A y se requiere refrigeración adicional por encima de 4 A. La eficiencia llega al 99% a 500 kHz. La placa mide unos 30 × 18 mm."
+      },
+      "image": "/images/products/integrated-boards/mini560-3v3/1.jpg",
+      "imageAlt": {
+        "en": "MINI560 3.3 V Buck Converter",
+        "zh": "MINI560 3.3 V 降压模块",
+        "es": "Convertidor reductor MINI560 de 3,3 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mini560-3v3/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mini560-3v3-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Synchronous buck, MINI560"
+        },
+        {
+          "label": "Input voltage",
+          "value": "5–20 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "3.3 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "<5 A; cooling above 4 A"
+        },
+        {
+          "label": "Headroom",
+          "value": ">1.7 V"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Up to 99%"
+        },
+        {
+          "label": "Board size",
+          "value": "About 30 × 18 mm"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mini560-9v",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "MINI560 9 V Buck Converter",
+        "zh": "MINI560 9 V 降压模块",
+        "es": "Convertidor reductor MINI560 de 9 V"
+      },
+      "tagline": {
+        "en": "11–20 V input, fixed 9 V, cooling above 3 A",
+        "zh": "输入 11–20 V，固定 9 V，3 A 以上需散热",
+        "es": "Entrada de 11–20 V, 9 V fijos, refrigeración por encima de 3 A"
+      },
+      "description": {
+        "en": "MINI560 synchronous buck module with a fixed 9 V output. Input is 11–20 V DC. Keep more than 2 V of headroom. Output current is under 4 A, and extra cooling is required above 3 A. Efficiency is up to 99%.",
+        "zh": "MINI560 同步降压模块，固定输出 9 V。输入 11–20 V DC，压差需大于 2 V。输出电流低于 4 A，超过 3 A 时需要额外散热。效率最高约 99%。",
+        "es": "Módulo reductor síncrono MINI560 con salida fija de 9 V. La entrada es de 11–20 V CC. Mantenga más de 2 V de margen. La corriente es inferior a 4 A y se requiere refrigeración adicional por encima de 3 A. La eficiencia llega al 99%."
+      },
+      "image": "/images/products/integrated-boards/mini560-9v/1.jpg",
+      "imageAlt": {
+        "en": "MINI560 9 V Buck Converter",
+        "zh": "MINI560 9 V 降压模块",
+        "es": "Convertidor reductor MINI560 de 9 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mini560-9v/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mini560-9v-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Synchronous buck, MINI560"
+        },
+        {
+          "label": "Input voltage",
+          "value": "11–20 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "9 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "<4 A; cooling above 3 A"
+        },
+        {
+          "label": "Headroom",
+          "value": ">2 V"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Up to 99%"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mini560-12v",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "MINI560 12 V Buck Converter",
+        "zh": "MINI560 12 V 降压模块",
+        "es": "Convertidor reductor MINI560 de 12 V"
+      },
+      "tagline": {
+        "en": "14–20 V input, fixed 12 V",
+        "zh": "输入 14–20 V，固定 12 V",
+        "es": "Entrada de 14–20 V, 12 V fijos"
+      },
+      "description": {
+        "en": "MINI560 synchronous buck module with a fixed 12 V output. Input is 14–20 V DC. Keep more than 2 V between input and the 12 V output. Output current is under 4 A. Efficiency is up to 99% at 500 kHz. The board is about 30 × 18 mm.",
+        "zh": "MINI560 同步降压模块，固定输出 12 V。输入 14–20 V DC，与 12 V 输出之间压差需大于 2 V。输出电流低于 4 A。效率最高约 99%，开关频率 500 kHz。板尺寸约 30 × 18 mm。",
+        "es": "Módulo reductor síncrono MINI560 con salida fija de 12 V. La entrada es de 14–20 V CC. Mantenga más de 2 V entre la entrada y la salida de 12 V. La corriente es inferior a 4 A. La eficiencia llega al 99% a 500 kHz. La placa mide unos 30 × 18 mm."
+      },
+      "image": "/images/products/integrated-boards/mini560-12v/1.jpg",
+      "imageAlt": {
+        "en": "MINI560 12 V Buck Converter",
+        "zh": "MINI560 12 V 降压模块",
+        "es": "Convertidor reductor MINI560 de 12 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mini560-12v/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mini560-12v-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Synchronous buck, MINI560"
+        },
+        {
+          "label": "Input voltage",
+          "value": "14–20 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "12 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "<4 A"
+        },
+        {
+          "label": "Headroom",
+          "value": ">2 V"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Up to 99%"
+        },
+        {
+          "label": "Board size",
+          "value": "About 30 × 18 mm"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mini560-pro-3v3",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "MINI560 PRO 3.3 V Buck Converter",
+        "zh": "MINI560 PRO 3.3 V 降压模块",
+        "es": "Convertidor reductor MINI560 PRO de 3,3 V"
+      },
+      "tagline": {
+        "en": "5–32 V input, fixed 3.3 V, under 5 A",
+        "zh": "输入 5–32 V，固定 3.3 V，电流低于 5 A",
+        "es": "Entrada de 5–32 V, 3,3 V fijos, menos de 5 A"
+      },
+      "description": {
+        "en": "MINI560 PRO fixed-output synchronous buck module. Input is 5–32 V DC and the output is 3.3 V. Keep at least 1.7 V of input-output differential. Output current is under 5 A, and extra cooling is required above 4 A.",
+        "zh": "MINI560 PRO 固定输出同步降压模块。输入 5–32 V DC，输出 3.3 V。输入与输出压差至少 1.7 V。输出电流低于 5 A，超过 4 A 时需要额外散热。",
+        "es": "Módulo reductor síncrono de salida fija MINI560 PRO. La entrada es de 5–32 V CC y la salida es de 3,3 V. Mantenga al menos 1,7 V de diferencia entre entrada y salida. La corriente es inferior a 5 A y se requiere refrigeración adicional por encima de 4 A."
+      },
+      "image": "/images/products/integrated-boards/mini560-pro-3v3/1.jpg",
+      "imageAlt": {
+        "en": "MINI560 PRO 3.3 V Buck Converter",
+        "zh": "MINI560 PRO 3.3 V 降压模块",
+        "es": "Convertidor reductor MINI560 PRO de 3,3 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mini560-pro-3v3/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mini560-pro-3v3-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Synchronous buck, MINI560 PRO"
+        },
+        {
+          "label": "Input voltage",
+          "value": "5–32 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "3.3 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "<5 A; cooling above 4 A"
+        },
+        {
+          "label": "Headroom",
+          "value": "≥1.7 V"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mini560-pro-5v",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "MINI560 PRO 5 V Buck Converter",
+        "zh": "MINI560 PRO 5 V 降压模块",
+        "es": "Convertidor reductor MINI560 PRO de 5 V"
+      },
+      "tagline": {
+        "en": "5–32 V input, fixed 5 V, under 5 A",
+        "zh": "输入 5–32 V，固定 5 V，电流低于 5 A",
+        "es": "Entrada de 5–32 V, 5 V fijos, menos de 5 A"
+      },
+      "description": {
+        "en": "MINI560 PRO fixed-output synchronous buck module. Input is 5–32 V DC and the output is 5 V. Output current is under 5 A. Extra cooling is required for continuous current above 4 A.",
+        "zh": "MINI560 PRO 固定输出同步降压模块。输入 5–32 V DC，输出 5 V。输出电流低于 5 A，持续电流超过 4 A 时需要额外散热。",
+        "es": "Módulo reductor síncrono de salida fija MINI560 PRO. La entrada es de 5–32 V CC y la salida es de 5 V. La corriente es inferior a 5 A. Se requiere refrigeración adicional por encima de 4 A continuos."
+      },
+      "image": "/images/products/integrated-boards/mini560-pro-5v/1.jpg",
+      "imageAlt": {
+        "en": "MINI560 PRO 5 V Buck Converter",
+        "zh": "MINI560 PRO 5 V 降压模块",
+        "es": "Convertidor reductor MINI560 PRO de 5 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mini560-pro-5v/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mini560-pro-5v-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Synchronous buck, MINI560 PRO"
+        },
+        {
+          "label": "Input voltage",
+          "value": "5–32 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "5 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "<5 A; cooling above 4 A"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mini560-pro-9v",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "MINI560 PRO 9 V Buck Converter",
+        "zh": "MINI560 PRO 9 V 降压模块",
+        "es": "Convertidor reductor MINI560 PRO de 9 V"
+      },
+      "tagline": {
+        "en": "5–32 V input, fixed 9 V, under 5 A",
+        "zh": "输入 5–32 V，固定 9 V，电流低于 5 A",
+        "es": "Entrada de 5–32 V, 9 V fijos, menos de 5 A"
+      },
+      "description": {
+        "en": "MINI560 PRO fixed-output synchronous buck module. The datasheet lists a 5–32 V DC input and a fixed 9 V output. Because this is a step-down module, the input must stay above 9 V in use. Output current is under 5 A, with extra cooling above 4 A.",
+        "zh": "MINI560 PRO 固定输出同步降压模块。数据手册给出的输入范围是 5–32 V DC，输出固定 9 V。这是降压模块，实际使用时输入必须高于 9 V。输出电流低于 5 A，超过 4 A 时需要额外散热。",
+        "es": "Módulo reductor síncrono de salida fija MINI560 PRO. La hoja de datos indica una entrada de 5–32 V CC y una salida fija de 9 V. Al ser un reductor, la entrada debe permanecer por encima de 9 V en uso. La corriente es inferior a 5 A, con refrigeración adicional por encima de 4 A."
+      },
+      "image": "/images/products/integrated-boards/mini560-pro-9v/1.jpg",
+      "imageAlt": {
+        "en": "MINI560 PRO 9 V Buck Converter",
+        "zh": "MINI560 PRO 9 V 降压模块",
+        "es": "Convertidor reductor MINI560 PRO de 9 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mini560-pro-9v/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mini560-pro-9v-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Synchronous buck, MINI560 PRO"
+        },
+        {
+          "label": "Input voltage",
+          "value": "5–32 V DC listed; stay above 9 V in use"
+        },
+        {
+          "label": "Output voltage",
+          "value": "9 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "<5 A; cooling above 4 A"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mini560-pro-12v",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "MINI560 PRO 12 V Buck Converter",
+        "zh": "MINI560 PRO 12 V 降压模块",
+        "es": "Convertidor reductor MINI560 PRO de 12 V"
+      },
+      "tagline": {
+        "en": "5–32 V input listed, fixed 12 V, under 5 A",
+        "zh": "数据手册输入 5–32 V，固定 12 V，电流低于 5 A",
+        "es": "Entrada indicada de 5–32 V, 12 V fijos, menos de 5 A"
+      },
+      "description": {
+        "en": "MINI560 PRO fixed-output synchronous buck module. The datasheet lists a 5–32 V DC input and a fixed 12 V output. Because this is a step-down module, the input must stay above 12 V in use. Output current is under 5 A, with extra cooling above 4 A.",
+        "zh": "MINI560 PRO 固定输出同步降压模块。数据手册给出的输入范围是 5–32 V DC，输出固定 12 V。这是降压模块，实际使用时输入必须高于 12 V。输出电流低于 5 A，超过 4 A 时需要额外散热。",
+        "es": "Módulo reductor síncrono de salida fija MINI560 PRO. La hoja de datos indica una entrada de 5–32 V CC y una salida fija de 12 V. Al ser un reductor, la entrada debe permanecer por encima de 12 V en uso. La corriente es inferior a 5 A, con refrigeración adicional por encima de 4 A."
+      },
+      "image": "/images/products/integrated-boards/mini560-pro-12v/1.jpg",
+      "imageAlt": {
+        "en": "MINI560 PRO 12 V Buck Converter",
+        "zh": "MINI560 PRO 12 V 降压模块",
+        "es": "Convertidor reductor MINI560 PRO de 12 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mini560-pro-12v/1.jpg"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mini560-pro-12v-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Synchronous buck, MINI560 PRO"
+        },
+        {
+          "label": "Input voltage",
+          "value": "5–32 V DC listed; stay above 12 V in use"
+        },
+        {
+          "label": "Output voltage",
+          "value": "12 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "<5 A; cooling above 4 A"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mini-25v-8a-3v3",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "Mini 25 V 8 A 3.3 V Buck Converter",
+        "zh": "Mini 25 V 8 A 3.3 V 降压模块",
+        "es": "Convertidor reductor Mini 25 V 8 A de 3,3 V"
+      },
+      "tagline": {
+        "en": "6–25 V input, fixed 3.3 V, 8 A maximum",
+        "zh": "输入 6–25 V，固定 3.3 V，最大 8 A",
+        "es": "Entrada de 6–25 V, 3,3 V fijos, máximo de 8 A"
+      },
+      "description": {
+        "en": "Compact high-current buck module with a fixed 3.3 V output. Input is 6–25 V DC, and the input must be at least 1 V above 3.3 V. The 8 A figure is the maximum rating, not an unconditional continuous current. Input, short-circuit, and thermal protection are integrated. Input and output grounds are common.",
+        "zh": "紧凑型大电流降压模块，固定输出 3.3 V。输入 6–25 V DC，且输入至少比 3.3 V 高 1 V。8 A 是最大额定值，不是无条件持续电流。集成输入、短路和过热保护。输入与输出共地。",
+        "es": "Módulo reductor compacto de alta corriente con salida fija de 3,3 V. La entrada es de 6–25 V CC y debe quedar al menos 1 V por encima de 3,3 V. Los 8 A son el máximo, no una corriente continua incondicional. Integra protección de entrada, cortocircuito y temperatura. Las masas de entrada y salida son comunes."
+      },
+      "image": "/images/products/integrated-boards/mini-25v-8a-3v3/1.png",
+      "imageAlt": {
+        "en": "Mini 25 V 8 A 3.3 V Buck Converter",
+        "zh": "Mini 25 V 8 A 3.3 V 降压模块",
+        "es": "Convertidor reductor Mini 25 V 8 A de 3,3 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mini-25v-8a-3v3/1.png"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mini-25v-8a-3v3-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Non-isolated buck"
+        },
+        {
+          "label": "Input voltage",
+          "value": "6–25 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "3.3 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "8 A maximum"
+        },
+        {
+          "label": "Headroom",
+          "value": "VIN at least 1 V above the output"
+        },
+        {
+          "label": "Protection",
+          "value": "Input, short-circuit, thermal"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mini-25v-8a-5v",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "Mini 25 V 8 A 5 V Buck Converter",
+        "zh": "Mini 25 V 8 A 5 V 降压模块",
+        "es": "Convertidor reductor Mini 25 V 8 A de 5 V"
+      },
+      "tagline": {
+        "en": "6–25 V input, fixed 5 V, 8 A maximum",
+        "zh": "输入 6–25 V，固定 5 V，最大 8 A",
+        "es": "Entrada de 6–25 V, 5 V fijos, máximo de 8 A"
+      },
+      "description": {
+        "en": "Compact high-current buck module with a fixed 5 V output. Input is 6–25 V DC, and the input must be at least 1 V above 5 V. The 8 A figure is the maximum rating, not an unconditional continuous current. Input, short-circuit, and thermal protection are integrated.",
+        "zh": "紧凑型大电流降压模块，固定输出 5 V。输入 6–25 V DC，且输入至少比 5 V 高 1 V。8 A 是最大额定值，不是无条件持续电流。集成输入、短路和过热保护。",
+        "es": "Módulo reductor compacto de alta corriente con salida fija de 5 V. La entrada es de 6–25 V CC y debe quedar al menos 1 V por encima de 5 V. Los 8 A son el máximo, no una corriente continua incondicional. Integra protección de entrada, cortocircuito y temperatura."
+      },
+      "image": "/images/products/integrated-boards/mini-25v-8a-5v/1.png",
+      "imageAlt": {
+        "en": "Mini 25 V 8 A 5 V Buck Converter",
+        "zh": "Mini 25 V 8 A 5 V 降压模块",
+        "es": "Convertidor reductor Mini 25 V 8 A de 5 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mini-25v-8a-5v/1.png"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mini-25v-8a-5v-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Non-isolated buck"
+        },
+        {
+          "label": "Input voltage",
+          "value": "6–25 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "5 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "8 A maximum"
+        },
+        {
+          "label": "Headroom",
+          "value": "VIN at least 1 V above the output"
+        },
+        {
+          "label": "Protection",
+          "value": "Input, short-circuit, thermal"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mini-25v-8a-9v",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "Mini 25 V 8 A 9 V Buck Converter",
+        "zh": "Mini 25 V 8 A 9 V 降压模块",
+        "es": "Convertidor reductor Mini 25 V 8 A de 9 V"
+      },
+      "tagline": {
+        "en": "6–25 V input, fixed 9 V, 8 A maximum",
+        "zh": "输入 6–25 V，固定 9 V，最大 8 A",
+        "es": "Entrada de 6–25 V, 9 V fijos, máximo de 8 A"
+      },
+      "description": {
+        "en": "Compact high-current buck module with a fixed 9 V output. Input is 6–25 V DC, and the input must be at least 1 V above 9 V. The 8 A figure is the maximum rating, not an unconditional continuous current. Input, short-circuit, and thermal protection are integrated.",
+        "zh": "紧凑型大电流降压模块，固定输出 9 V。输入 6–25 V DC，且输入至少比 9 V 高 1 V。8 A 是最大额定值，不是无条件持续电流。集成输入、短路和过热保护。",
+        "es": "Módulo reductor compacto de alta corriente con salida fija de 9 V. La entrada es de 6–25 V CC y debe quedar al menos 1 V por encima de 9 V. Los 8 A son el máximo, no una corriente continua incondicional. Integra protección de entrada, cortocircuito y temperatura."
+      },
+      "image": "/images/products/integrated-boards/mini-25v-8a-9v/1.png",
+      "imageAlt": {
+        "en": "Mini 25 V 8 A 9 V Buck Converter",
+        "zh": "Mini 25 V 8 A 9 V 降压模块",
+        "es": "Convertidor reductor Mini 25 V 8 A de 9 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mini-25v-8a-9v/1.png"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mini-25v-8a-9v-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Non-isolated buck"
+        },
+        {
+          "label": "Input voltage",
+          "value": "6–25 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "9 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "8 A maximum"
+        },
+        {
+          "label": "Headroom",
+          "value": "VIN at least 1 V above the output"
+        },
+        {
+          "label": "Protection",
+          "value": "Input, short-circuit, thermal"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "mini-25v-8a-12v",
+      "catalogId": "integrated-boards",
+      "subcategoryId": "charging-circuit",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "Mini 25 V 8 A 12 V Buck Converter",
+        "zh": "Mini 25 V 8 A 12 V 降压模块",
+        "es": "Convertidor reductor Mini 25 V 8 A de 12 V"
+      },
+      "tagline": {
+        "en": "6–25 V input, fixed 12 V, 8 A maximum",
+        "zh": "输入 6–25 V，固定 12 V，最大 8 A",
+        "es": "Entrada de 6–25 V, 12 V fijos, máximo de 8 A"
+      },
+      "description": {
+        "en": "Compact high-current buck module with a fixed 12 V output. Input is 6–25 V DC, and the input must be at least 1 V above 12 V. The 8 A figure is the maximum rating, not an unconditional continuous current. Input, short-circuit, and thermal protection are integrated.",
+        "zh": "紧凑型大电流降压模块，固定输出 12 V。输入 6–25 V DC，且输入至少比 12 V 高 1 V。8 A 是最大额定值，不是无条件持续电流。集成输入、短路和过热保护。",
+        "es": "Módulo reductor compacto de alta corriente con salida fija de 12 V. La entrada es de 6–25 V CC y debe quedar al menos 1 V por encima de 12 V. Los 8 A son el máximo, no una corriente continua incondicional. Integra protección de entrada, cortocircuito y temperatura."
+      },
+      "image": "/images/products/integrated-boards/mini-25v-8a-12v/1.png",
+      "imageAlt": {
+        "en": "Mini 25 V 8 A 12 V Buck Converter",
+        "zh": "Mini 25 V 8 A 12 V 降压模块",
+        "es": "Convertidor reductor Mini 25 V 8 A de 12 V"
+      },
+      "gallery": [
+        "/images/products/integrated-boards/mini-25v-8a-12v/1.png"
+      ],
+      "datasheetHref": "/downloads/integrated-boards/mini-25v-8a-12v-datasheet.pdf",
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Converter",
+          "value": "Non-isolated buck"
+        },
+        {
+          "label": "Input voltage",
+          "value": "6–25 V DC"
+        },
+        {
+          "label": "Output voltage",
+          "value": "12 V fixed"
+        },
+        {
+          "label": "Output current",
+          "value": "8 A maximum"
+        },
+        {
+          "label": "Headroom",
+          "value": "VIN at least 1 V above the output"
+        },
+        {
+          "label": "Protection",
+          "value": "Input, short-circuit, thermal"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T01:59:41Z",
+      "updatedAt": "2026-09-27T01:59:41Z"
+    },
+    {
+      "id": "2zd120-3",
+      "catalogId": "ev-charging-gun",
+      "subcategoryId": "ultra-fast-dc-chargers",
+      "brand": "LV C-Chong",
+      "name": {
+        "en": "2ZD120-3 120 kW Dual-Gun DC Charger",
+        "zh": "2ZD120-3 120 kW 双枪直流充电桩",
+        "es": "Cargador CC de doble pistola 2ZD120-3 de 120 kW"
+      },
+      "tagline": {
+        "en": "Freestanding 120 kW dual-gun DC charger with a 10.1-inch touch screen.",
+        "zh": "落地式 120 kW 双枪直流桩，配备 10.1 英寸触摸屏。",
+        "es": "Cargador CC de pie de 120 kW y doble pistola, con pantalla táctil de 10,1 pulgadas."
+      },
+      "description": {
+        "en": "The 2ZD120-3 is a floor-standing DC charger rated at 120 kW. It accepts three-phase 380 V input and delivers 200–1000 V DC, with up to 400 A across two guns or 250 A on a single gun. The cabinet is IP54.",
+        "zh": "2ZD120-3 是落地式直流充电桩，额定功率 120 kW。输入为三相 380 V，直流输出 200–1000 V，双枪合计最高 400 A，单枪最高 250 A。机柜防护等级 IP54。",
+        "es": "El 2ZD120-3 es un cargador de CC de pie de 120 kW. Acepta entrada trifásica de 380 V y entrega 200–1000 V CC, hasta 400 A con dos pistolas o 250 A con una sola. El armario es IP54."
+      },
+      "image": "/images/products/ev-charging-gun/ultra-fast-dc-chargers/2zd120-3/cover.jpg",
+      "imageAlt": {
+        "en": "2ZD120-3 120 kW Dual-Gun DC Charger",
+        "zh": "2ZD120-3 120 kW 双枪直流充电桩",
+        "es": "Cargador CC de doble pistola 2ZD120-3 de 120 kW"
+      },
+      "gallery": [
+        "/images/products/ev-charging-gun/ultra-fast-dc-chargers/2zd120-3/cover.jpg",
+        "/images/products/ev-charging-gun/ultra-fast-dc-chargers/2zd120-3/4.jpg",
+        "/images/products/ev-charging-gun/ultra-fast-dc-chargers/2zd120-3/5.jpg"
+      ],
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Model",
+          "value": "2ZD120-3"
+        },
+        {
+          "label": "Max output power",
+          "value": "120 kW"
+        },
+        {
+          "label": "DC output voltage",
+          "value": "200–1000 V"
+        },
+        {
+          "label": "Max charging current",
+          "value": "400 A dual gun; 250 A single gun"
+        },
+        {
+          "label": "AC input",
+          "value": "3-phase 380 V, 50 Hz ±5 Hz"
+        },
+        {
+          "label": "Display",
+          "value": "10.1-inch touch screen"
+        },
+        {
+          "label": "Cabinet size",
+          "value": "920 × 628 × 1850 mm"
+        },
+        {
+          "label": "Protection",
+          "value": "IP54"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T00:53:32Z",
+      "updatedAt": "2026-09-27T00:53:32Z"
+    },
+    {
+      "id": "dc-60-240kw",
+      "catalogId": "ev-charging-gun",
+      "subcategoryId": "ultra-fast-dc-chargers",
+      "brand": "SiCore Dynamics",
+      "name": {
+        "en": "60–240 kW Freestanding DC Fast Charger",
+        "zh": "60–240 kW 落地式直流快充桩",
+        "es": "Cargador rápido de CC de pie de 60–240 kW"
+      },
+      "tagline": {
+        "en": "Configurable dual-cable DC platform for public and commercial charging sites.",
+        "zh": "可配置的双枪直流平台，用于公共和商业充电场景。",
+        "es": "Plataforma de CC de doble cable configurable para sitios de carga públicos y comerciales."
+      },
+      "description": {
+        "en": "This freestanding DC charger family covers 60, 120, 180, and 240 kW. It uses a dual-cable layout, 200–1000 V DC output, IP54 protection, and OCPP with Wi-Fi or 4G. Connector options include GB/T, CCS, CHAdeMO, and Tesla-style plugs.",
+        "zh": "这款落地式直流桩覆盖 60、120、180 和 240 kW。双枪输出，直流电压 200–1000 V，防护等级 IP54，支持 OCPP 以及 Wi-Fi 或 4G。接口可选国标、CCS、CHAdeMO 和特斯拉式插头。",
+        "es": "Esta familia de cargadores de CC de pie cubre 60, 120, 180 y 240 kW. Usa dos cables, salida de 200–1000 V CC, protección IP54 y OCPP con Wi-Fi o 4G. Las opciones de conector incluyen GB/T, CCS, CHAdeMO y estilo Tesla."
+      },
+      "image": "/images/products/ev-charging-gun/ultra-fast-dc-chargers/dc-60-240kw/cover.jpg",
+      "imageAlt": {
+        "en": "60–240 kW Freestanding DC Fast Charger",
+        "zh": "60–240 kW 落地式直流快充桩",
+        "es": "Cargador rápido de CC de pie de 60–240 kW"
+      },
+      "gallery": [
+        "/images/products/ev-charging-gun/ultra-fast-dc-chargers/dc-60-240kw/cover.jpg",
+        "/images/products/ev-charging-gun/ultra-fast-dc-chargers/dc-60-240kw/01.jpg",
+        "/images/products/ev-charging-gun/ultra-fast-dc-chargers/dc-60-240kw/02.jpg",
+        "/images/products/ev-charging-gun/ultra-fast-dc-chargers/dc-60-240kw/03.jpg",
+        "/images/products/ev-charging-gun/ultra-fast-dc-chargers/dc-60-240kw/04.jpg",
+        "/images/products/ev-charging-gun/ultra-fast-dc-chargers/dc-60-240kw/06.jpg",
+        "/images/products/ev-charging-gun/ultra-fast-dc-chargers/dc-60-240kw/07.jpg",
+        "/images/products/ev-charging-gun/ultra-fast-dc-chargers/dc-60-240kw/08.jpg",
+        "/images/products/ev-charging-gun/ultra-fast-dc-chargers/dc-60-240kw/09.jpg"
+      ],
+      "availability": "available",
+      "priceLabel": "Quote",
+      "buyable": false,
+      "specs": [
+        {
+          "label": "Rated power",
+          "value": "60 / 120 / 180 / 240 kW"
+        },
+        {
+          "label": "DC output voltage",
+          "value": "200–1000 V"
+        },
+        {
+          "label": "Cables",
+          "value": "Dual cable"
+        },
+        {
+          "label": "Protection",
+          "value": "IP54"
+        },
+        {
+          "label": "Connectivity",
+          "value": "OCPP; Wi-Fi / 4G"
+        },
+        {
+          "label": "Access",
+          "value": "RFID, app, QR code, password, plug and charge"
+        },
+        {
+          "label": "Connectors",
+          "value": "GB/T, CCS, CHAdeMO, Tesla-style"
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-09-27T00:53:32Z",
+      "updatedAt": "2026-09-27T00:53:32Z",
+      "datasheetHref": "/downloads/ev-charging-gun/DC_Fast_Charger_Product_Datasheet.pdf"
+    },
+    {
       "id": "wdd35d4",
       "catalogId": "third-party-products",
       "subcategoryId": "sensors-sensing",

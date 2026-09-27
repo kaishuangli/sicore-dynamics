@@ -1,6 +1,6 @@
 import { autonomousSoftwareSections } from "@/lib/autonomous-software";
 import type { CatalogDefinition, CatalogId } from "@/lib/catalog/types";
-import { consumerProductSubcategories } from "@/lib/consumer-products";
+import { visibleConsumerProductSubcategories } from "@/lib/consumer-products";
 import { dockingProducts } from "@/lib/docking-products";
 import { fastChargingCategories } from "@/lib/fast-charging-catalog";
 import { integratedBoardCategories } from "@/lib/integrated-boards";
@@ -58,7 +58,7 @@ export const catalogDefinitions: CatalogDefinition[] = [
     id: "consumer-oriented-products",
     label: L("Consumer Oriented Products", "消费类产品", "Productos orientados al consumidor"),
     href: "/products/consumer-oriented-products",
-    subcategories: consumerProductSubcategories.map((item) => ({
+    subcategories: visibleConsumerProductSubcategories.map((item) => ({
       id: item.id,
       label: L(item.label, item.labelZh, item.labelEs),
     })),

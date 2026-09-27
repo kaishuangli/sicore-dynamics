@@ -6,7 +6,7 @@ import { useMemo, useState } from "react";
 import type { Locale } from "@/lib/i18n/config";
 import { withLocale } from "@/lib/i18n/path";
 import {
-  consumerProductSubcategories,
+  visibleConsumerProductSubcategories,
   getConsumerCatalogProducts,
   getConsumerSubcategoryDescription,
   getConsumerSubcategoryLabel,
@@ -103,7 +103,7 @@ export default function ConsumerProductsCatalog({
 
   const counts = useMemo(
     () =>
-      consumerProductSubcategories.map((sub) => ({
+      visibleConsumerProductSubcategories.map((sub) => ({
         id: sub.id,
         label: getConsumerSubcategoryLabel(sub.id, locale),
         description: getConsumerSubcategoryDescription(sub.id, locale),
