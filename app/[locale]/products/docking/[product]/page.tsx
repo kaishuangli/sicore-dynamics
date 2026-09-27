@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
+import JsonLd from "@/components/JsonLd";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { getDockingProductContent } from "@/lib/i18n/content";
@@ -11,6 +12,8 @@ import {
   type DockingProductId,
 } from "@/lib/docking-products";
 import { withLocale } from "@/lib/i18n/path";
+import { getDockingSkusForCategory } from "@/lib/docking-skus";
+import { getProductSchema } from "@/lib/seo";
 import { site } from "@/lib/site";
 import CatalogProductPage from "@/sections/catalog/CatalogProductPage";
 import DockingShell from "@/sections/products/DockingShell";
@@ -73,10 +76,25 @@ export default async function DockingProductDetailPage({ params }: PageProps) {
 
   if (categoryId) {
     const productId = categoryId as DockingProductId;
+    const item = getDockingProductContent(rawLocale, productId);
+    const cover = getDockingSkusForCategory(productId)[0]?.image;
     return (
-      <DockingShell locale={rawLocale} activeProductId={productId}>
-        <DockingCategoryCatalog locale={rawLocale} categoryId={productId} />
-      </DockingShell>
+      <>
+        {item ? (
+          <JsonLd
+            data={getProductSchema({
+              name: item.label,
+              description: item.tagline,
+              path: withLocale(`/products/docking/${productId}`, rawLocale),
+              image: cover,
+              category: "Docking",
+            })}
+          />
+        ) : null}
+        <DockingShell locale={rawLocale} activeProductId={productId}>
+          <DockingCategoryCatalog locale={rawLocale} categoryId={productId} />
+        </DockingShell>
+      </>
     );
   }
 

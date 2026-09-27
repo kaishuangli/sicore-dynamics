@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "/images/plug-free-docking/hero.png",
         width: 1200,
         height: 630,
-        alt: "SiCore Dynamics wireless charging for robotics and intelligent machines",
+        alt: "SiCore Dynamics autonomous charging for robotics and intelligent machines",
       },
     ],
   },
@@ -49,6 +49,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
+      <head>
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM site summary" />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );

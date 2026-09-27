@@ -29,8 +29,8 @@ export default function KnowledgeSection() {
               <span className="text-gradient-blue">wireless power</span> systems.
             </h2>
             <p className="mt-4 text-sm leading-6 text-slate-600">
-              Explore 13 engineering collections — from wireless charging fundamentals to intelligent
-              power control, charging stations, and industry standards.
+              Explore engineering collections covering autonomous charging, wireless charging
+              fundamentals, intelligent power control, charging stations, and industry standards.
             </p>
           </div>
           <Link

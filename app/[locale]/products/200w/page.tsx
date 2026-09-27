@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import JsonLd from "@/components/JsonLd";
 import Wireless200wProductPage from "@/sections/products/wireless200w/Wireless200wProductPage";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getProduct200w } from "@/lib/i18n/content";
+import { withLocale } from "@/lib/i18n/path";
+import { getProductSchema } from "@/lib/seo";
 
 type Product200wPageProps = {
   params: Promise<{ locale: string }>;
@@ -32,5 +35,20 @@ export default async function Product200wPage({ params }: Product200wPageProps) 
   if (!isLocale(raw)) notFound();
   const locale = raw as Locale;
 
-  return <Wireless200wProductPage locale={locale} />;
+  const { wireless200wMeta, wireless200wHero } = getProduct200w(locale);
+
+  return (
+    <>
+      <JsonLd
+        data={getProductSchema({
+          name: wireless200wHero.title,
+          description: wireless200wMeta.description,
+          path: withLocale("/products/200w", locale),
+          image: wireless200wHero.image,
+          category: "Wireless Power Modules",
+        })}
+      />
+      <Wireless200wProductPage locale={locale} />
+    </>
+  );
 }

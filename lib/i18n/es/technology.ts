@@ -233,9 +233,9 @@ export const technologyAdvantages = [
 ];
 
 export const technologyPageMeta = {
-  title: "Plataformas Tecnológicas",
+  title: "Plataforma tecnológica de carga autónoma",
   description:
-    "Plataformas tecnológicas de SiCore Dynamics: Plataforma de Energía Inalámbrica, sistemas de carga inteligente, acoplamiento sin conector e integración OEM para máquinas autónomas.",
+    "Desde la transferencia de energía y el acoplamiento hasta la inteligencia de carga y la integración OEM, SiCore proporciona la pila tecnológica necesaria para que las máquinas se carguen de forma autónoma.",
 };
 
 /** Legacy hash / slug → current platform route */

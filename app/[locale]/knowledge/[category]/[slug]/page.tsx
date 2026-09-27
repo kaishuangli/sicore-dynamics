@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import JsonLd from "@/components/JsonLd";
 import {
   getKnowledgeArticle,
   getKnowledgeArticleStaticParams,
@@ -8,6 +9,7 @@ import {
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getKnowledgeCategories } from "@/lib/i18n/content";
 import { withLocale } from "@/lib/i18n/path";
+import { absoluteUrl } from "@/lib/geo";
 import { site } from "@/lib/site";
 import KnowledgeArticlePage from "@/sections/knowledge/KnowledgeArticlePage";
 
@@ -74,8 +76,29 @@ export default async function KnowledgeArticleRoute({ params }: ArticlePageProps
       ? readyLinks[readyIndex + 1]
       : null;
 
+  const path = withLocale(`/knowledge/${categoryId}/${slug}`, locale);
+  const headline = catalogArticles[catalogIndex]?.title ?? article.title;
+  const description = catalogArticles[catalogIndex]?.summary ?? article.summary;
+
   return (
-    <KnowledgeArticlePage
+    <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "TechArticle",
+          headline,
+          description,
+          inLanguage: "en",
+          mainEntityOfPage: absoluteUrl(path),
+          author: {
+            "@type": "Organization",
+            name: site.name,
+            url: site.url,
+          },
+          publisher: { "@id": `${site.url}/#organization` },
+        }}
+      />
+      <KnowledgeArticlePage
       article={{
         ...article,
         title: catalogArticles[catalogIndex]?.title ?? article.title,
@@ -97,5 +120,6 @@ export default async function KnowledgeArticleRoute({ params }: ArticlePageProps
       prev={prev}
       next={next}
     />
+    </>
   );
 }

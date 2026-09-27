@@ -4,7 +4,7 @@ export const site = {
   email: "contact@sicoredynamics.com",
   tagline: "Intelligent Autonomous Charging Solutions",
   description:
-    "SiCore Dynamics specializes in intelligent autonomous charging solutions. We design automatic power charging systems for robotics, medical devices, drones, industrial automation, and OEM platforms — so intelligent machines can operate continuously without human intervention.",
+    "SiCore Dynamics is an intelligent autonomous charging technology company. Wireless charging is one part of its technology stack, together with contact charging, plug-free docking, intelligent charging software, and OEM charging infrastructure for autonomous machines.",
   seoCorePhrase:
     "We engineer autonomous charging infrastructure that keeps intelligent machines operating continuously",
 };

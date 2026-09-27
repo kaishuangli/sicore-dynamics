@@ -29,13 +29,17 @@ export default function TechHero({ locale }: { locale: Locale }) {
               id="tech-hero-heading"
               className="font-display mt-5 text-[32px] font-black leading-[1.08] tracking-[-0.04em] text-white md:text-[42px] lg:text-[48px]"
             >
-              {t("先进的无线充电技术", "Tecnologías avanzadas de carga inalámbrica", "Advanced Wireless Charging Technologies")}
+              {t(
+                "自主充电技术平台",
+                "Plataforma tecnológica de carga autónoma",
+                "Autonomous Charging Technology Platform",
+              )}
             </h1>
             <p className="mt-6 text-base leading-7 text-slate-400 md:text-lg">
               {t(
-                "为下一代智能机器提供先进的无线充电技术、智能充电站与 AI 驱动的能源系统。",
-                "Tecnologías avanzadas de carga inalámbrica, estaciones inteligentes y sistemas de energía impulsados por IA para la próxima generación de máquinas inteligentes.",
-                "Delivering advanced wireless charging technologies, intelligent charging stations, and AI-powered energy systems for next-generation intelligent machines.",
+                "从功率传输与对接到充电智能和 OEM 集成，SiCore 提供机器自主充电所需的完整技术栈。",
+                "Desde la transferencia de energía y el acoplamiento hasta la inteligencia de carga y la integración OEM, SiCore proporciona la pila tecnológica necesaria para que las máquinas se carguen de forma autónoma.",
+                "From power transfer and docking to charging intelligence and OEM integration, SiCore provides the technology stack required for machines to charge autonomously.",
               )}
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
@@ -57,7 +61,7 @@ export default function TechHero({ locale }: { locale: Locale }) {
               <div className="relative aspect-[4/3] min-h-[280px]">
                 <Image
                   src="/images/hero-wireless-robotics.jpg"
-                  alt="Industrial robot and AGV wireless charging with blue energy field"
+                  alt="Autonomous charging for industrial robots and mobile machines"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"

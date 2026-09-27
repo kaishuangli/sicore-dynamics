@@ -1,9 +1,10 @@
+import { absoluteUrl, geoEntity } from "@/lib/geo";
+import { productTiers, type ProductTierId } from "@/lib/products";
 import { site } from "@/lib/site";
-import { geoEntity } from "@/lib/geo";
 
 export const homeTitle = "Intelligent Autonomous Charging for Robotics & Smart Equipment";
 
-export const homeDescription = `${site.seoCorePhrase}. SiCore Dynamics designs automatic power charging systems and intelligent autonomous charging solutions for robotics, AGVs, drones, medical devices, industrial automation, and OEM platforms.`;
+export const homeDescription = geoEntity.definition;
 
 export const coreCapabilities = [
   {
@@ -64,7 +65,7 @@ export function getOrganizationSchema() {
       height: 682,
     },
     image: `${site.url}/images/sicore-logo.png`,
-    description: geoEntity.definition,
+    description: geoEntity.profile,
     email: site.email,
     telephone: geoEntity.phone,
     foundingDate: geoEntity.foundingDate,
@@ -103,11 +104,11 @@ export function getOrganizationSchema() {
       name: "Worldwide",
     },
     knowsAbout: [
-      "Advanced Wireless Charging Technologies",
-      "Intelligent Charging Stations",
-      "AI Power Systems",
-      "AI Power Electronics",
-      "Wireless Power Transfer",
+      "Intelligent Autonomous Charging",
+      "Plug-Free Docking",
+      "Intelligent Charging Systems",
+      "OEM Charging Infrastructure",
+      "Wireless Charging",
       "Wireless Charging for Robotics",
       "Power Electronics",
       "Industrial Automation",
@@ -190,21 +191,59 @@ export function getServiceSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: site.seoCorePhrase,
-    description: homeDescription,
+    name: "Intelligent Autonomous Charging",
+    description: geoEntity.profile,
     provider: {
       "@id": `${site.url}/#organization`,
     },
     serviceType: [
-      "Wireless Charging Technology",
-      "Intelligent Charging Systems",
-      "AI Power Electronics",
-      "Industrial Power Solutions",
-      "OEM Wireless Charging Integration",
+      "Intelligent Autonomous Charging",
+      "Wireless Charging",
+      "Contact Charging",
+      "Plug-Free Docking",
+      "Intelligent Charging Software",
+      "OEM Charging Infrastructure",
     ],
     areaServed: "Worldwide",
     brand: {
       "@id": `${site.url}/#organization`,
     },
   };
+}
+
+export function getProductSchema(input: {
+  name: string;
+  description: string;
+  path: string;
+  image?: string;
+  category: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: input.name,
+    description: input.description,
+    category: input.category,
+    url: absoluteUrl(input.path),
+    ...(input.image ? { image: absoluteUrl(input.image) } : {}),
+    brand: {
+      "@type": "Brand",
+      name: site.name,
+    },
+    manufacturer: {
+      "@id": `${site.url}/#organization`,
+    },
+  };
+}
+
+export function getWirelessTierProductSchema(tierId: ProductTierId, path: string) {
+  const tier = productTiers.find((item) => item.id === tierId);
+  if (!tier) return null;
+  return getProductSchema({
+    name: tier.title,
+    description: tier.description,
+    path,
+    image: tier.image,
+    category: "Wireless Power Modules",
+  });
 }

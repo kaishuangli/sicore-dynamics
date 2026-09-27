@@ -18,16 +18,16 @@ export default function TechCta({ locale }: { locale: Locale }) {
           className="font-display mx-auto max-w-3xl text-2xl font-black tracking-[-0.03em] text-[#0B0F19] md:text-3xl lg:text-4xl"
         >
           {t(
-            "准备好打造下一代无线充电系统了吗？",
-            "¿Listo para crear la próxima generación de sistemas de carga inalámbrica?",
-            "Ready to Build the Next Generation of Wireless Charging Systems?",
+            "准备把自主充电做进下一台机器了吗？",
+            "¿Listo para integrar la carga autónoma en su próxima máquina?",
+            "Ready to Build Autonomous Charging into Your Next Machine?",
           )}
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-[#64748B] md:text-base">
           {t(
-            "与 SiCore Dynamics 合作，将先进的无线充电、智能充电站与 AI 电力系统集成到您的下一代智能机器平台中。",
-            "Asóciese con SiCore Dynamics para integrar carga inalámbrica avanzada, estaciones inteligentes y sistemas de energía con IA en su próxima plataforma de máquinas inteligentes.",
-            "Partner with SiCore Dynamics to integrate advanced wireless charging, intelligent stations, and AI power systems into your next intelligent machine platform.",
+            "与 SiCore Dynamics 合作，把无线充电、无插拔对接、智能充电系统和 OEM 充电基础设施集成到您的机器平台中。",
+            "Asóciese con SiCore Dynamics para integrar carga inalámbrica, acoplamiento sin conector, sistemas de carga inteligente e infraestructura de carga OEM en su plataforma.",
+            "Partner with SiCore Dynamics to integrate wireless charging, plug-free docking, intelligent charging systems, and OEM charging infrastructure into your machine platform.",
           )}
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

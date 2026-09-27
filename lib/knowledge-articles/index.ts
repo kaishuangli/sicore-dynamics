@@ -12,9 +12,11 @@ import { emiEmcEngineeringArticles } from "@/lib/knowledge-articles/emi-emc-engi
 import { safetyEngineeringArticles } from "@/lib/knowledge-articles/safety-engineering";
 import { industryStandardsArticles } from "@/lib/knowledge-articles/industry-standards";
 import { resonantWirelessPowerArticles } from "@/lib/knowledge-articles/resonant-wireless-power";
+import { autonomousChargingArticles } from "@/lib/knowledge-articles/autonomous-charging";
 import { wirelessChargingFundamentalsArticles } from "@/lib/knowledge-articles/wireless-charging-fundamentals";
 
 const articlesByCategory: Record<string, readonly KnowledgeArticle[]> = {
+  "autonomous-charging": autonomousChargingArticles,
   "wireless-charging-fundamentals": wirelessChargingFundamentalsArticles,
   "resonant-wireless-power": resonantWirelessPowerArticles,
   "coil-engineering": coilEngineeringArticles,

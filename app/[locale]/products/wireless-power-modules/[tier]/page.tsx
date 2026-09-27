@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import JsonLd from "@/components/JsonLd";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { getProduct200w, getProduct800w, getProduct1500w } from "@/lib/i18n/content";
 import { getProductTiers } from "@/lib/i18n/product-content";
 import { getUploadedProduct, getUploadedProducts } from "@/lib/catalog/products";
 import { pickLocalized } from "@/lib/catalog/types";
+import { withLocale } from "@/lib/i18n/path";
 import { isWirelessLowPowerTierId, productTiers, type ProductTierId } from "@/lib/products";
+import { getWirelessTierProductSchema } from "@/lib/seo";
 import { site } from "@/lib/site";
 import CatalogProductPage from "@/sections/catalog/CatalogProductPage";
 import Wireless30wCatalog from "@/sections/products/wireless30w/Wireless30wCatalog";
@@ -145,10 +148,17 @@ export default async function WirelessPowerModuleTierPage({ params }: PageProps)
   }
 
   if (isProductTierId(tier)) {
+    const productSchema = getWirelessTierProductSchema(
+      tier,
+      withLocale(`/products/wireless-power-modules/${tier}`, rawLocale),
+    );
     return (
-      <WirelessPowerModulesShell locale={rawLocale} activeTierId={tier}>
-        <ProductDetail locale={rawLocale} tier={tier} />
-      </WirelessPowerModulesShell>
+      <>
+        {productSchema ? <JsonLd data={productSchema} /> : null}
+        <WirelessPowerModulesShell locale={rawLocale} activeTierId={tier}>
+          <ProductDetail locale={rawLocale} tier={tier} />
+        </WirelessPowerModulesShell>
+      </>
     );
   }
 

@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: AboutPageProps): Promise<Meta
       "SiCore Dynamics",
       "about SiCore",
       "autonomous charging infrastructure",
-      "wireless power company",
+      "intelligent autonomous charging",
       "robotics charging",
       "intelligent energy systems",
     ],

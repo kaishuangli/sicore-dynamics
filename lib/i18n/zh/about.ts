@@ -3,9 +3,9 @@ export const aboutSections = [
     id: "about-sicore",
     label: "关于 SiCore",
     title: "关于 SiCore Dynamics",
-    tagline: "一家为智能机器打造的无线电源技术公司。",
+    tagline: "一家智能自主充电技术公司。",
     description:
-      "SiCore Dynamics 开发先进的无线电力传输系统，帮助机器人、工业机器、医疗设备及未来智能系统实现更高自主性的充电与运行。",
+      "SiCore Dynamics 是一家总部位于美国德克萨斯州的智能自主充电技术公司。我们开发无线充电、接触式充电、无插拔对接、智能充电软件和 OEM 充电基础设施，使自主机器能够在尽量减少人工干预的情况下运行。",
     highlights: [
       "谐振式无线电力传输平台",
       "面向机器人与自动化的智能充电站",

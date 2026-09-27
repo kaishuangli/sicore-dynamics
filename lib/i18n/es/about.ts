@@ -3,9 +3,9 @@ export const aboutSections = [
     id: "about-sicore",
     label: "Sobre SiCore",
     title: "Sobre SiCore Dynamics",
-    tagline: "Una empresa de tecnología de energía inalámbrica creada para máquinas inteligentes.",
+    tagline: "Una empresa de tecnología de carga autónoma inteligente.",
     description:
-      "SiCore Dynamics desarrolla sistemas avanzados de transferencia de energía inalámbrica que ayudan a robots, máquinas industriales, dispositivos médicos y futuros sistemas inteligentes a cargarse y operar con mayor autonomía.",
+      "SiCore Dynamics es una empresa de tecnología de carga autónoma inteligente con sede en Texas, Estados Unidos. Desarrollamos carga inalámbrica, carga por contacto, acoplamiento sin conector, software de carga inteligente e infraestructura de carga OEM que permiten a las máquinas autónomas operar con una intervención humana mínima.",
     highlights: [
       "Plataformas de transferencia de energía inalámbrica resonante",
       "Estaciones de carga inteligentes para robótica y automatización",

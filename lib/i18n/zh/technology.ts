@@ -233,9 +233,9 @@ export const technologyAdvantages = [
 ];
 
 export const technologyPageMeta = {
-  title: "技术平台",
+  title: "自主充电技术平台",
   description:
-    "SiCore Dynamics 技术平台：面向自主机器的无线能量平台、智能充电系统、无插拔对接技术与 OEM 集成。",
+    "从功率传输与对接到充电智能和 OEM 集成，SiCore 提供机器自主充电所需的完整技术栈。",
 };
 
 /** Legacy hash / slug → current platform route */

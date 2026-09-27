@@ -39,13 +39,13 @@ export default function KnowledgeHero({ locale }: { locale: Locale }) {
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-400 md:text-lg">
             {isZh
-              ? "十三个工程系列——涵盖无线充电基础到智能电力控制、充电站与行业标准。"
-              : "Thirteen engineering collections — from wireless charging fundamentals to intelligent power control, charging stations, and industry standards."}
+              ? "工程系列涵盖自主充电、无线供电、智能功率控制、充电站与行业标准。"
+              : "Engineering collections covering autonomous charging, wireless power, intelligent power control, charging stations, and industry standards."}
           </p>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             {[
-              { value: "13", label: isZh ? "系列" : "Collections" },
+              { value: String(knowledgeCategories.length), label: isZh ? "系列" : "Collections" },
               { value: `${totalKnowledgeArticles}`, label: isZh ? "主题" : "Topics" },
               { value: "SiCore Core", label: isZh ? "AI 电力控制" : "AI Power Control" },
             ].map((stat) => (

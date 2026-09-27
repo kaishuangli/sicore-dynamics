@@ -233,9 +233,9 @@ export const technologyAdvantages = [
 ];
 
 export const technologyPageMeta = {
-  title: "Technology Platforms",
+  title: "Autonomous Charging Technology Platform",
   description:
-    "SiCore Dynamics technology platforms: Wireless Energy Platform, intelligent charging systems, plug-free docking, and OEM integration for autonomous machines.",
+    "From power transfer and docking to charging intelligence and OEM integration, SiCore provides the technology stack required for machines to charge autonomously.",
 };
 
 /** Legacy hash / slug → current platform route */

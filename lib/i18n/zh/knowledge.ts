@@ -419,6 +419,31 @@ const categoryInputs: CategoryInput[] = [
       { title: "REACH 法规" },
     ],
   },
+  {
+    id: "autonomous-charging",
+    index: "13",
+    title: "自主充电",
+    titleZh: "自主充电",
+    shortLabel: "自主充电",
+    description: "自主充电是什么、AMR 何时用无线或接触式充电，以及无插拔对接如何完成充电循环。",
+    icon: "ai",
+    accent: "from-[#0B5FFF] to-cyan-400",
+    featured: true,
+    topics: [
+      {
+        title: "什么是自主充电？",
+        summary: "自主充电让机器自行寻找电源、对接、充电、报告能量状态并返回作业，无需人工插拔。",
+      },
+      {
+        title: "AMR 的无线充电与接触式充电",
+        summary: "如何为 AMR 或 AGV 选择无线充电或接触式充电，以及车队为何会在同一平台里同时使用两者。",
+      },
+      {
+        title: "无插拔对接如何工作",
+        summary: "无插拔对接是让机器在没有人插接连接器的情况下停靠到充电器的机械与控制步骤。",
+      },
+    ],
+  },
 ];
 
 export const knowledgeCategories = categoryInputs.map(makeCategory);
@@ -446,5 +471,5 @@ export const totalKnowledgeArticles = knowledgeCategories.reduce(
 export const knowledgePageMeta = {
   title: "知识中心",
   description:
-    "SiCore Dynamics 知识库——13 个工程专题合集，涵盖无线充电基础、磁共振无线充电、线圈设计、智能功率控制、智能充电站与行业标准等内容。",
+    "SiCore Dynamics 知识库，涵盖自主充电、无线充电基础、磁共振无线充电、线圈设计、智能功率控制、智能充电站与行业标准。",
 };

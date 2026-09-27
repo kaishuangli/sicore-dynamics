@@ -421,6 +421,35 @@ const categoryInputs: CategoryInput[] = [
       { title: "REACH" },
     ],
   },
+  {
+    id: "autonomous-charging",
+    index: "13",
+    title: "Carga autónoma",
+    titleZh: "自主充电",
+    shortLabel: "Carga autónoma",
+    description:
+      "Qué es la carga autónoma, cuándo usar carga inalámbrica o por contacto, y cómo el acoplamiento sin conector cierra el ciclo.",
+    icon: "ai",
+    accent: "from-[#0B5FFF] to-cyan-400",
+    featured: true,
+    topics: [
+      {
+        title: "¿Qué es la carga autónoma?",
+        summary:
+          "La carga autónoma permite que una máquina encuentre energía, se acople, cargue, informe su estado energético y vuelva al trabajo sin que una persona conecte un cable.",
+      },
+      {
+        title: "Carga inalámbrica o por contacto para AMR",
+        summary:
+          "Cómo elegir carga inalámbrica o por contacto para un AMR o AGV, y por qué muchas flotas usan ambas en una sola plataforma.",
+      },
+      {
+        title: "Cómo funciona el acoplamiento sin conector",
+        summary:
+          "El acoplamiento sin conector es el paso mecánico y de control que coloca una máquina en el cargador sin que una persona enchufe un conector.",
+      },
+    ],
+  },
 ];
 
 export const knowledgeCategories = categoryInputs.map(makeCategory);
@@ -448,5 +477,5 @@ export const totalKnowledgeArticles = knowledgeCategories.reduce(
 export const knowledgePageMeta = {
   title: "Centro de Conocimiento",
   description:
-    "Biblioteca de conocimiento de SiCore Dynamics — 13 colecciones técnicas que abarcan los fundamentos de la carga inalámbrica, la energía inalámbrica resonante, el diseño de bobinas, el control inteligente de potencia, las estaciones de carga y las normas de la industria.",
+    "Biblioteca de conocimiento de SiCore Dynamics sobre carga autónoma, fundamentos de la carga inalámbrica, energía inalámbrica resonante, diseño de bobinas, control inteligente de potencia, estaciones de carga y normas de la industria.",
 };

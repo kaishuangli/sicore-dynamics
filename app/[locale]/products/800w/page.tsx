@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import JsonLd from "@/components/JsonLd";
 import Wireless800wProductPage from "@/sections/products/wireless800w/Wireless800wProductPage";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getProduct800w } from "@/lib/i18n/content";
+import { withLocale } from "@/lib/i18n/path";
+import { getProductSchema } from "@/lib/seo";
 
 type Product800wPageProps = {
   params: Promise<{ locale: string }>;
@@ -32,5 +35,20 @@ export default async function Product800wPage({ params }: Product800wPageProps) 
   if (!isLocale(raw)) notFound();
   const locale = raw as Locale;
 
-  return <Wireless800wProductPage locale={locale} />;
+  const { wireless800wMeta, wireless800wHero } = getProduct800w(locale);
+
+  return (
+    <>
+      <JsonLd
+        data={getProductSchema({
+          name: `${wireless800wHero.titleLead} ${wireless800wHero.titleRest}`,
+          description: wireless800wMeta.description,
+          path: withLocale("/products/800w", locale),
+          image: wireless800wHero.image,
+          category: "Wireless Power Modules",
+        })}
+      />
+      <Wireless800wProductPage locale={locale} />
+    </>
+  );
 }

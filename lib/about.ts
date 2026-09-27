@@ -3,9 +3,9 @@ export const aboutSections = [
     id: "about-sicore",
     label: "About SiCore",
     title: "About SiCore Dynamics",
-    tagline: "A wireless power technology company built for intelligent machines.",
+    tagline: "An intelligent autonomous charging technology company.",
     description:
-      "SiCore Dynamics develops advanced wireless power transfer systems that help robots, industrial machines, medical devices, and future intelligent systems charge and operate with greater autonomy.",
+      "SiCore Dynamics is an intelligent autonomous charging technology company headquartered in Texas, USA. We develop wireless charging, contact charging, plug-free docking, intelligent charging software, and OEM charging infrastructure that enable autonomous machines to operate with minimal human intervention.",
     highlights: [
       "Resonant wireless power transfer platforms",
       "Intelligent charging stations for robotics and automation",

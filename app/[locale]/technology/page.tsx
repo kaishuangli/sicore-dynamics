@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: TechnologyPageProps): Promise
       images: [
         {
           url: `${site.url}/images/hero-wireless-robotics.jpg`,
-          alt: "SiCore Dynamics wireless charging technology",
+          alt: "SiCore Dynamics autonomous charging technology platform",
         },
       ],
     },

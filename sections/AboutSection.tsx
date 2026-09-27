@@ -50,9 +50,8 @@ export default function AboutSection({ locale }: { locale: Locale }) {
             {t("SiCore Dynamics 是谁？", "¿Qué es SiCore Dynamics?", "Who is SiCore Dynamics?")}
           </h3>
           <p className="geo-entity-definition mt-4 text-sm leading-7 text-slate-600 md:text-base md:leading-8">
-            {geoEntity.definition}
+            {geoEntity.profile}
           </p>
-          <p className="mt-3 text-sm leading-7 text-slate-600 md:text-base md:leading-8">{geoEntity.whatWeDo}</p>
           <ul className="mt-5 space-y-2">
             {geoEntity.differentiators.map((item) => (
               <li key={item} className="flex gap-2.5 text-sm leading-6 text-slate-600">

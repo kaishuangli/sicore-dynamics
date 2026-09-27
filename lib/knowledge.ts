@@ -418,6 +418,38 @@ const categoryInputs: CategoryInput[] = [
       { title: "REACH" },
     ],
   },
+  {
+    id: "autonomous-charging",
+    index: "13",
+    title: "Autonomous Charging",
+    titleZh: "自主充电",
+    shortLabel: "Autonomous Charging",
+    description:
+      "What autonomous charging is, when to use wireless or contact charging, and how plug-free docking completes the cycle.",
+    icon: "ai",
+    accent: "from-[#0B5FFF] to-cyan-400",
+    featured: true,
+    topics: [
+      {
+        title: "What is Autonomous Charging?",
+        slug: "what-is-autonomous-charging",
+        summary:
+          "Autonomous charging is the system that lets a machine find power, dock, charge, report energy status, and return to work without a person plugging in a cable.",
+      },
+      {
+        title: "Wireless vs Contact Charging for AMRs",
+        slug: "wireless-vs-contact-charging-for-amrs",
+        summary:
+          "How to choose wireless charging or contact charging for an AMR or AGV, and why many fleets use both inside one autonomous charging platform.",
+      },
+      {
+        title: "How Plug-Free Docking Works",
+        slug: "how-plug-free-docking-works",
+        summary:
+          "Plug-free docking is the mechanical and control step that puts a machine on a charger without a person mating a connector.",
+      },
+    ],
+  },
 ];
 
 export const knowledgeCategories = categoryInputs.map(makeCategory);
@@ -445,5 +477,5 @@ export const totalKnowledgeArticles = knowledgeCategories.reduce(
 export const knowledgePageMeta = {
   title: "Knowledge Center",
   description:
-    "SiCore Dynamics knowledge library — 13 engineering collections covering wireless charging fundamentals, resonant WPT, coil design, intelligent power control, charging stations, and industry standards.",
+    "SiCore Dynamics knowledge library covering autonomous charging, wireless charging fundamentals, resonant WPT, coil design, intelligent power control, charging stations, and industry standards.",
 };

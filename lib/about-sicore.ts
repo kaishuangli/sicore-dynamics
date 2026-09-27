@@ -9,8 +9,9 @@ export const aboutSicoreHero = {
 export const aboutSicoreStory = {
   id: "our-story",
   paragraphs: [
-    "Founded in 2024 and headquartered in Texas, USA, SiCore Dynamics is a technology company specializing in wireless and plug-free charging solutions for intelligent machines. We develop reliable charging systems that enable robots, autonomous vehicles, industrial equipment, medical devices, and other smart products to charge safely, efficiently, and with minimal human intervention.",
-    "Founded by a team of experienced engineers with backgrounds in power electronics, embedded systems, and industrial product development, SiCore combines advanced charging technologies with practical engineering to deliver complete solutions for OEM customers. From wireless charging modules and contact charging systems to customized charging stations, our goal is to simplify power delivery and help customers build products that are easier to use, more reliable, and ready for the future.",
+    "SiCore Dynamics is an intelligent autonomous charging technology company headquartered in Texas, USA. We develop wireless charging, contact charging, plug-free docking, intelligent charging software, and OEM charging infrastructure that enable autonomous machines to operate with minimal human intervention.",
+    "Our technology connects power electronics, charging interfaces, docking intelligence, embedded control, communications, and fleet-level charging management into one integrated autonomous charging platform. From a single mobile robot to a distributed fleet of AMRs, AGVs, drones, medical devices, and industrial machines, SiCore helps equipment find power, dock, charge, monitor energy status, and return to operation automatically.",
+    "SiCore works with OEMs and system integrators from concept and prototype through system integration and production. Our engineering capabilities span wireless power transfer, conductive charging, docking mechanics, embedded electronics, communications, charging control, monitoring, and customized charging infrastructure.",
   ],
 } as const;
 
@@ -87,5 +88,5 @@ export const aboutSicoreLookingAhead = {
 export const aboutSicorePageMeta = {
   title: "About SiCore Dynamics",
   description:
-    "SiCore Dynamics engineers autonomous charging infrastructure for intelligent machines—so energy delivery is as autonomous as the systems it powers.",
+    "SiCore Dynamics is an intelligent autonomous charging technology company headquartered in Texas, USA. We develop wireless charging, contact charging, plug-free docking, intelligent charging software, and OEM charging infrastructure that enable autonomous machines to operate with minimal human intervention.",
 };

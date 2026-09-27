@@ -9,8 +9,9 @@ export const aboutSicoreHero = {
 export const aboutSicoreStory = {
   id: "our-story",
   paragraphs: [
-    "Fundada en 2024 y con sede en Texas, Estados Unidos, SiCore Dynamics es una empresa de tecnología especializada en soluciones de carga inalámbrica y sin conexión para máquinas inteligentes. Desarrollamos sistemas de carga confiables que permiten a robots, vehículos autónomos, equipos industriales, dispositivos médicos y otros productos inteligentes cargarse de forma segura, eficiente y con una intervención humana mínima.",
-    "Fundada por un equipo de ingenieros con amplia experiencia en electrónica de potencia, sistemas embebidos y desarrollo de productos industriales, SiCore combina tecnologías de carga avanzadas con ingeniería práctica para ofrecer soluciones completas a clientes OEM. Desde módulos de carga inalámbrica y sistemas de carga por contacto hasta estaciones de carga personalizadas, nuestro objetivo es simplificar la entrega de energía y ayudar a los clientes a construir productos más fáciles de usar, más confiables y preparados para el futuro.",
+    "SiCore Dynamics es una empresa de tecnología de carga autónoma inteligente con sede en Texas, Estados Unidos. Desarrollamos carga inalámbrica, carga por contacto, acoplamiento sin conector, software de carga inteligente e infraestructura de carga OEM que permiten a las máquinas autónomas operar con una intervención humana mínima.",
+    "Nuestra tecnología conecta la electrónica de potencia, las interfaces de carga, la inteligencia de acoplamiento, el control embebido, las comunicaciones y la gestión de carga a nivel de flota en una plataforma integrada de carga autónoma. Desde un solo robot móvil hasta una flota distribuida de AMR, AGV, drones, equipos médicos y máquinas industriales, SiCore ayuda al equipo a encontrar energía, acoplarse, cargarse, supervisar el estado energético y volver a operar automáticamente.",
+    "SiCore trabaja con OEM e integradores de sistemas desde el concepto y el prototipo hasta la integración del sistema y la producción. Nuestras capacidades de ingeniería abarcan la transferencia de energía inalámbrica, la carga conductiva, la mecánica de acoplamiento, la electrónica embebida, las comunicaciones, el control de carga, la supervisión y la infraestructura de carga personalizada.",
   ],
 } as const;
 
@@ -87,5 +88,5 @@ export const aboutSicoreLookingAhead = {
 export const aboutSicorePageMeta = {
   title: "Sobre SiCore Dynamics",
   description:
-    "SiCore Dynamics diseña infraestructura de carga autónoma para máquinas inteligentes, para que la entrega de energía sea tan autónoma como los sistemas que alimenta.",
+    "SiCore Dynamics es una empresa de tecnología de carga autónoma inteligente con sede en Texas, Estados Unidos. Desarrollamos carga inalámbrica, carga por contacto, acoplamiento sin conector, software de carga inteligente e infraestructura de carga OEM que permiten a las máquinas autónomas operar con una intervención humana mínima.",
 };

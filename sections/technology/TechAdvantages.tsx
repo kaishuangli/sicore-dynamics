@@ -21,9 +21,9 @@ export default function TechAdvantages({ locale }: { locale: Locale }) {
         </h2>
         <p className="mt-5 max-w-2xl text-sm leading-7 text-[#64748B] md:text-base">
           {t(
-            "SiCore Dynamics 不仅提供充电器——我们为智能机器提供无线充电技术平台。",
-            "SiCore Dynamics no solo vende cargadores: ofrecemos plataformas tecnológicas de carga inalámbrica para máquinas inteligentes.",
-            "SiCore Dynamics is not just selling chargers — we provide wireless charging technology platforms for intelligent machines.",
+            "SiCore Dynamics 提供的是自主充电技术栈，无线充电只是其中一部分。",
+            "SiCore Dynamics ofrece una pila de carga autónoma. La carga inalámbrica es una parte de esa pila.",
+            "SiCore Dynamics provides an autonomous charging technology stack. Wireless charging is one part of that stack.",
           )}
         </p>
 
