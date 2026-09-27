@@ -37,9 +37,8 @@ export const productCategoryCards = [
   },
   {
     id: "consumer-oriented-products",
-    image:
-      "/images/products/consumer-oriented-products/consumer-electronics/gaming-mouse-wireless-charging-dock/1.png",
-    imageAlt: "Gaming mouse wireless charging dock",
+    image: "/images/products/consumer-oriented-products/homepage-consumer.png",
+    imageAlt: "Desk power panel with wireless charging, USB, HDMI, and network ports",
     description: "Consumer electronics, medical, furniture, DC-DC modules, and component wireless chargers.",
     zh: "覆盖消费电子、医疗、家具、DC-DC 模块与元器件的无线充电产品。",
     es: "Cargadores inalámbricos para electrónica de consumo, médico, mobiliario, módulos DC-DC y componentes.",

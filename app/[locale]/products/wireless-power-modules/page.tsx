@@ -9,8 +9,8 @@ type PageProps = {
 export default async function WirelessPowerModulesIndexPage({ params }: PageProps) {
   const { locale: raw } = await params;
   if (!isLocale(raw)) {
-    redirect("/products/wireless-power-modules/60w");
+    redirect("/products/wireless-power-modules/200w");
   }
 
-  redirect(withLocale("/products/wireless-power-modules/60w", raw));
+  redirect(withLocale("/products/wireless-power-modules/200w", raw));
 }

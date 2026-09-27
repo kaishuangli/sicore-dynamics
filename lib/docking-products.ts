@@ -1,10 +1,5 @@
 export const dockingProducts = [
   {
-    id: "pogo-pin-charging-dock",
-    label: "Pogo Pin Charging Dock",
-    tagline: "Compact spring-loaded pins for precise, repeatable charging.",
-  },
-  {
     id: "spring-contact-charging-dock",
     label: "Spring Contact Charging Dock",
     tagline: "Compliant spring contacts for reliable high-cycle docking.",
@@ -23,6 +18,11 @@ export const dockingProducts = [
     id: "wireless-charging-dock",
     label: "Wireless Charging Dock",
     tagline: "Contactless power transfer for sealed and autonomous systems.",
+  },
+  {
+    id: "pogo-pin-charging-dock",
+    label: "Pogo Pin Charging Dock",
+    tagline: "Compact spring-loaded pins for precise, repeatable charging.",
   },
 ] as const;
 
