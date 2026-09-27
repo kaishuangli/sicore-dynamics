@@ -60,7 +60,7 @@ export const aboutSections = [
     title: "Inversionistas",
     tagline: "Invirtiendo en el futuro de la energía inteligente.",
     description:
-      "Apoyando la próxima generación de tecnologías de carga inalámbrica e infraestructura autónoma de energía.",
+      "Carga inalámbrica, carga por contacto, acoplamiento sin conector e infraestructura de carga OEM para máquinas autónomas.",
     highlights: [
       "Carga inalámbrica avanzada",
       "Experiencia en ingeniería",

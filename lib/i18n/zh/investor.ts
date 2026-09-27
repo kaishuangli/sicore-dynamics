@@ -1,13 +1,13 @@
 export const investorPageMeta = {
   title: "投资者 | SiCore Dynamics",
   description:
-    "投资智能电源的未来——SiCore Dynamics 带来的无线充电技术与自主能源基础设施。",
+    "投资智能自主充电——SiCore Dynamics 的无线充电、接触式充电、无插拔对接与 OEM 充电基础设施。",
 };
 
 export const investorHero = {
   eyebrow: "投资者",
   title: "投资智能电源的未来",
-  body: "支持下一代无线充电技术与自主能源基础设施的发展。",
+  body: "支持面向自主机器的无线充电、接触式充电、无插拔对接与 OEM 充电基础设施。",
 } as const;
 
 export const investorWhy = {
@@ -15,8 +15,8 @@ export const investorWhy = {
   intro: "我们正在为快速增长的机器人与自动化行业打造智能充电技术。",
   items: [
     {
-      title: "先进无线充电",
-      text: "为自主机器设计的高效谐振式与无插拔充电平台。",
+      title: "自主充电平台",
+      text: "面向自主机器的无线充电、接触式充电、无插拔对接与充电软件。",
     },
     {
       title: "工程专长",

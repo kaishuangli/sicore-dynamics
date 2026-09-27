@@ -7,15 +7,16 @@ export default function TechWirelessPanel() {
     <div className="py-12 lg:py-16">
       <div className="container-page">
         <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#0B5FFF]">
-          Wireless Charging Technology
+          Wireless Energy Platform
         </p>
         <h2 className="font-display mt-3 text-2xl font-black tracking-[-0.03em] text-[#0B0F19] md:text-3xl lg:text-4xl">
           Wireless Power Transfer Built for Intelligent Machines
         </h2>
         <p className="mt-4 max-w-3xl text-sm leading-7 text-[#64748B] md:text-base">
-          High-efficiency wireless power transfer for intelligent machines. SiCore&apos;s wireless
-          charging technology enables OEM customers to deploy reliable, scalable, non-contact power
-          across robotics and industrial automation.
+          Wireless charging is one part of the SiCore autonomous charging stack, together with
+          contact charging, plug-free docking, intelligent charging software, and OEM charging
+          infrastructure. This platform delivers high-efficiency, non-contact power for robotics and
+          industrial automation.
         </p>
 
         <div className="mt-12 grid gap-14 lg:grid-cols-2 lg:items-start lg:gap-20">

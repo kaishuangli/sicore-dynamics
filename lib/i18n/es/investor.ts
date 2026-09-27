@@ -1,13 +1,13 @@
 export const investorPageMeta = {
   title: "Inversionistas | SiCore Dynamics",
   description:
-    "Invirtiendo en el futuro de la energía inteligente — tecnologías de carga inalámbrica e infraestructura autónoma de energía de SiCore Dynamics.",
+    "Invirtiendo en carga autónoma inteligente: carga inalámbrica, carga por contacto, acoplamiento sin conector e infraestructura de carga OEM de SiCore Dynamics.",
 };
 
 export const investorHero = {
   eyebrow: "Inversionistas",
   title: "Invirtiendo en el Futuro de la Energía Inteligente",
-  body: "Apoyando la próxima generación de tecnologías de carga inalámbrica e infraestructura autónoma de energía.",
+  body: "Carga inalámbrica, carga por contacto, acoplamiento sin conector e infraestructura de carga OEM para máquinas autónomas.",
 } as const;
 
 export const investorWhy = {
@@ -16,8 +16,8 @@ export const investorWhy = {
     "Estamos construyendo tecnologías de carga inteligente para la industria de robótica y automatización, en rápido crecimiento.",
   items: [
     {
-      title: "Carga Inalámbrica Avanzada",
-      text: "Plataformas de carga resonante y sin conexión de alta eficiencia, diseñadas para máquinas autónomas.",
+      title: "Plataforma de carga autónoma",
+      text: "Carga inalámbrica, carga por contacto, acoplamiento sin conector y software de carga diseñados para máquinas autónomas.",
     },
     {
       title: "Experiencia en Ingeniería",

@@ -93,5 +93,5 @@ export const wireless200wSpecs = [
 
 export const wireless200wCta = {
   title: "Impulse Su Innovación.",
-  description: "Construyamos juntos el futuro de la energía inalámbrica.",
+  description: "Incorporemos la carga autónoma en su próxima máquina.",
 };

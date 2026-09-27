@@ -8,14 +8,14 @@ export const homeDescription = geoEntity.definition;
 
 export const coreCapabilities = [
   {
-    label: "Wireless Charging Technology",
-    text: "Advanced wireless power transfer technologies delivering high efficiency, precise alignment tolerance, and reliable energy transmission.",
+    label: "Wireless Energy Platform",
+    text: "Wireless charging is one part of the SiCore autonomous charging stack, engineered for efficient energy transfer and alignment-tolerant docking.",
     icon: "wireless" as const,
     href: "/technology/wireless-energy-platform",
   },
   {
     label: "Intelligent Charging Systems",
-    text: "Smart wireless charging stations designed for autonomous robots, AGVs, drones, and intelligent industrial equipment.",
+    text: "Charging software and control that help machines find power, monitor energy status, and return to operation.",
     icon: "station" as const,
     href: "/technology/intelligent-charging",
   },
@@ -26,14 +26,19 @@ export const coreCapabilities = [
     href: "/technology/plug-free-docking",
   },
   {
-    label: "Industrial Power Solutions",
-    text: "High-performance wireless charging and intelligent power solutions engineered for demanding industrial environments.",
+    label: "OEM Charging Infrastructure",
+    text: "Custom charging infrastructure for OEMs and system integrators, from prototype through production.",
     icon: "industrial" as const,
     href: "/#solutions",
   },
 ];
 
 export const seoKeywords = [
+  "intelligent autonomous charging",
+  "autonomous charging infrastructure",
+  "contact charging",
+  "intelligent charging software",
+  "OEM charging infrastructure",
   "advanced wireless charging technologies",
   "intelligent charging stations",
   "AI power systems",
@@ -217,6 +222,7 @@ export function getProductSchema(input: {
   path: string;
   image?: string;
   category: string;
+  brand?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -224,15 +230,16 @@ export function getProductSchema(input: {
     name: input.name,
     description: input.description,
     category: input.category,
-    url: absoluteUrl(input.path),
-    ...(input.image ? { image: absoluteUrl(input.image) } : {}),
     brand: {
       "@type": "Brand",
-      name: site.name,
+      name: input.brand ?? site.name,
     },
-    manufacturer: {
-      "@id": `${site.url}/#organization`,
-    },
+    url: absoluteUrl(input.path),
+    ...(input.image ? { image: absoluteUrl(input.image) } : {}),
+    manufacturer:
+      !input.brand || input.brand === site.name
+        ? { "@id": `${site.url}/#organization` }
+        : { "@type": "Organization", name: input.brand },
   };
 }
 

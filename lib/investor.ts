@@ -1,13 +1,13 @@
 export const investorPageMeta = {
   title: "Investors | SiCore Dynamics",
   description:
-    "Investing in the future of intelligent power — wireless charging technologies and autonomous energy infrastructure from SiCore Dynamics.",
+    "Investing in intelligent autonomous charging — wireless charging, contact charging, plug-free docking, and OEM charging infrastructure from SiCore Dynamics.",
 };
 
 export const investorHero = {
   eyebrow: "Investors",
   title: "Investing in the Future of Intelligent Power",
-  body: "Supporting the next generation of wireless charging technologies and autonomous energy infrastructure.",
+  body: "Supporting wireless charging, contact charging, plug-free docking, and OEM charging infrastructure for autonomous machines.",
 } as const;
 
 export const investorWhy = {
@@ -16,8 +16,8 @@ export const investorWhy = {
     "We are building intelligent charging technologies for the rapidly growing robotics and automation industry.",
   items: [
     {
-      title: "Advanced Wireless Charging",
-      text: "High-efficiency resonant and plug-free charging platforms designed for autonomous machines.",
+      title: "Autonomous Charging Platform",
+      text: "Wireless charging, contact charging, plug-free docking, and charging software designed for autonomous machines.",
     },
     {
       title: "Engineering Expertise",

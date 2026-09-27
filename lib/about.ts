@@ -60,7 +60,7 @@ export const aboutSections = [
     title: "Investors",
     tagline: "Investing in the future of intelligent power.",
     description:
-      "Supporting the next generation of wireless charging technologies and autonomous energy infrastructure.",
+      "Supporting wireless charging, contact charging, plug-free docking, and OEM charging infrastructure for autonomous machines.",
     highlights: [
       "Advanced wireless charging",
       "Engineering expertise",

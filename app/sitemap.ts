@@ -9,6 +9,7 @@ import { industries } from "@/lib/industries";
 import { integratedBoardIds } from "@/lib/integrated-boards";
 import { isProductCategoryPublic, productTiers, wirelessLowPowerTier } from "@/lib/products";
 import { site } from "@/lib/site";
+import { getKnowledgeArticleStaticParams } from "@/lib/knowledge-articles";
 import { technologyPlatforms } from "@/lib/technology";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -48,9 +49,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/products/docking",
     ...dockingProductIds.map((id) => `/products/docking/${id}`),
     "/knowledge",
-    "/knowledge/autonomous-charging/what-is-autonomous-charging",
-    "/knowledge/autonomous-charging/wireless-vs-contact-charging-for-amrs",
-    "/knowledge/autonomous-charging/how-plug-free-docking-works",
+    ...getKnowledgeArticleStaticParams().map(
+      ({ category, slug }) => `/knowledge/${category}/${slug}`,
+    ),
     "/download",
     "/contact",
     "/third-party-products",

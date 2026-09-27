@@ -55,7 +55,7 @@ export const aboutSections = [
     label: "投资者",
     title: "投资者",
     tagline: "投资智能电源的未来。",
-    description: "支持下一代无线充电技术与自主能源基础设施的发展。",
+    description: "支持面向自主机器的无线充电、接触式充电、无插拔对接与 OEM 充电基础设施。",
     highlights: ["先进无线充电", "工程专长", "持续增长的市场机遇"],
     items: [
       {

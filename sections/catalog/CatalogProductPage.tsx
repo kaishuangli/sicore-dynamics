@@ -1,10 +1,12 @@
 import Link from "next/link";
 import AddToCartButton from "@/components/cart/AddToCartButton";
-import { getCatalogDefinition } from "@/lib/catalog/catalogs";
+import JsonLd from "@/components/JsonLd";
+import { catalogProductPath, getCatalogDefinition } from "@/lib/catalog/catalogs";
 import type { CatalogProduct } from "@/lib/catalog/types";
 import { pickLocalized } from "@/lib/catalog/types";
 import type { Locale } from "@/lib/i18n/config";
 import { withLocale } from "@/lib/i18n/path";
+import { getProductSchema } from "@/lib/seo";
 import { formatUsd } from "@/lib/third-party-products";
 import ProductImageGallery from "@/sections/catalog/ProductImageGallery";
 
@@ -49,9 +51,20 @@ export default function CatalogProductPage({
   const gallery = product.gallery?.length ? product.gallery : [product.image || "/images/product-tx.png"];
 
   const Frame = embedded ? "section" : "main";
+  const categoryLabel = pickLocalized(catalog.label, locale);
 
   return (
     <Frame className={embedded ? "bg-white px-6 py-12 lg:px-12 lg:py-16" : "bg-white py-12 lg:py-16"}>
+      <JsonLd
+        data={getProductSchema({
+          name,
+          description: description || tagline || name,
+          path: L(catalogProductPath(product.catalogId, product.id)),
+          image: product.image || gallery[0],
+          category: categoryLabel,
+          brand: product.brand,
+        })}
+      />
       <div className={`${embedded ? "" : "container-page "}grid gap-10 lg:grid-cols-2 lg:items-start`}>
         <ProductImageGallery images={gallery} alt={imageAlt} />
         <div>

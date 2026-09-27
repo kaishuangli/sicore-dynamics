@@ -21,9 +21,9 @@ export default function ContactCard({ className = "", locale = "en" }: ContactCa
       </p>
       <h2 className="font-display mt-3 text-xl font-black tracking-[-0.03em] text-slate-950 md:text-2xl">
         {t(
-          "一起打造无线供电的未来。",
-          "Construyamos juntos el futuro de la energía inalámbrica.",
-          "Let's build the future of wireless power together.",
+          "把自主充电做进您的下一台机器。",
+          "Incorporemos la carga autónoma en su próxima máquina.",
+          "Let's build autonomous charging into your next machine.",
         )}
       </h2>
       <p className="mt-4 text-xs leading-6 text-slate-600 md:text-sm">

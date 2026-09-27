@@ -93,5 +93,5 @@ export const wireless200wSpecs = [
 
 export const wireless200wCta = {
   title: "驱动您的创新。",
-  description: "让我们携手共创无线供电的未来。",
+  description: "把自主充电做进您的下一台机器。",
 };
