@@ -13,22 +13,27 @@ export default function PhysicsLayerSection({ locale }: { locale: Locale }) {
 
   return (
     <section id="physics" className="border-t border-slate-200/70 bg-white" aria-labelledby="physics-heading">
-      {/* Hero — full composition image */}
       <div className="border-b border-slate-200/70 bg-white">
-        <div className="container-page pt-10 lg:pt-12">
-          <SectionEyebrow>{content.eyebrow}</SectionEyebrow>
-          <h2 id="physics-heading" className="sr-only">
-            {content.title}
-          </h2>
-        </div>
-        <div className="mt-4 w-full bg-white pb-6 md:pb-8">
+        <div className="container-page grid items-center gap-8 py-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-12 lg:py-14">
+          <div>
+            <SectionEyebrow>{content.eyebrow}</SectionEyebrow>
+            <h2
+              id="physics-heading"
+              className="font-display mt-4 max-w-md text-3xl font-black leading-tight tracking-[-0.03em] text-[#0B0F19] md:text-4xl"
+            >
+              {content.title}
+            </h2>
+            <p className="mt-5 max-w-md text-sm leading-7 text-slate-600 md:text-base md:leading-8">
+              {content.description}
+            </p>
+          </div>
           <Image
             src={content.heroImage}
-            alt={`${content.title}. ${content.description}`}
+            alt="Two copper wireless charging coils with a magnetic field between them"
             width={1024}
-            height={561}
-            className="mx-auto h-auto w-full max-w-6xl"
-            sizes="(max-width: 1152px) 100vw, 1152px"
+            height={512}
+            className="h-auto w-full"
+            sizes="(max-width: 1024px) 100vw, 58vw"
             quality={100}
             priority
           />

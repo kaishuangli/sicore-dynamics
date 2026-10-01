@@ -19,7 +19,7 @@ export const wirelessEnergyPlatformPage = {
     title: "Física de la Transferencia de Energía Inalámbrica",
     description:
       "La Capa de Física define los principios fundamentales de la transferencia de energía inalámbrica. Establece cómo se desplaza la energía a través del espacio mediante campos electromagnéticos y acoplamiento resonante — permitiendo una entrega de energía eficiente y sin contacto para sistemas inteligentes de próxima generación.",
-    heroImage: "/images/physics-layer/physics-hero.png",
+    heroImage: "/images/physics-layer/physics-hero.jpg",
     mechanismsEyebrow: "Mecanismos de Transferencia",
     mechanismsTitle: "Cuatro Mecanismos Fundamentales de Transferencia",
     mechanismsIntro:
@@ -29,7 +29,7 @@ export const wirelessEnergyPlatformPage = {
         id: "resonant-inductive",
         number: "01",
         title: "Acoplamiento Inductivo Resonante",
-        image: "/images/physics-layer/resonant-inductive-v2.png",
+        image: "/images/physics-layer/resonant-inductive.jpg",
         description:
           "La solución estándar de la industria para transferencia de energía de alta eficiencia a corto alcance. Ampliamente adoptada en la carga Qi y en sistemas de acoplamiento industrial.",
         applications: [

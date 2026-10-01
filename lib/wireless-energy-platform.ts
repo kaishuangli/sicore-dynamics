@@ -19,7 +19,7 @@ export const wirelessEnergyPlatformPage = {
     title: "Wireless Energy Transfer Physics",
     description:
       "The Physics Layer defines the fundamental principles of wireless energy transfer. It establishes how energy moves across space through electromagnetic fields and resonant coupling — enabling efficient, contactless power delivery for next-generation intelligent systems.",
-    heroImage: "/images/physics-layer/physics-hero.png",
+    heroImage: "/images/physics-layer/physics-hero.jpg",
     mechanismsEyebrow: "Transfer Mechanisms",
     mechanismsTitle: "Four Fundamental Transfer Mechanisms",
     mechanismsIntro:
@@ -29,7 +29,7 @@ export const wirelessEnergyPlatformPage = {
         id: "resonant-inductive",
         number: "01",
         title: "Resonant Inductive Coupling",
-        image: "/images/physics-layer/resonant-inductive-v2.png",
+        image: "/images/physics-layer/resonant-inductive.jpg",
         description:
           "The industry-standard solution for high-efficiency short-range power transfer. Widely adopted in Qi charging and industrial docking systems.",
         applications: [

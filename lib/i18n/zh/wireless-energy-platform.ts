@@ -19,7 +19,7 @@ export const wirelessEnergyPlatformPage = {
     title: "无线能量传输物理原理",
     description:
       "物理层定义了无线能量传输的基本原理，阐明能量如何通过电磁场与谐振耦合在空间中传递——为下一代智能系统实现高效、非接触式的供电。",
-    heroImage: "/images/physics-layer/physics-hero.png",
+    heroImage: "/images/physics-layer/physics-hero.jpg",
     mechanismsEyebrow: "传输机制",
     mechanismsTitle: "四种基础传输机制",
     mechanismsIntro:
@@ -29,7 +29,7 @@ export const wirelessEnergyPlatformPage = {
         id: "resonant-inductive",
         number: "01",
         title: "谐振感应耦合",
-        image: "/images/physics-layer/resonant-inductive-v2.png",
+        image: "/images/physics-layer/resonant-inductive.jpg",
         description:
           "业界标准的高效短距离电力传输方案，广泛应用于 Qi 无线充电与工业对接系统。",
         applications: [
