@@ -60,11 +60,9 @@ export default function FastChargingCatalog({ locale }: { locale: Locale }) {
       ),
     [catalogProducts],
   );
-  const defaultCategory = populatedCategories[0]?.id ?? "ac-ev-chargers";
+  const defaultCategory: FastChargingCategoryId = populatedCategories[0]?.id ?? "ac-ev-chargers";
   const activeCategory: FastChargingCategoryId =
-    category && populatedCategories.some((item) => item.id === category)
-      ? category
-      : defaultCategory;
+    populatedCategories.find((item) => item.id === category)?.id ?? defaultCategory;
 
   const title = navProducts["ev-charging-gun"] ?? "EV Charging Gun";
   const searchHeading = isZh
