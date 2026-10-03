@@ -12,7 +12,6 @@ import {
   getFastChargingCatalogProducts,
   getFastChargingCategoryLabel,
   getFastChargingProductName,
-  isFastChargingCategoryId,
   type FastChargingAvailability,
   type FastChargingCategoryId,
 } from "@/lib/fast-charging-catalog";
@@ -54,8 +53,18 @@ export default function FastChargingCatalog({ locale }: { locale: Locale }) {
   const [perPage, setPerPage] = useState(24);
 
   const catalogProducts = useMemo(() => getFastChargingCatalogProducts(), []);
+  const populatedCategories = useMemo(
+    () =>
+      fastChargingCategories.filter((item) =>
+        catalogProducts.some((product) => product.categoryId === item.id),
+      ),
+    [catalogProducts],
+  );
+  const defaultCategory = populatedCategories[0]?.id ?? "ac-ev-chargers";
   const activeCategory: FastChargingCategoryId =
-    category && isFastChargingCategoryId(category) ? category : "ac-ev-chargers";
+    category && populatedCategories.some((item) => item.id === category)
+      ? category
+      : defaultCategory;
 
   const title = navProducts["ev-charging-gun"] ?? "EV Charging Gun";
   const searchHeading = isZh
@@ -68,27 +77,27 @@ export default function FastChargingCatalog({ locale }: { locale: Locale }) {
   const categoryLabel = t("Category", "产品分类", "Categorías");
 
   const hrefFor = (nextCategory: FastChargingCategoryId) => {
-    if (nextCategory === "ac-ev-chargers") return L("/products/ev-charging-gun");
+    if (nextCategory === defaultCategory) return L("/products/ev-charging-gun");
     return L(`/products/ev-charging-gun?category=${nextCategory}`);
   };
 
   const filteredCategories = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return fastChargingCategories;
-    return fastChargingCategories.filter((item) => {
+    if (!q) return populatedCategories;
+    return populatedCategories.filter((item) => {
       const label = getFastChargingCategoryLabel(item, locale).toLowerCase();
       return label.includes(q) || item.id.includes(q);
     });
-  }, [locale, query]);
+  }, [locale, populatedCategories, query]);
 
   const counts = useMemo(
     () =>
-      fastChargingCategories.map((item) => ({
+      populatedCategories.map((item) => ({
         id: item.id,
         label: getFastChargingCategoryLabel(item, locale),
         count: catalogProducts.filter((product) => product.categoryId === item.id).length,
       })),
-    [locale, catalogProducts],
+    [locale, catalogProducts, populatedCategories],
   );
 
   const filteredProducts = useMemo(() => {

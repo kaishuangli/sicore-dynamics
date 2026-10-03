@@ -1,10 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
-import {
-  getIntegratedBoardCategories,
-  getIntegratedBoards,
-} from "@/lib/i18n/content";
+import { getIntegratedBoardCategories } from "@/lib/i18n/content";
 import { withLocale } from "@/lib/i18n/path";
 import { getUploadedProducts, getWirelessInterfaceSharedProducts } from "@/lib/catalog/products";
 import { pickLocalized } from "@/lib/catalog/types";
@@ -27,8 +24,7 @@ export default function IntegratedBoardsCatalog({
   const L = (href: string) => withLocale(href, locale);
   const isZh = locale === "zh";
   const isEs = locale === "es";
-  const builtIn = getIntegratedBoards(locale);
-  const extras = [
+  const boards = [
     ...getUploadedProducts("integrated-boards"),
     ...getWirelessInterfaceSharedProducts(),
   ].map((item) => ({
@@ -40,12 +36,10 @@ export default function IntegratedBoardsCatalog({
     imageAlt: pickLocalized(item.imageAlt, locale) || pickLocalized(item.name, locale),
     specs: item.specs,
   }));
-  const extraCategories = new Set(extras.map((item) => item.categoryId));
-  const boards = [
-    ...extras,
-    ...builtIn.filter((board) => !extraCategories.has(board.categoryId)),
-  ];
-  const categories = getIntegratedBoardCategories(locale);
+  const coveredCategoryIds = new Set(boards.map((item) => item.categoryId));
+  const categories = getIntegratedBoardCategories(locale).filter((item) =>
+    coveredCategoryIds.has(item.id),
+  );
 
   const activeCategory =
     category && isIntegratedBoardCategoryId(category) ? category : undefined;

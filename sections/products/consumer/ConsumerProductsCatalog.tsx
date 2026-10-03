@@ -166,7 +166,9 @@ export default function ConsumerProductsCatalog({
           ),
           href: "/products/consumer-oriented-products",
         },
-        ...counts.map((item) => ({
+        ...counts
+          .filter((item) => item.count > 0)
+          .map((item) => ({
           id: item.id,
           label: item.label,
           tagline: t(
@@ -197,7 +199,9 @@ export default function ConsumerProductsCatalog({
 
         {subcategory === "all" ? (
           <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-            {counts.map((item) => (
+            {counts
+              .filter((item) => item.count > 0)
+              .map((item) => (
               <Link
                 key={item.id}
                 href={categoryHref(item.id)}

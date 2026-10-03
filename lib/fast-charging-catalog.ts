@@ -69,78 +69,8 @@ export type FastChargingProduct = {
   gallery?: string[];
 };
 
-const availabilityCycle: FastChargingAvailability[] = ["in-stock", "available", "oem"];
-
-type CategoryTemplate = {
-  categoryId: FastChargingCategoryId;
-  prefix: string;
-  name: (n: number) => string;
-  nameZh: (n: number) => string;
-  nameEs: (n: number) => string;
-  tagline: string;
-};
-
-const categoryTemplates: CategoryTemplate[] = [
-  {
-    categoryId: "ac-ev-chargers",
-    prefix: "ac",
-    name: (n) => `AC EV Charger Template ${String(n).padStart(2, "0")}`,
-    nameZh: (n) => `交流 EV 充电器模板 ${String(n).padStart(2, "0")}`,
-    nameEs: (n) => `Plantilla cargador EV CA ${String(n).padStart(2, "0")}`,
-    tagline: "AC EV charger product template placeholder.",
-  },
-  {
-    categoryId: "dc-fast-chargers",
-    prefix: "dc",
-    name: (n) => `DC Fast Charger Template ${String(n).padStart(2, "0")}`,
-    nameZh: (n) => `直流快充模板 ${String(n).padStart(2, "0")}`,
-    nameEs: (n) => `Plantilla cargador rápido CC ${String(n).padStart(2, "0")}`,
-    tagline: "DC fast charger product template placeholder.",
-  },
-  {
-    categoryId: "ultra-fast-dc-chargers",
-    prefix: "ufc",
-    name: (n) => `Ultra-Fast DC Template ${String(n).padStart(2, "0")}`,
-    nameZh: (n) => `超充直流模板 ${String(n).padStart(2, "0")}`,
-    nameEs: (n) => `Plantilla ultra rápida CC ${String(n).padStart(2, "0")}`,
-    tagline: "Ultra-fast DC charger product template placeholder.",
-  },
-  {
-    categoryId: "portable-ev-chargers",
-    prefix: "portable",
-    name: (n) => `Portable EV Charger Template ${String(n).padStart(2, "0")}`,
-    nameZh: (n) => `便携 EV 充电器模板 ${String(n).padStart(2, "0")}`,
-    nameEs: (n) => `Plantilla cargador EV portátil ${String(n).padStart(2, "0")}`,
-    tagline: "Portable EV charger product template placeholder.",
-  },
-  {
-    categoryId: "charging-accessories",
-    prefix: "acc",
-    name: (n) => `Charging Accessory Template ${String(n).padStart(2, "0")}`,
-    nameZh: (n) => `充电配件模板 ${String(n).padStart(2, "0")}`,
-    nameEs: (n) => `Plantilla accesorio de carga ${String(n).padStart(2, "0")}`,
-    tagline: "Charging accessory product template placeholder.",
-  },
-];
-
-const PRODUCTS_PER_CATEGORY = 20;
-
-/** Placeholder product templates for catalog layout (replace with real SKUs later). */
-export const fastChargingProducts: FastChargingProduct[] = categoryTemplates.flatMap((template) =>
-  Array.from({ length: PRODUCTS_PER_CATEGORY }, (_, index) => {
-    const n = index + 1;
-    return {
-      id: `${template.prefix}-template-${String(n).padStart(2, "0")}`,
-      categoryId: template.categoryId,
-      name: template.name(n),
-      nameZh: template.nameZh(n),
-      nameEs: template.nameEs(n),
-      tagline: template.tagline,
-      priceLabel: "Quote",
-      availability: availabilityCycle[index % availabilityCycle.length]!,
-    };
-  }),
-);
+/** Placeholder charger templates are not listed. The catalog shows folder and uploaded products only. */
+export const fastChargingProducts: FastChargingProduct[] = [];
 
 export function getFastChargingProductName(
   item: FastChargingProduct,
@@ -351,7 +281,6 @@ export function getFastChargingFolderProducts(): FastChargingProduct[] {
 export function getFastChargingCatalogProducts(): FastChargingProduct[] {
   const folder = getFastChargingFolderProducts();
   const folderIds = new Set(folder.map((item) => item.id));
-  const folderCategories = new Set(folder.map((item) => item.categoryId));
   const extras = getUploadedProducts("ev-charging-gun")
     .filter((item) => isFastChargingCategoryId(item.subcategoryId))
     .filter((item) => !folderIds.has(item.id))
@@ -366,11 +295,7 @@ export function getFastChargingCatalogProducts(): FastChargingProduct[] {
       availability: item.availability,
       image: resolveProductImage("ev-charging-gun", item.id, item.image),
     }));
-  const uploadedCategories = new Set(extras.map((item) => item.categoryId));
-  const templates = fastChargingProducts.filter(
-    (item) => !folderCategories.has(item.categoryId) && !uploadedCategories.has(item.categoryId),
-  );
-  return [...folder, ...extras, ...templates].map((item) => ({
+  return [...folder, ...extras].map((item) => ({
     ...item,
     image: item.image || resolveProductImage("ev-charging-gun", item.id, item.image),
   }));

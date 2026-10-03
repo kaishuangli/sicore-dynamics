@@ -49,7 +49,9 @@ export default function DownloadPageContent({ locale }: { locale: Locale }) {
   const isZh = locale === "zh";
   const L = (href: string) => withLocale(href, locale);
   const { downloadCategories, downloadFiles } = getDownloadsBundle(locale);
-  const [activeCategory, setActiveCategory] = useState<DownloadCategoryId>("brochure");
+  const [activeCategory, setActiveCategory] = useState<DownloadCategoryId>(
+    downloadCategories[0]?.id ?? "datasheet",
+  );
   const [hasAccess, setHasAccess] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [pendingFile, setPendingFile] = useState<{ title: string; href: string } | null>(null);

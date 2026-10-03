@@ -2,19 +2,14 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { getIntegratedBoardContent } from "@/lib/i18n/content";
 import { getUploadedProduct, getUploadedProducts, getWirelessInterfaceSharedProducts } from "@/lib/catalog/products";
 import { pickLocalized } from "@/lib/catalog/types";
 import {
   integratedBoardCategories,
-  integratedBoardIds,
   isIntegratedBoardCategoryId,
   isIntegratedBoardId,
-  type IntegratedBoardId,
 } from "@/lib/integrated-boards";
-import { site } from "@/lib/site";
 import CatalogProductPage from "@/sections/catalog/CatalogProductPage";
-import IntegratedBoardProductPage from "@/sections/products/integrated-boards/IntegratedBoardProductPage";
 import IntegratedBoardsCatalog from "@/sections/products/integrated-boards/IntegratedBoardsCatalog";
 
 type PageProps = {
@@ -32,9 +27,12 @@ function isWirelessInterfaceSharedProduct(id: string) {
 }
 
 export function generateStaticParams() {
+  const uploaded = getUploadedProducts("integrated-boards");
+  const categories = new Set(uploaded.map((item) => item.subcategoryId));
+  if (hasWirelessInterfaceSharedUploads()) categories.add("wireless-interface");
   return [
-    ...integratedBoardIds.map((board) => ({ board })),
-    ...getUploadedProducts("integrated-boards").map((item) => ({ board: item.id })),
+    ...[...categories].map((board) => ({ board })),
+    ...uploaded.map((item) => ({ board: item.id })),
     ...getWirelessInterfaceSharedProducts().map((item) => ({ board: item.id })),
   ];
 }
@@ -71,22 +69,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             : `Integrated board products in the ${label} category.`,
     };
   }
-  if (!isIntegratedBoardId(board)) return {};
-  const product = getIntegratedBoardContent(locale, board);
-  if (!product) return {};
-
-  const url =
-    locale === "zh"
-      ? `${site.url}/zh/products/integrated-boards/${board}`
-      : locale === "es"
-        ? `${site.url}/es/products/integrated-boards/${board}`
-        : `${site.url}/products/integrated-boards/${board}`;
-
-  return {
-    title: `${product.title} | ${category}`,
-    description: product.description,
-    alternates: { canonical: url },
-  };
+  return {};
 }
 
 export default async function IntegratedBoardDetailPage({ params }: PageProps) {
@@ -100,14 +83,7 @@ export default async function IntegratedBoardDetailPage({ params }: PageProps) {
     return <IntegratedBoardsCatalog locale={rawLocale} category={board} />;
   }
 
-  if (isIntegratedBoardId(board)) {
-    return (
-      <IntegratedBoardProductPage
-        locale={rawLocale as Locale}
-        boardId={board as IntegratedBoardId}
-      />
-    );
-  }
+  if (isIntegratedBoardId(board)) notFound();
 
   const uploaded = getUploadedProduct(board);
   if (uploaded?.catalogId === "integrated-boards") {

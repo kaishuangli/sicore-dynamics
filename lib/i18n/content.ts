@@ -315,11 +315,35 @@ export function getContactBundle(locale: Locale) {
   };
 }
 
+function publishedDownloadFiles<T extends Record<string, { href: string }[]>>(files: T): T {
+  return Object.fromEntries(
+    Object.entries(files).map(([id, list]) => [
+      id,
+      list.filter((file) => file.href.startsWith("/downloads/")),
+    ]),
+  ) as T;
+}
+
 export function getDownloadsBundle(locale: Locale) {
+  const downloadFiles = publishedDownloadFiles(
+    pickLocale(downloadFilesEn, downloadFilesZh, locale, downloadFilesEs),
+  );
+  const downloadCategories = pickLocale(
+    downloadCategoriesEn,
+    downloadCategoriesZh,
+    locale,
+    downloadCategoriesEs,
+  ).filter((category) => downloadFiles[category.id]?.length);
+  const downloadNavLinks = pickLocale(
+    downloadNavLinksEn,
+    downloadNavLinksZh,
+    locale,
+    downloadNavLinksEs,
+  ).filter((link) => downloadCategories.some((category) => category.id === link.id));
   return {
-    downloadCategories: pickLocale(downloadCategoriesEn, downloadCategoriesZh, locale, downloadCategoriesEs),
-    downloadFiles: pickLocale(downloadFilesEn, downloadFilesZh, locale, downloadFilesEs),
-    downloadNavLinks: pickLocale(downloadNavLinksEn, downloadNavLinksZh, locale, downloadNavLinksEs),
+    downloadCategories,
+    downloadFiles,
+    downloadNavLinks,
     downloadPageMeta: pickLocale(downloadPageMetaEn, downloadPageMetaZh, locale, downloadPageMetaEs),
     downloadFaqs: pickLocale(downloadFaqsEn, downloadFaqsZh, locale, downloadFaqsEs),
   };

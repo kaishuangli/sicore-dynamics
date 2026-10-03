@@ -2,7 +2,6 @@ import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
 import { getDownloadsBundle } from "@/lib/i18n/content";
 import { withLocale } from "@/lib/i18n/path";
-import { site } from "@/lib/site";
 
 export default function DownloadHero({ locale }: { locale: Locale }) {
   const isZh = locale === "zh";
@@ -45,16 +44,11 @@ export default function DownloadHero({ locale }: { locale: Locale }) {
 
             <p className="download-hero-copy mt-4 text-sm leading-7 text-slate-300 md:text-base">
               {isZh ? (
-                <>
-                  浏览
-                  <span className="font-semibold text-white">{site.seoCorePhrase}</span>
-                  的宣传册、产品文档、软件工具、数据表与认证证书。填写姓名、公司、邮箱和电话即可解锁下载。
-                </>
+                <>浏览已发布的产品数据手册。填写姓名、公司、邮箱和电话即可解锁下载。</>
               ) : (
                 <>
-                  Browse brochures, product documents, software tools, datasheets, and certificates for{" "}
-                  <span className="font-semibold text-white">{site.seoCorePhrase.toLowerCase()}</span>.
-                  Register with your name, company, email, and phone to unlock downloads.
+                  Browse published product datasheets. Register with your name, company, email, and
+                  phone to unlock downloads.
                 </>
               )}
             </p>

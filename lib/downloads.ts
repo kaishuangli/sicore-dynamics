@@ -384,15 +384,23 @@ export const downloadFiles: Record<DownloadCategoryId, DownloadFile[]> = {
   ],
 };
 
-export const downloadNavLinks = downloadCategories.map((category) => ({
-  label: category.label,
-  href: `/download#${category.id}`,
-  id: category.id,
-}));
+export function isPublishedDownloadHref(href: string) {
+  return href.startsWith("/downloads/");
+}
+
+export const downloadNavLinks = downloadCategories
+  .filter((category) =>
+    downloadFiles[category.id].some((file) => isPublishedDownloadHref(file.href)),
+  )
+  .map((category) => ({
+    label: category.label,
+    href: `/download#${category.id}`,
+    id: category.id,
+  }));
 
 export function getDownloadCategoryFromHash(hash: string): DownloadCategoryId | null {
   const id = hash.replace(/^#/, "");
-  return downloadCategories.some((category) => category.id === id)
+  return downloadNavLinks.some((category) => category.id === id)
     ? (id as DownloadCategoryId)
     : null;
 }

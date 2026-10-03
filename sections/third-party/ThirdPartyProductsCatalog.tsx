@@ -35,6 +35,10 @@ export default function ThirdPartyProductsCatalog({
     category && isThirdPartyCategoryId(category) ? category : undefined;
 
   const catalogItems = getThirdPartyCatalogItems();
+  const coveredCategoryIds = new Set(catalogItems.map((item) => item.categoryId));
+  const visibleCategories = thirdPartyCategories.filter((item) =>
+    coveredCategoryIds.has(item.id),
+  );
   const filtered = activeCategory
     ? catalogItems.filter((item) => item.categoryId === activeCategory)
     : [...catalogItems];
@@ -89,7 +93,7 @@ export default function ThirdPartyProductsCatalog({
         </div>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {thirdPartyCategories.map((item) => (
+          {visibleCategories.map((item) => (
             <Link
               key={item.id}
               href={hrefFor(item.id, sort)}
@@ -151,7 +155,7 @@ export default function ThirdPartyProductsCatalog({
                     {allLabel}
                   </Link>
                 </li>
-                {thirdPartyCategories.map((item) => {
+                {visibleCategories.map((item) => {
                   const active = activeCategory === item.id;
                   return (
                     <li key={item.id}>
